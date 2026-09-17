@@ -1,0 +1,1296 @@
+{
+  "nodes": [
+    {
+      "id": "fog",
+      "name": "FOG",
+      "type": "project",
+      "lat": 44.495,
+      "lon": 11.343,
+      "city": "Bologna",
+      "country": "Italy",
+      "verification_status": "provided_unverified",
+      "sources": []
+    },
+    {
+      "id": "st",
+      "name": "Secuencias Temporales",
+      "type": "label",
+      "lat": 19.433,
+      "lon": -99.133,
+      "city": "Mexico City",
+      "country": "Mexico",
+      "verification_status": "provided_unverified",
+      "sources": []
+    },
+    {
+      "id": "eafhm",
+      "name": "EAFHM",
+      "type": "artist",
+      "lat": 19.433,
+      "lon": -99.133,
+      "city": "Mexico City",
+      "country": "Mexico",
+      "verification_status": "provided_unverified",
+      "sources": []
+    },
+    {
+      "id": "oslated",
+      "name": "Oslated",
+      "type": "label",
+      "lat": 33.5,
+      "lon": 126.531,
+      "city": "Jeju",
+      "country": "South Korea",
+      "verification_status": "provided_unverified",
+      "sources": []
+    },
+    {
+      "id": "huinali",
+      "name": "Huinali Recordings",
+      "type": "label",
+      "lat": 33.5,
+      "lon": 126.531,
+      "city": "Jeju",
+      "country": "South Korea",
+      "verification_status": "provided_unverified",
+      "sources": []
+    },
+    {
+      "id": "cy",
+      "name": "CY",
+      "type": "artist",
+      "lat": 37.567,
+      "lon": 126.978,
+      "city": "Seoul",
+      "country": "South Korea",
+      "verification_status": "provided_unverified",
+      "sources": []
+    },
+    {
+      "id": "melifera",
+      "name": "Melifera Records",
+      "type": "label",
+      "lat": 43.297,
+      "lon": 5.37,
+      "city": "Marseille / Lyon",
+      "country": "France",
+      "verification_status": "provided_unverified",
+      "sources": []
+    },
+    {
+      "id": "nawl",
+      "name": "NAWL",
+      "type": "artist",
+      "lat": 45.764,
+      "lon": 4.836,
+      "city": "Lyon",
+      "country": "France",
+      "verification_status": "provided_unverified",
+      "sources": []
+    },
+    {
+      "id": "vallee",
+      "name": "La Vallée Électrique",
+      "type": "festival",
+      "lat": 43.8,
+      "lon": 5.3,
+      "city": "Provence",
+      "country": "France",
+      "verification_status": "provided_unverified",
+      "sources": []
+    },
+    {
+      "id": "fhss",
+      "name": "Forbidden Hawaiian Sound Service",
+      "type": "artist",
+      "lat": 35.676,
+      "lon": 139.65,
+      "city": "Japan",
+      "country": "Japan",
+      "verification_status": "provided_unverified",
+      "sources": []
+    },
+    {
+      "id": "FOG Mexico-0",
+      "name": "ENA",
+      "type": "artist",
+      "city": "Geography to verify",
+      "country": "Mexico",
+      "episode": "FOG Mexico",
+      "approximate": true,
+      "verification_status": "pending",
+      "sources": [],
+      "draft_coordinates": {
+        "lat": 19.43,
+        "lon": -97.63
+      },
+      "geography_note": "Coordinate illustrative della V0, non una localizzazione dell’artista. Il paese indica il contesto dell’episodio."
+    },
+    {
+      "id": "FOG Mexico-1",
+      "name": "Simone Gatto",
+      "type": "artist",
+      "city": "Geography to verify",
+      "country": "Mexico",
+      "episode": "FOG Mexico",
+      "approximate": true,
+      "verification_status": "pending",
+      "sources": [],
+      "draft_coordinates": {
+        "lat": 19.863883739117558,
+        "lon": -97.77854669814637
+      },
+      "geography_note": "Coordinate illustrative della V0, non una localizzazione dell’artista. Il paese indica il contesto dell’episodio."
+    },
+    {
+      "id": "FOG Mexico-2",
+      "name": "Javier Marimon",
+      "type": "artist",
+      "city": "Geography to verify",
+      "country": "Mexico",
+      "episode": "FOG Mexico",
+      "approximate": true,
+      "verification_status": "pending",
+      "sources": [],
+      "draft_coordinates": {
+        "lat": 20.21183148246803,
+        "lon": -98.1947652972119
+      },
+      "geography_note": "Coordinate illustrative della V0, non una localizzazione dell’artista. Il paese indica il contesto dell’episodio."
+    },
+    {
+      "id": "FOG Mexico-3",
+      "name": "Aiôn Lazura",
+      "type": "artist",
+      "city": "Geography to verify",
+      "country": "Mexico",
+      "episode": "FOG Mexico",
+      "approximate": true,
+      "verification_status": "pending",
+      "sources": [],
+      "draft_coordinates": {
+        "lat": 20.404927912181822,
+        "lon": -98.79621859906553
+      },
+      "geography_note": "Coordinate illustrative della V0, non una localizzazione dell’artista. Il paese indica il contesto dell’episodio."
+    },
+    {
+      "id": "FOG Mexico-4",
+      "name": "Fred Small",
+      "type": "artist",
+      "city": "Geography to verify",
+      "country": "Mexico",
+      "episode": "FOG Mexico",
+      "approximate": true,
+      "verification_status": "pending",
+      "sources": [],
+      "draft_coordinates": {
+        "lat": 20.404927912181822,
+        "lon": -99.46378140093447
+      },
+      "geography_note": "Coordinate illustrative della V0, non una localizzazione dell’artista. Il paese indica il contesto dell’episodio."
+    },
+    {
+      "id": "FOG Mexico-5",
+      "name": "Koscoy",
+      "type": "artist",
+      "city": "Geography to verify",
+      "country": "Mexico",
+      "episode": "FOG Mexico",
+      "approximate": true,
+      "verification_status": "pending",
+      "sources": [],
+      "draft_coordinates": {
+        "lat": 20.21183148246803,
+        "lon": -100.06523470278809
+      },
+      "geography_note": "Coordinate illustrative della V0, non una localizzazione dell’artista. Il paese indica il contesto dell’episodio."
+    },
+    {
+      "id": "FOG Mexico-6",
+      "name": "Piante Vive",
+      "type": "artist",
+      "city": "Geography to verify",
+      "country": "Mexico",
+      "episode": "FOG Mexico",
+      "approximate": true,
+      "verification_status": "pending",
+      "sources": [],
+      "draft_coordinates": {
+        "lat": 19.863883739117558,
+        "lon": -100.48145330185362
+      },
+      "geography_note": "Coordinate illustrative della V0, non una localizzazione dell’artista. Il paese indica il contesto dell’episodio."
+    },
+    {
+      "id": "FOG Mexico-7",
+      "name": "Arturo Salerno",
+      "type": "artist",
+      "city": "Geography to verify",
+      "country": "Mexico",
+      "episode": "FOG Mexico",
+      "approximate": true,
+      "verification_status": "pending",
+      "sources": [],
+      "draft_coordinates": {
+        "lat": 19.43,
+        "lon": -100.63
+      },
+      "geography_note": "Coordinate illustrative della V0, non una localizzazione dell’artista. Il paese indica il contesto dell’episodio."
+    },
+    {
+      "id": "FOG Mexico-8",
+      "name": "Avsluta",
+      "type": "artist",
+      "city": "Geography to verify",
+      "country": "Mexico",
+      "episode": "FOG Mexico",
+      "approximate": true,
+      "verification_status": "pending",
+      "sources": [],
+      "draft_coordinates": {
+        "lat": 18.99611626088244,
+        "lon": -100.48145330185362
+      },
+      "geography_note": "Coordinate illustrative della V0, non una localizzazione dell’artista. Il paese indica il contesto dell’episodio."
+    },
+    {
+      "id": "FOG Mexico-9",
+      "name": "Saphileaum",
+      "type": "artist",
+      "city": "Geography to verify",
+      "country": "Mexico",
+      "episode": "FOG Mexico",
+      "approximate": true,
+      "verification_status": "pending",
+      "sources": [],
+      "draft_coordinates": {
+        "lat": 18.64816851753197,
+        "lon": -100.06523470278809
+      },
+      "geography_note": "Coordinate illustrative della V0, non una localizzazione dell’artista. Il paese indica il contesto dell’episodio."
+    },
+    {
+      "id": "FOG Mexico-10",
+      "name": "951012",
+      "type": "artist",
+      "city": "Geography to verify",
+      "country": "Mexico",
+      "episode": "FOG Mexico",
+      "approximate": true,
+      "verification_status": "pending",
+      "sources": [],
+      "draft_coordinates": {
+        "lat": 18.455072087818177,
+        "lon": -99.46378140093447
+      },
+      "geography_note": "Coordinate illustrative della V0, non una localizzazione dell’artista. Il paese indica il contesto dell’episodio."
+    },
+    {
+      "id": "FOG Mexico-11",
+      "name": "Orca Silent",
+      "type": "artist",
+      "city": "Geography to verify",
+      "country": "Mexico",
+      "episode": "FOG Mexico",
+      "approximate": true,
+      "verification_status": "pending",
+      "sources": [],
+      "draft_coordinates": {
+        "lat": 18.455072087818177,
+        "lon": -98.79621859906553
+      },
+      "geography_note": "Coordinate illustrative della V0, non una localizzazione dell’artista. Il paese indica il contesto dell’episodio."
+    },
+    {
+      "id": "FOG Mexico-12",
+      "name": "Max Figueroa",
+      "type": "artist",
+      "city": "Geography to verify",
+      "country": "Mexico",
+      "episode": "FOG Mexico",
+      "approximate": true,
+      "verification_status": "pending",
+      "sources": [],
+      "draft_coordinates": {
+        "lat": 18.64816851753197,
+        "lon": -98.1947652972119
+      },
+      "geography_note": "Coordinate illustrative della V0, non una localizzazione dell’artista. Il paese indica il contesto dell’episodio."
+    },
+    {
+      "id": "FOG Mexico-13",
+      "name": "Corell",
+      "type": "artist",
+      "city": "Geography to verify",
+      "country": "Mexico",
+      "episode": "FOG Mexico",
+      "approximate": true,
+      "verification_status": "pending",
+      "sources": [],
+      "draft_coordinates": {
+        "lat": 18.99611626088244,
+        "lon": -97.77854669814637
+      },
+      "geography_note": "Coordinate illustrative della V0, non una localizzazione dell’artista. Il paese indica il contesto dell’episodio."
+    },
+    {
+      "id": "FOG Korea-0",
+      "name": "Irina Kotik",
+      "type": "artist",
+      "city": "Geography to verify",
+      "country": "Korea",
+      "episode": "FOG Korea",
+      "approximate": true,
+      "verification_status": "pending",
+      "sources": [],
+      "draft_coordinates": {
+        "lat": 36.2,
+        "lon": 129.3
+      },
+      "geography_note": "Coordinate illustrative della V0, non una localizzazione dell’artista. Il paese indica il contesto dell’episodio."
+    },
+    {
+      "id": "FOG Korea-1",
+      "name": "Gilles Wasserman",
+      "type": "artist",
+      "city": "Geography to verify",
+      "country": "Korea",
+      "episode": "FOG Korea",
+      "approximate": true,
+      "verification_status": "pending",
+      "sources": [],
+      "draft_coordinates": {
+        "lat": 36.7,
+        "lon": 129.09903810567664
+      },
+      "geography_note": "Coordinate illustrative della V0, non una localizzazione dell’artista. Il paese indica il contesto dell’episodio."
+    },
+    {
+      "id": "FOG Korea-2",
+      "name": "Sanjib",
+      "type": "artist",
+      "city": "Geography to verify",
+      "country": "Korea",
+      "episode": "FOG Korea",
+      "approximate": true,
+      "verification_status": "pending",
+      "sources": [],
+      "draft_coordinates": {
+        "lat": 37.066025403784444,
+        "lon": 128.55
+      },
+      "geography_note": "Coordinate illustrative della V0, non una localizzazione dell’artista. Il paese indica il contesto dell’episodio."
+    },
+    {
+      "id": "FOG Korea-3",
+      "name": "Vayu",
+      "type": "artist",
+      "city": "Geography to verify",
+      "country": "Korea",
+      "episode": "FOG Korea",
+      "approximate": true,
+      "verification_status": "pending",
+      "sources": [],
+      "draft_coordinates": {
+        "lat": 37.2,
+        "lon": 127.8
+      },
+      "geography_note": "Coordinate illustrative della V0, non una localizzazione dell’artista. Il paese indica il contesto dell’episodio."
+    },
+    {
+      "id": "FOG Korea-4",
+      "name": "Night Sea Project",
+      "type": "artist",
+      "city": "Geography to verify",
+      "country": "Korea",
+      "episode": "FOG Korea",
+      "approximate": true,
+      "verification_status": "pending",
+      "sources": [],
+      "draft_coordinates": {
+        "lat": 37.066025403784444,
+        "lon": 127.05
+      },
+      "geography_note": "Coordinate illustrative della V0, non una localizzazione dell’artista. Il paese indica il contesto dell’episodio."
+    },
+    {
+      "id": "FOG Korea-5",
+      "name": "Doltz",
+      "type": "artist",
+      "city": "Geography to verify",
+      "country": "Korea",
+      "episode": "FOG Korea",
+      "approximate": true,
+      "verification_status": "pending",
+      "sources": [],
+      "draft_coordinates": {
+        "lat": 36.7,
+        "lon": 126.50096189432334
+      },
+      "geography_note": "Coordinate illustrative della V0, non una localizzazione dell’artista. Il paese indica il contesto dell’episodio."
+    },
+    {
+      "id": "FOG Korea-6",
+      "name": "Olorun / Tristan Boltz",
+      "type": "artist",
+      "city": "Geography to verify",
+      "country": "Korea",
+      "episode": "FOG Korea",
+      "approximate": true,
+      "verification_status": "pending",
+      "sources": [],
+      "draft_coordinates": {
+        "lat": 36.2,
+        "lon": 126.3
+      },
+      "geography_note": "Coordinate illustrative della V0, non una localizzazione dell’artista. Il paese indica il contesto dell’episodio."
+    },
+    {
+      "id": "FOG Korea-7",
+      "name": "Adhémar",
+      "type": "artist",
+      "city": "Geography to verify",
+      "country": "Korea",
+      "episode": "FOG Korea",
+      "approximate": true,
+      "verification_status": "pending",
+      "sources": [],
+      "draft_coordinates": {
+        "lat": 35.7,
+        "lon": 126.50096189432334
+      },
+      "geography_note": "Coordinate illustrative della V0, non una localizzazione dell’artista. Il paese indica il contesto dell’episodio."
+    },
+    {
+      "id": "FOG Korea-8",
+      "name": "Saša Delimar",
+      "type": "artist",
+      "city": "Geography to verify",
+      "country": "Korea",
+      "episode": "FOG Korea",
+      "approximate": true,
+      "verification_status": "pending",
+      "sources": [],
+      "draft_coordinates": {
+        "lat": 35.33397459621556,
+        "lon": 127.05
+      },
+      "geography_note": "Coordinate illustrative della V0, non una localizzazione dell’artista. Il paese indica il contesto dell’episodio."
+    },
+    {
+      "id": "FOG Korea-9",
+      "name": "Aspetuck",
+      "type": "artist",
+      "city": "Geography to verify",
+      "country": "Korea",
+      "episode": "FOG Korea",
+      "approximate": true,
+      "verification_status": "pending",
+      "sources": [],
+      "draft_coordinates": {
+        "lat": 35.2,
+        "lon": 127.8
+      },
+      "geography_note": "Coordinate illustrative della V0, non una localizzazione dell’artista. Il paese indica il contesto dell’episodio."
+    },
+    {
+      "id": "FOG Korea-10",
+      "name": "Racco",
+      "type": "artist",
+      "city": "Geography to verify",
+      "country": "Korea",
+      "episode": "FOG Korea",
+      "approximate": true,
+      "verification_status": "pending",
+      "sources": [],
+      "draft_coordinates": {
+        "lat": 35.33397459621556,
+        "lon": 128.55
+      },
+      "geography_note": "Coordinate illustrative della V0, non una localizzazione dell’artista. Il paese indica il contesto dell’episodio."
+    },
+    {
+      "id": "FOG Korea-11",
+      "name": "Oreste",
+      "type": "artist",
+      "city": "Geography to verify",
+      "country": "Korea",
+      "episode": "FOG Korea",
+      "approximate": true,
+      "verification_status": "pending",
+      "sources": [],
+      "draft_coordinates": {
+        "lat": 35.7,
+        "lon": 129.09903810567664
+      },
+      "geography_note": "Coordinate illustrative della V0, non una localizzazione dell’artista. Il paese indica il contesto dell’episodio."
+    },
+    {
+      "id": "FOG France-0",
+      "name": "Gaspard Polar",
+      "type": "artist",
+      "city": "Geography to verify",
+      "country": "France",
+      "episode": "FOG France",
+      "approximate": true,
+      "verification_status": "pending",
+      "sources": [],
+      "draft_coordinates": {
+        "lat": 46.2,
+        "lon": 3.7
+      },
+      "geography_note": "Coordinate illustrative della V0, non una localizzazione dell’artista. Il paese indica il contesto dell’episodio."
+    },
+    {
+      "id": "FOG France-1",
+      "name": "Biocym",
+      "type": "artist",
+      "city": "Geography to verify",
+      "country": "France",
+      "episode": "FOG France",
+      "approximate": true,
+      "verification_status": "pending",
+      "sources": [],
+      "draft_coordinates": {
+        "lat": 46.7,
+        "lon": 3.499038105676658
+      },
+      "geography_note": "Coordinate illustrative della V0, non una localizzazione dell’artista. Il paese indica il contesto dell’episodio."
+    },
+    {
+      "id": "FOG France-2",
+      "name": "Sauvage Dub Trio",
+      "type": "artist",
+      "city": "Geography to verify",
+      "country": "France",
+      "episode": "FOG France",
+      "approximate": true,
+      "verification_status": "pending",
+      "sources": [],
+      "draft_coordinates": {
+        "lat": 47.066025403784444,
+        "lon": 2.95
+      },
+      "geography_note": "Coordinate illustrative della V0, non una localizzazione dell’artista. Il paese indica il contesto dell’episodio."
+    },
+    {
+      "id": "FOG France-3",
+      "name": "Vardae",
+      "type": "artist",
+      "city": "Geography to verify",
+      "country": "France",
+      "episode": "FOG France",
+      "approximate": true,
+      "verification_status": "pending",
+      "sources": [],
+      "draft_coordinates": {
+        "lat": 47.2,
+        "lon": 2.2
+      },
+      "geography_note": "Coordinate illustrative della V0, non una localizzazione dell’artista. Il paese indica il contesto dell’episodio."
+    },
+    {
+      "id": "FOG France-4",
+      "name": "Kato De Vidts",
+      "type": "artist",
+      "city": "Geography to verify",
+      "country": "France",
+      "episode": "FOG France",
+      "approximate": true,
+      "verification_status": "pending",
+      "sources": [],
+      "draft_coordinates": {
+        "lat": 47.066025403784444,
+        "lon": 1.4500000000000006
+      },
+      "geography_note": "Coordinate illustrative della V0, non una localizzazione dell’artista. Il paese indica il contesto dell’episodio."
+    },
+    {
+      "id": "FOG France-5",
+      "name": "Vice City",
+      "type": "artist",
+      "city": "Geography to verify",
+      "country": "France",
+      "episode": "FOG France",
+      "approximate": true,
+      "verification_status": "pending",
+      "sources": [],
+      "draft_coordinates": {
+        "lat": 46.7,
+        "lon": 0.9009618943233422
+      },
+      "geography_note": "Coordinate illustrative della V0, non una localizzazione dell’artista. Il paese indica il contesto dell’episodio."
+    },
+    {
+      "id": "FOG France-6",
+      "name": "Jorge Fons",
+      "type": "artist",
+      "city": "Geography to verify",
+      "country": "France",
+      "episode": "FOG France",
+      "approximate": true,
+      "verification_status": "pending",
+      "sources": [],
+      "draft_coordinates": {
+        "lat": 46.2,
+        "lon": 0.7000000000000002
+      },
+      "geography_note": "Coordinate illustrative della V0, non una localizzazione dell’artista. Il paese indica il contesto dell’episodio."
+    },
+    {
+      "id": "FOG France-7",
+      "name": "Orbin Nun",
+      "type": "artist",
+      "city": "Geography to verify",
+      "country": "France",
+      "episode": "FOG France",
+      "approximate": true,
+      "verification_status": "pending",
+      "sources": [],
+      "draft_coordinates": {
+        "lat": 45.7,
+        "lon": 0.900961894323342
+      },
+      "geography_note": "Coordinate illustrative della V0, non una localizzazione dell’artista. Il paese indica il contesto dell’episodio."
+    },
+    {
+      "id": "FOG France-8",
+      "name": "Sindh",
+      "type": "artist",
+      "city": "Geography to verify",
+      "country": "France",
+      "episode": "FOG France",
+      "approximate": true,
+      "verification_status": "pending",
+      "sources": [],
+      "draft_coordinates": {
+        "lat": 45.33397459621556,
+        "lon": 1.4499999999999995
+      },
+      "geography_note": "Coordinate illustrative della V0, non una localizzazione dell’artista. Il paese indica il contesto dell’episodio."
+    },
+    {
+      "id": "FOG France-9",
+      "name": "Caldera",
+      "type": "artist",
+      "city": "Geography to verify",
+      "country": "France",
+      "episode": "FOG France",
+      "approximate": true,
+      "verification_status": "pending",
+      "sources": [],
+      "draft_coordinates": {
+        "lat": 45.2,
+        "lon": 2.1999999999999997
+      },
+      "geography_note": "Coordinate illustrative della V0, non una localizzazione dell’artista. Il paese indica il contesto dell’episodio."
+    },
+    {
+      "id": "FOG France-10",
+      "name": "Uman Yazar",
+      "type": "artist",
+      "city": "Geography to verify",
+      "country": "France",
+      "episode": "FOG France",
+      "approximate": true,
+      "verification_status": "pending",
+      "sources": [],
+      "draft_coordinates": {
+        "lat": 45.33397459621556,
+        "lon": 2.95
+      },
+      "geography_note": "Coordinate illustrative della V0, non una localizzazione dell’artista. Il paese indica il contesto dell’episodio."
+    },
+    {
+      "id": "FOG France-11",
+      "name": "Elisa Batti",
+      "type": "artist",
+      "city": "Geography to verify",
+      "country": "France",
+      "episode": "FOG France",
+      "approximate": true,
+      "verification_status": "pending",
+      "sources": [],
+      "draft_coordinates": {
+        "lat": 45.7,
+        "lon": 3.4990381056766577
+      },
+      "geography_note": "Coordinate illustrative della V0, non una localizzazione dell’artista. Il paese indica il contesto dell’episodio."
+    },
+    {
+      "id": "FOG Japan-0",
+      "name": "Tochigi Canopy",
+      "type": "artist",
+      "city": "Geography to verify",
+      "country": "Japan",
+      "episode": "FOG Japan",
+      "approximate": true,
+      "verification_status": "pending",
+      "sources": [],
+      "draft_coordinates": {
+        "lat": 36.2,
+        "lon": 139.7
+      },
+      "geography_note": "Coordinate illustrative della V0, non una localizzazione dell’artista. Il paese indica il contesto dell’episodio."
+    },
+    {
+      "id": "FOG Japan-1",
+      "name": "Kenji Kawai",
+      "type": "artist",
+      "city": "Geography to verify",
+      "country": "Japan",
+      "episode": "FOG Japan",
+      "approximate": true,
+      "verification_status": "pending",
+      "sources": [],
+      "draft_coordinates": {
+        "lat": 36.46979677115703,
+        "lon": 139.6443759310217
+      },
+      "geography_note": "Coordinate illustrative della V0, non una localizzazione dell’artista. Il paese indica il contesto dell’episodio."
+    },
+    {
+      "id": "FOG Japan-2",
+      "name": "Tasoko Daisuke",
+      "type": "artist",
+      "city": "Geography to verify",
+      "country": "Japan",
+      "episode": "FOG Japan",
+      "approximate": true,
+      "verification_status": "pending",
+      "sources": [],
+      "draft_coordinates": {
+        "lat": 36.719583950035435,
+        "lon": 139.48162910681972
+      },
+      "geography_note": "Coordinate illustrative della V0, non una localizzazione dell’artista. Il paese indica il contesto dell’episodio."
+    },
+    {
+      "id": "FOG Japan-3",
+      "name": "Deep Step",
+      "type": "artist",
+      "city": "Geography to verify",
+      "country": "Japan",
+      "episode": "FOG Japan",
+      "approximate": true,
+      "verification_status": "pending",
+      "sources": [],
+      "draft_coordinates": {
+        "lat": 36.930835964278124,
+        "lon": 139.22382971482796
+      },
+      "geography_note": "Coordinate illustrative della V0, non una localizzazione dell’artista. Il paese indica il contesto dell’episodio."
+    },
+    {
+      "id": "FOG Japan-4",
+      "name": "CTAFAD",
+      "type": "artist",
+      "city": "Geography to verify",
+      "country": "Japan",
+      "episode": "FOG Japan",
+      "approximate": true,
+      "verification_status": "pending",
+      "sources": [],
+      "draft_coordinates": {
+        "lat": 37.08788521840238,
+        "lon": 138.89009755659671
+      },
+      "geography_note": "Coordinate illustrative della V0, non una localizzazione dell’artista. Il paese indica il contesto dell’episodio."
+    },
+    {
+      "id": "FOG Japan-5",
+      "name": "WAV",
+      "type": "artist",
+      "city": "Geography to verify",
+      "country": "Japan",
+      "episode": "FOG Japan",
+      "approximate": true,
+      "verification_status": "pending",
+      "sources": [],
+      "draft_coordinates": {
+        "lat": 37.17908408768233,
+        "lon": 138.50518401957893
+      },
+      "geography_note": "Coordinate illustrative della V0, non una localizzazione dell’artista. Il paese indica il contesto dell’episodio."
+    },
+    {
+      "id": "FOG Japan-6",
+      "name": "Wata",
+      "type": "artist",
+      "city": "Geography to verify",
+      "country": "Japan",
+      "episode": "FOG Japan",
+      "approximate": true,
+      "verification_status": "pending",
+      "sources": [],
+      "draft_coordinates": {
+        "lat": 37.19766876919054,
+        "lon": 138.09763637995297
+      },
+      "geography_note": "Coordinate illustrative della V0, non una localizzazione dell’artista. Il paese indica il contesto dell’episodio."
+    },
+    {
+      "id": "FOG Japan-7",
+      "name": "Voiski",
+      "type": "artist",
+      "city": "Geography to verify",
+      "country": "Japan",
+      "episode": "FOG Japan",
+      "approximate": true,
+      "verification_status": "pending",
+      "sources": [],
+      "draft_coordinates": {
+        "lat": 37.14226092211882,
+        "lon": 137.6976805817435
+      },
+      "geography_note": "Coordinate illustrative della V0, non una localizzazione dell’artista. Il paese indica il contesto dell’episodio."
+    },
+    {
+      "id": "FOG Japan-8",
+      "name": "Iori",
+      "type": "artist",
+      "city": "Geography to verify",
+      "country": "Japan",
+      "episode": "FOG Japan",
+      "approximate": true,
+      "verification_status": "pending",
+      "sources": [],
+      "draft_coordinates": {
+        "lat": 37.01696989301045,
+        "lon": 137.3349795168277
+      },
+      "geography_note": "Coordinate illustrative della V0, non una localizzazione dell’artista. Il paese indica il contesto dell’episodio."
+    },
+    {
+      "id": "FOG Japan-9",
+      "name": "Hironori Takahashi",
+      "type": "artist",
+      "city": "Geography to verify",
+      "country": "Japan",
+      "episode": "FOG Japan",
+      "approximate": true,
+      "verification_status": "pending",
+      "sources": [],
+      "draft_coordinates": {
+        "lat": 36.83108794432606,
+        "lon": 137.03643306394335
+      },
+      "geography_note": "Coordinate illustrative della V0, non una localizzazione dell’artista. Il paese indica il contesto dell’episodio."
+    },
+    {
+      "id": "FOG Japan-10",
+      "name": "S.O.Oishi",
+      "type": "artist",
+      "city": "Geography to verify",
+      "country": "Japan",
+      "episode": "FOG Japan",
+      "approximate": true,
+      "verification_status": "pending",
+      "sources": [],
+      "draft_coordinates": {
+        "lat": 36.59840108984624,
+        "lon": 136.8241830477418
+      },
+      "geography_note": "Coordinate illustrative della V0, non una localizzazione dell’artista. Il paese indica il contesto dell’episodio."
+    },
+    {
+      "id": "FOG Japan-11",
+      "name": "Herbalistek",
+      "type": "artist",
+      "city": "Geography to verify",
+      "country": "Japan",
+      "episode": "FOG Japan",
+      "approximate": true,
+      "verification_status": "pending",
+      "sources": [],
+      "draft_coordinates": {
+        "lat": 36.33616664909625,
+        "lon": 136.7139710809455
+      },
+      "geography_note": "Coordinate illustrative della V0, non una localizzazione dell’artista. Il paese indica il contesto dell’episodio."
+    },
+    {
+      "id": "FOG Japan-12",
+      "name": "Susumu Yokota",
+      "type": "artist",
+      "city": "Geography to verify",
+      "country": "Japan",
+      "episode": "FOG Japan",
+      "approximate": true,
+      "verification_status": "pending",
+      "sources": [],
+      "draft_coordinates": {
+        "lat": 36.06383335090376,
+        "lon": 136.7139710809455
+      },
+      "geography_note": "Coordinate illustrative della V0, non una localizzazione dell’artista. Il paese indica il contesto dell’episodio."
+    },
+    {
+      "id": "FOG Japan-13",
+      "name": "Sabi",
+      "type": "artist",
+      "city": "Geography to verify",
+      "country": "Japan",
+      "episode": "FOG Japan",
+      "approximate": true,
+      "verification_status": "pending",
+      "sources": [],
+      "draft_coordinates": {
+        "lat": 35.801598910153764,
+        "lon": 136.8241830477418
+      },
+      "geography_note": "Coordinate illustrative della V0, non una localizzazione dell’artista. Il paese indica il contesto dell’episodio."
+    },
+    {
+      "id": "FOG Japan-14",
+      "name": "Yu Su",
+      "type": "artist",
+      "city": "Geography to verify",
+      "country": "Japan",
+      "episode": "FOG Japan",
+      "approximate": true,
+      "verification_status": "pending",
+      "sources": [],
+      "draft_coordinates": {
+        "lat": 35.56891205567395,
+        "lon": 137.03643306394335
+      },
+      "geography_note": "Coordinate illustrative della V0, non una localizzazione dell’artista. Il paese indica il contesto dell’episodio."
+    },
+    {
+      "id": "FOG Japan-15",
+      "name": "Scott Gailey",
+      "type": "artist",
+      "city": "Geography to verify",
+      "country": "Japan",
+      "episode": "FOG Japan",
+      "approximate": true,
+      "verification_status": "pending",
+      "sources": [],
+      "draft_coordinates": {
+        "lat": 35.38303010698956,
+        "lon": 137.3349795168277
+      },
+      "geography_note": "Coordinate illustrative della V0, non una localizzazione dell’artista. Il paese indica il contesto dell’episodio."
+    },
+    {
+      "id": "FOG Japan-16",
+      "name": "Asuna & Opitope",
+      "type": "artist",
+      "city": "Geography to verify",
+      "country": "Japan",
+      "episode": "FOG Japan",
+      "approximate": true,
+      "verification_status": "pending",
+      "sources": [],
+      "draft_coordinates": {
+        "lat": 35.25773907788118,
+        "lon": 137.6976805817435
+      },
+      "geography_note": "Coordinate illustrative della V0, non una localizzazione dell’artista. Il paese indica il contesto dell’episodio."
+    },
+    {
+      "id": "FOG Japan-17",
+      "name": "Total Blue",
+      "type": "artist",
+      "city": "Geography to verify",
+      "country": "Japan",
+      "episode": "FOG Japan",
+      "approximate": true,
+      "verification_status": "pending",
+      "sources": [],
+      "draft_coordinates": {
+        "lat": 35.20233123080946,
+        "lon": 138.09763637995297
+      },
+      "geography_note": "Coordinate illustrative della V0, non una localizzazione dell’artista. Il paese indica il contesto dell’episodio."
+    },
+    {
+      "id": "FOG Japan-18",
+      "name": "Toshifumi Hinata",
+      "type": "artist",
+      "city": "Geography to verify",
+      "country": "Japan",
+      "episode": "FOG Japan",
+      "approximate": true,
+      "verification_status": "pending",
+      "sources": [],
+      "draft_coordinates": {
+        "lat": 35.22091591231768,
+        "lon": 138.50518401957893
+      },
+      "geography_note": "Coordinate illustrative della V0, non una localizzazione dell’artista. Il paese indica il contesto dell’episodio."
+    },
+    {
+      "id": "FOG Japan-19",
+      "name": "Haruomi Hosono",
+      "type": "artist",
+      "city": "Geography to verify",
+      "country": "Japan",
+      "episode": "FOG Japan",
+      "approximate": true,
+      "verification_status": "pending",
+      "sources": [],
+      "draft_coordinates": {
+        "lat": 35.31211478159763,
+        "lon": 138.89009755659671
+      },
+      "geography_note": "Coordinate illustrative della V0, non una localizzazione dell’artista. Il paese indica il contesto dell’episodio."
+    },
+    {
+      "id": "FOG Japan-20",
+      "name": "Inoue Kaoru",
+      "type": "artist",
+      "city": "Geography to verify",
+      "country": "Japan",
+      "episode": "FOG Japan",
+      "approximate": true,
+      "verification_status": "pending",
+      "sources": [],
+      "draft_coordinates": {
+        "lat": 35.46916403572188,
+        "lon": 139.22382971482796
+      },
+      "geography_note": "Coordinate illustrative della V0, non una localizzazione dell’artista. Il paese indica il contesto dell’episodio."
+    },
+    {
+      "id": "FOG Japan-21",
+      "name": "Aki Fukakusa",
+      "type": "artist",
+      "city": "Geography to verify",
+      "country": "Japan",
+      "episode": "FOG Japan",
+      "approximate": true,
+      "verification_status": "pending",
+      "sources": [],
+      "draft_coordinates": {
+        "lat": 35.68041604996457,
+        "lon": 139.48162910681972
+      },
+      "geography_note": "Coordinate illustrative della V0, non una localizzazione dell’artista. Il paese indica il contesto dell’episodio."
+    },
+    {
+      "id": "FOG Japan-22",
+      "name": "Huerco S.",
+      "type": "artist",
+      "city": "Geography to verify",
+      "country": "Japan",
+      "episode": "FOG Japan",
+      "approximate": true,
+      "verification_status": "pending",
+      "sources": [],
+      "draft_coordinates": {
+        "lat": 35.93020322884298,
+        "lon": 139.6443759310217
+      },
+      "geography_note": "Coordinate illustrative della V0, non una localizzazione dell’artista. Il paese indica il contesto dell’episodio."
+    }
+  ],
+  "edges": [
+    {
+      "source": "eafhm",
+      "target": "st",
+      "kind": "founder_of",
+      "verification_status": "provided_unverified",
+      "sources": []
+    },
+    {
+      "source": "nawl",
+      "target": "melifera",
+      "kind": "released_on",
+      "verification_status": "provided_unverified",
+      "sources": []
+    },
+    {
+      "source": "nawl",
+      "target": "vallee",
+      "kind": "festival_context",
+      "verification_status": "provided_unverified",
+      "sources": []
+    },
+    {
+      "source": "FOG Mexico-0",
+      "target": "st",
+      "kind": "released_on",
+      "verification_status": "provided_unverified",
+      "sources": []
+    },
+    {
+      "source": "FOG Mexico-1",
+      "target": "st",
+      "kind": "released_on",
+      "verification_status": "provided_unverified",
+      "sources": []
+    },
+    {
+      "source": "FOG Mexico-2",
+      "target": "st",
+      "kind": "released_on",
+      "verification_status": "provided_unverified",
+      "sources": []
+    },
+    {
+      "source": "FOG Mexico-3",
+      "target": "st",
+      "kind": "released_on",
+      "verification_status": "provided_unverified",
+      "sources": []
+    },
+    {
+      "source": "FOG Mexico-4",
+      "target": "st",
+      "kind": "released_on",
+      "verification_status": "provided_unverified",
+      "sources": []
+    },
+    {
+      "source": "FOG Mexico-5",
+      "target": "st",
+      "kind": "released_on",
+      "verification_status": "provided_unverified",
+      "sources": []
+    },
+    {
+      "source": "FOG Mexico-6",
+      "target": "st",
+      "kind": "released_on",
+      "verification_status": "provided_unverified",
+      "sources": []
+    },
+    {
+      "source": "FOG Mexico-7",
+      "target": "st",
+      "kind": "released_on",
+      "verification_status": "provided_unverified",
+      "sources": []
+    },
+    {
+      "source": "FOG Mexico-8",
+      "target": "st",
+      "kind": "released_on",
+      "verification_status": "provided_unverified",
+      "sources": []
+    },
+    {
+      "source": "FOG Mexico-9",
+      "target": "st",
+      "kind": "released_on",
+      "verification_status": "provided_unverified",
+      "sources": []
+    },
+    {
+      "source": "FOG Mexico-10",
+      "target": "st",
+      "kind": "released_on",
+      "verification_status": "provided_unverified",
+      "sources": []
+    },
+    {
+      "source": "FOG Mexico-11",
+      "target": "st",
+      "kind": "released_on",
+      "verification_status": "provided_unverified",
+      "sources": []
+    },
+    {
+      "source": "FOG Mexico-12",
+      "target": "st",
+      "kind": "released_on",
+      "verification_status": "provided_unverified",
+      "sources": []
+    },
+    {
+      "source": "FOG Mexico-13",
+      "target": "st",
+      "kind": "released_on",
+      "verification_status": "provided_unverified",
+      "sources": []
+    },
+    {
+      "source": "FOG France-0",
+      "target": "melifera",
+      "kind": "released_on",
+      "verification_status": "provided_unverified",
+      "sources": []
+    },
+    {
+      "source": "FOG France-1",
+      "target": "melifera",
+      "kind": "released_on",
+      "verification_status": "provided_unverified",
+      "sources": []
+    },
+    {
+      "source": "FOG France-2",
+      "target": "melifera",
+      "kind": "released_on",
+      "verification_status": "provided_unverified",
+      "sources": []
+    },
+    {
+      "source": "FOG France-3",
+      "target": "melifera",
+      "kind": "released_on",
+      "verification_status": "provided_unverified",
+      "sources": []
+    },
+    {
+      "source": "FOG France-4",
+      "target": "melifera",
+      "kind": "released_on",
+      "verification_status": "provided_unverified",
+      "sources": []
+    },
+    {
+      "source": "FOG France-5",
+      "target": "melifera",
+      "kind": "released_on",
+      "verification_status": "provided_unverified",
+      "sources": []
+    },
+    {
+      "source": "FOG France-6",
+      "target": "melifera",
+      "kind": "released_on",
+      "verification_status": "provided_unverified",
+      "sources": []
+    },
+    {
+      "source": "FOG France-7",
+      "target": "melifera",
+      "kind": "released_on",
+      "verification_status": "provided_unverified",
+      "sources": []
+    },
+    {
+      "source": "FOG France-8",
+      "target": "melifera",
+      "kind": "released_on",
+      "verification_status": "provided_unverified",
+      "sources": []
+    },
+    {
+      "source": "FOG France-9",
+      "target": "melifera",
+      "kind": "released_on",
+      "verification_status": "provided_unverified",
+      "sources": []
+    },
+    {
+      "source": "FOG France-10",
+      "target": "melifera",
+      "kind": "released_on",
+      "verification_status": "provided_unverified",
+      "sources": []
+    },
+    {
+      "source": "FOG France-11",
+      "target": "melifera",
+      "kind": "released_on",
+      "verification_status": "provided_unverified",
+      "sources": []
+    }
+  ],
+  "note": "Dati importati da FOG_Map_V0.zip. Nessuna fonte di verifica allegata; nessun dato promosso automaticamente a verificato."
+}
