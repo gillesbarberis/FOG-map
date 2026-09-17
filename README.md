@@ -22,3 +22,9 @@ I percorsi relativi consentono la pubblicazione su https://gillesbarberis.github
 ## Interazione
 
 Trascinare per ruotare, rotella o pulsanti per zoomare; su touch è implementato il pinch a due dita. La ricerca e i filtri sono disponibili anche su mobile. L’elenco permette di selezionare punti sovrapposti e artisti senza coordinate.
+
+## Grafica V0.2
+
+Interfaccia ricostruita dal riferimento visivo: globo WebGL notturno, atmosfera, punti luminosi, etichette senza sovrapposizioni, scheda laterale e ricerca apribile. Texture terrestre inclusa localmente da [three-globe](https://github.com/vasturiano/three-globe/blob/master/example/img/earth-night.jpg), con licenza MIT in `assets/LICENSE-three-globe.txt`. Le luci urbane della texture sono cartografia di sfondo, non dati FOG.
+
+Solo le relazioni già presenti nel JSON con entrambi gli estremi geolocalizzati sono disegnate sul globo. Nessun artista, collegamento o biografia del mockup è stato aggiunto ai dati.
