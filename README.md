@@ -1,44 +1,60 @@
-# FOG Map
+# FOG — Atlas & Practice
 
-Static web app imported from `FOG_Map_V0.zip`, with search, filters, an accessible list, globe rotation and zoom.
+An episode-led musical atlas and a portfolio of Gilles Barberis’s current practice. Static HTML, CSS, Canvas 2D and WebGL; no build step or account credentials required.
+
+## Local preview
+
+Run `python3 -m http.server 8080 --bind 127.0.0.1` and open http://127.0.0.1:8080/#atlas. Practice is at `#practice`.
+
+The `spatial-practice-ctm` branch and draft PR #1 remain under review. Do not merge into `main` until Gilles has approved the preview.
+
+## Explore the atlas
+
+- **World:** clickable `FOG_JAP`, `FOG_MEX`, `FOG_KOR` and `FOG_FRA` labels represent the countries covered by the recordings. Country labels remain visible while rotating.
+- **Country:** as a country fills more of the view, labels and collectives appear. Their visibility depends on apparent country size and centering, not just a universal zoom threshold.
+- **Local scene:** the country label gives way to the main focus (bright gold), guest (medium brightness) and located producers (lower brightness). A small episode return button keeps the recording accessible. Producers are grouped by their actual home base, across all FOG episodes.
+- **Connections:** hovering or keyboard-focusing a label previews its network; clicking keeps that network lit. A new click replaces the selection; closing details clears it. Great-circle trajectories stop at the horizon. Unlocated endpoints do not generate invented map positions.
+- **Listening:** each country offers its two SoundCloud recordings. Play opens the official embedded player inside the page. The player stays mounted when selecting another node or changing zoom, and can be minimized or closed. Only an explicit play action changes its recording. Producer cards offer the specific recordings where they are credited.
+
+The searchable list includes episodes, producers, labels and festivals, including entries without confirmed coordinates. Mouse drag, wheel, zoom buttons and touch pinch are supported.
 
 <a id="stato-dei-dati"></a>
 
 ## Data status
 
-- 71 entries and 29 connections preserved from V0.
-- 10 places supplied in V0: `provided_unverified`. They appear on the globe but have not been verified.
-- 61 artists with provisional locations: `pending`. They are available in the list but excluded from the globe and geographic connections. Original illustrative coordinates are preserved only in `draft_coordinates`.
-- All connections are `provided_unverified`; `sources` is empty because V0 included no sources. An episode’s country does not establish an artist’s origin or residence.
-- No data is marked as verified without sources. To verify an entry, add a source, check its identity and coordinates, then explicitly update its status.
+`atlas-data.json` separates country episodes, recordings, producer appearances, entity relationships and actual locations. `fog-data.json` is the preserved V0 archive; it is no longer used directly by the renderer.
 
-## Local preview
+- Four country episodes and eight recordings, resolved from the [public FOG SoundCloud playlist](https://soundcloud.com/gilles_barberis/sets/fog).
+- Every recording has its public URL, identifier, description and retrieval date. Appearance links are mapped from these tracklists. Main and guest recordings remain distinct; the absence of a guest tracklist is not filled with the main recording’s producers.
+- Cross-episode appearances include Piante Vive and Saphileaum (Mexico / Korea), ena b. (Mexico / Korea), Biocym (France / Korea), and Susumu Yokota (both Japan recordings).
+- Three city-level locations were checked against public sources on 19 September 2026: ena b. in Lisbon, Adhémar in Paris and Recy in Seoul. See each node’s location sources. The original V0 city/region positions remain explicitly `provided_unverified`.
+- A country episode anchor is representative cartography, not an artist address. V0 illustrative artist coordinates are not imported into the live geography. An artist’s appearance in an episode never establishes residence or nationality.
+- Remaining location research is intentionally unfinished. Missing locations are listed in the panels and search; their trajectories will become drawable when sourced coordinates are added.
+- Legacy label/festival relationships retain their original verification status. Newly sourced relationships carry the relevant recording URL.
 
-Run `python3 -m http.server 8080 --bind 127.0.0.1` in this directory and open http://127.0.0.1:8080.
+To locate an artist, update their `location` with `city`, `country`, `lat`, `lon`, `precision`, `status`, `sources` and `checked_at`. Keep country-level estimates explicitly marked; do not silently turn a country estimate into a city address. Each node’s `appearances` references recording IDs, so it can occur in multiple countries’ tracklists without duplication.
 
-The portfolio is directly accessible at http://127.0.0.1:8080/#practice; `#atlas` returns to the map. The local preview is available on the computer running the server.
+## SoundCloud access
 
-## Practice — review
+Playback uses SoundCloud’s official widget. No login, secret, API key or custom audio proxy is included in the website. Public metadata can be reviewed with:
 
-The `spatial-practice-ctm` branch and draft PR #1 remain under review until Gilles approves the preview, before merging into `main`.
+```
+python3 scripts/sync-soundcloud.py
+python3 scripts/sync-soundcloud.py --write
+```
 
-The atlas has its own globe and panel grid; Practice follows in normal document flow. The two spatial cases sit side by side on desktop and stack on mobile. The Atmos/d&b cinema room is described as a future development that is not yet operational, with d&b infrastructure under consideration. TENS remains high-level.
+The first command only reports changes. The second updates existing public recording metadata locally after identity checks. It does not change SoundCloud, infer new tracklist relationships, or assign locations. New recordings require an editorial episode mapping. Public page metadata is a best-effort source and may change; the script fails without modifying the file if its required records cannot be resolved.
 
-Local verification on 19 September 2026 in the in-app browser: visual review at desktop 1440 × 900 and mobile 390 × 844; no horizontal overflow at 320, 760, 768, 1024, 1280 or 1600 px; search for “Oslated”, mobile detail selection and Practice/Atlas navigation worked; no console warnings or errors observed. These were viewport simulations, not tests on physical devices.
+A stable authenticated account integration is a separate application: SoundCloud currently requires app registration and OAuth authorization. It is not connected by this preview. See the [official API guide](https://developers.soundcloud.com/docs/api/guide).
 
-All interface text, accessibility labels, search states and error messages are in English. Artist, organisation and work names retain their original spelling.
+## Validation
+
+Run `node --test tests/atlas-model.test.js` (Node 18+) and `node --check app.js`. The tests cover referential integrity, distinct main/guest appearances, cross-country memberships, missing locations, country-specific semantic zoom and great-circle endpoints.
+
+Browser checks cover clickable country labels, persistent selection, episode and producer cards, semantic zoom, embedded playback, and narrow layouts. Chrome playback was verified, including continued playback during scene navigation and a minimized player at 320px. Layouts were checked at 390px and 320px without horizontal overflow. These are desktop viewport simulations, not physical-device tests. The Codex in-app browser left the SoundCloud iframe blank on localhost; use Chrome for audio review of this local preview.
 
 ## GitHub Pages
 
-Settings → Pages → Deploy from a branch → main → / (root).
-Relative paths support publication at https://gillesbarberis.github.io/FOG-map/.
+Settings → Pages → Deploy from a branch → main → / (root). Relative paths support https://gillesbarberis.github.io/FOG-map/.
 
-## Interaction
-
-Drag to rotate; use the mouse wheel or buttons to zoom. Two-finger pinch is supported on touch screens. Search and filters are also available on mobile. The list lets visitors select overlapping points and artists without coordinates.
-
-## V0.2 graphics
-
-Interface rebuilt from the visual reference: a night-time WebGL globe, atmosphere, luminous points, non-overlapping labels, side panel and expandable search. The Earth texture from [three-globe](https://github.com/vasturiano/three-globe/blob/master/example/img/earth-night.jpg) is included locally under the MIT licence in `assets/LICENSE-three-globe.txt`. City lights in the texture are background cartography, not FOG data.
-
-Only connections already present in the JSON with both endpoints geolocated are drawn on the globe. No artists, connections or biographies from the mockup have been added to the data.
+The local Earth texture is from [three-globe](https://github.com/vasturiano/three-globe/blob/master/example/img/earth-night.jpg), under the MIT licence in `assets/LICENSE-three-globe.txt`. City lights are background cartography, not FOG network points. Practice preserves the future/non-operational status of the Atmos/d&b room and keeps TENS documentation high-level.

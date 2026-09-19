@@ -42,3 +42,23 @@ html{scroll-padding-top:24px}
   .practice-card h2{font-size:10px}.practice-card h3{font-size:22px}
   .practice-card p{font-size:15px}.practice-card .card-note{font-size:13px}
 }
+
+/* Episode-led navigation: labels are real, keyboard-accessible buttons. */
+#map-labels{position:absolute;inset:0;pointer-events:none;z-index:2;overflow:hidden}
+.map-label{position:absolute;top:0;left:0;pointer-events:auto;text-align:left;padding:5px 8px;max-width:180px;background:#020609c9;border:1px solid transparent;border-radius:4px;line-height:1.3;min-height:38px;transition:color .15s,background .15s}
+.map-label span{display:block;font-size:11px;color:#cfdae4}.map-label small{display:block;margin-top:3px;color:#8599a9;font-size:8px;text-transform:uppercase;letter-spacing:.08em}
+.map-label.episode{min-height:44px;padding:7px 10px;border-color:#62748560;background:#03070ad9;max-width:130px}
+.map-label.episode span{font:12px monospace;letter-spacing:.1em;color:#f2cf94}
+.map-label.focus span{color:#dfc394}.map-label.guest span{color:#b8c8d5}.map-label.dimmed{opacity:.55}
+.map-label:hover,.map-label:focus-visible,.map-label.selected{border-color:#b58b4d;background:#0b1218;opacity:1}.map-label.lit span{color:#ffe0a2}
+.map-context{position:absolute;right:22px;top:16px;z-index:3;text-align:right;pointer-events:none;color:#8295a6;font-size:8px;letter-spacing:.12em}
+#episode-return{pointer-events:auto;display:block;margin:10px 0 0 auto;font-size:9px;letter-spacing:.06em;color:var(--gold);background:#060c11de;border:1px solid #35434e;padding:10px;min-height:40px}
+#zoom-value{display:block;text-align:center;font:9px monospace;color:#a5b4c1;padding:9px 0 5px}
+.episode-country{font-size:18px;color:#bac8d5;margin:10px 0}.scene-button{display:block;width:100%;min-height:44px;padding:12px 10px;border:1px solid #665131;color:var(--gold);font-size:10px;letter-spacing:.06em;line-height:1.5}
+.scene-button:hover{background:#17160e}.recording{margin:20px 0 28px;min-width:0}.recording h3{font-size:13px;line-height:1.5;font-weight:400;margin:5px 0 12px}.recording iframe{display:block;width:100%;border:0;background:#0b1116;border-radius:4px}.listen-link{display:inline-flex;align-items:center;min-height:36px;font-size:9px;letter-spacing:.06em;color:var(--gold)}.note a{color:#c6b18e;text-decoration:underline}.panel-title{overflow-wrap:anywhere;letter-spacing:.06em}
+@media(max-width:760px){.map-context{top:51px;right:18px;font-size:7px}.map-label.episode span{font-size:11px}.map-label{max-width:145px}.map-label span{font-size:10px}.world{height:65dvh;min-height:430px}.map-context #episode-return{font-size:8px}.recording iframe{height:166px}}
+.play-recording{display:flex;align-items:center;gap:12px;text-align:left;width:100%;border:1px solid #34424c;padding:14px;background:#091017;min-height:66px;color:#e3c592;font-size:10px;letter-spacing:.07em;border-radius:4px}.play-recording>span:first-child{font-size:19px}.play-recording small{display:block;color:#8ea0af;font-size:10px;letter-spacing:0;margin-top:7px}.play-recording:hover{border-color:var(--gold);background:#13191d}
+#listening-player{position:fixed;z-index:20;bottom:18px;left:24px;width:min(470px,calc(100vw - 48px));border:1px solid #4b5358;border-radius:7px;background:#090e13;box-shadow:0 10px 50px #000b;padding:14px}
+.player-heading{display:flex;align-items:center;gap:8px}.player-heading>div{min-width:0;flex:1}.player-heading h2{font-size:13px;line-height:1.4;margin:5px 0 12px;font-weight:400}.player-heading .eyebrow{font-size:8px;color:#ddbd87}.player-heading button{width:36px;height:40px;flex-shrink:0;font-size:23px;color:#a9b5c1}
+#soundcloud-frame{display:block;width:100%;border:0;background:#12181e;border-radius:3px}#player-source{display:inline-block;font-size:9px;color:#b9a583;margin-top:10px;padding:6px 0}#listening-player.minimized #player-content{display:none}#listening-player.minimized h2{margin-bottom:4px}body.listening{padding-bottom:95px}
+@media(max-width:760px){#listening-player{bottom:10px;left:10px;width:calc(100vw - 20px);padding:12px}.player-heading h2{font-size:12px}}
