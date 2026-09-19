@@ -1,40 +1,44 @@
 # FOG Map
 
-Web-app statica importata da `FOG_Map_V0.zip`, con ricerca, filtri, elenco accessibile, rotazione e zoom del globo.
+Static web app imported from `FOG_Map_V0.zip`, with search, filters, an accessible list, globe rotation and zoom.
 
-## Stato dei dati
+<a id="stato-dei-dati"></a>
 
-- 71 elementi e 29 relazioni conservati dalla V0.
-- 10 luoghi forniti nella V0: `provided_unverified`. Sono sul globo, ma non certificati come verificati.
-- 61 artisti con geografia provvisoria: `pending`. Sono consultabili nell’elenco, esclusi dal globo e dalle linee geografiche. Le coordinate illustrative originali sono conservate solo in `draft_coordinates`.
-- Tutte le relazioni sono `provided_unverified`; `sources` è vuoto perché la V0 non allega fonti. Il paese di un episodio non è l’origine o la residenza di un artista.
-- Nessun dato è dichiarato verificato senza fonti. Per verificare un elemento, aggiungere la fonte, controllare identità e coordinate, poi aggiornare lo stato esplicitamente.
+## Data status
 
-## Anteprima locale
+- 71 entries and 29 connections preserved from V0.
+- 10 places supplied in V0: `provided_unverified`. They appear on the globe but have not been verified.
+- 61 artists with provisional locations: `pending`. They are available in the list but excluded from the globe and geographic connections. Original illustrative coordinates are preserved only in `draft_coordinates`.
+- All connections are `provided_unverified`; `sources` is empty because V0 included no sources. An episode’s country does not establish an artist’s origin or residence.
+- No data is marked as verified without sources. To verify an entry, add a source, check its identity and coordinates, then explicitly update its status.
 
-Eseguire `python3 -m http.server 8080 --bind 127.0.0.1` nella cartella e aprire http://127.0.0.1:8080.
+## Local preview
 
-La sezione portfolio è raggiungibile direttamente su http://127.0.0.1:8080/#practice; `#atlas` riporta alla mappa. La preview locale è accessibile sul computer che esegue il server.
+Run `python3 -m http.server 8080 --bind 127.0.0.1` in this directory and open http://127.0.0.1:8080.
 
-## Practice — revisione
+The portfolio is directly accessible at http://127.0.0.1:8080/#practice; `#atlas` returns to the map. The local preview is available on the computer running the server.
 
-Il branch `spatial-practice-ctm` e la draft PR #1 restano in revisione fino all’approvazione della preview da parte di Gilles, prima del merge su `main`.
+## Practice — review
 
-L’atlante mantiene la propria griglia con globo e pannello; Practice segue nel normale flusso della pagina. I due casi spatial sono affiancati su desktop e impilati su mobile. La sala cinema Atmos/d&b è descritta come sviluppo futuro non ancora operativo, con infrastruttura d&b in valutazione; TENS resta ad alto livello.
+The `spatial-practice-ctm` branch and draft PR #1 remain under review until Gilles approves the preview, before merging into `main`.
 
-Verifica locale del 19 settembre 2026 nel browser integrato: controllo visivo desktop 1440 × 900 e mobile 390 × 844; assenza di overflow orizzontale anche a 320, 760, 768, 1024, 1280 e 1600 px; ricerca “Oslated”, apertura scheda mobile e navigazione Practice/Atlas funzionanti; nessun warning o errore console rilevato. Emulazione delle dimensioni, non test su dispositivi fisici.
+The atlas has its own globe and panel grid; Practice follows in normal document flow. The two spatial cases sit side by side on desktop and stack on mobile. The Atmos/d&b cinema room is described as a future development that is not yet operational, with d&b infrastructure under consideration. TENS remains high-level.
+
+Local verification on 19 September 2026 in the in-app browser: visual review at desktop 1440 × 900 and mobile 390 × 844; no horizontal overflow at 320, 760, 768, 1024, 1280 or 1600 px; search for “Oslated”, mobile detail selection and Practice/Atlas navigation worked; no console warnings or errors observed. These were viewport simulations, not tests on physical devices.
+
+All interface text, accessibility labels, search states and error messages are in English. Artist, organisation and work names retain their original spelling.
 
 ## GitHub Pages
 
 Settings → Pages → Deploy from a branch → main → / (root).
-I percorsi relativi consentono la pubblicazione su https://gillesbarberis.github.io/FOG-map/.
+Relative paths support publication at https://gillesbarberis.github.io/FOG-map/.
 
-## Interazione
+## Interaction
 
-Trascinare per ruotare, rotella o pulsanti per zoomare; su touch è implementato il pinch a due dita. La ricerca e i filtri sono disponibili anche su mobile. L’elenco permette di selezionare punti sovrapposti e artisti senza coordinate.
+Drag to rotate; use the mouse wheel or buttons to zoom. Two-finger pinch is supported on touch screens. Search and filters are also available on mobile. The list lets visitors select overlapping points and artists without coordinates.
 
-## Grafica V0.2
+## V0.2 graphics
 
-Interfaccia ricostruita dal riferimento visivo: globo WebGL notturno, atmosfera, punti luminosi, etichette senza sovrapposizioni, scheda laterale e ricerca apribile. Texture terrestre inclusa localmente da [three-globe](https://github.com/vasturiano/three-globe/blob/master/example/img/earth-night.jpg), con licenza MIT in `assets/LICENSE-three-globe.txt`. Le luci urbane della texture sono cartografia di sfondo, non dati FOG.
+Interface rebuilt from the visual reference: a night-time WebGL globe, atmosphere, luminous points, non-overlapping labels, side panel and expandable search. The Earth texture from [three-globe](https://github.com/vasturiano/three-globe/blob/master/example/img/earth-night.jpg) is included locally under the MIT licence in `assets/LICENSE-three-globe.txt`. City lights in the texture are background cartography, not FOG data.
 
-Solo le relazioni già presenti nel JSON con entrambi gli estremi geolocalizzati sono disegnate sul globo. Nessun artista, collegamento o biografia del mockup è stato aggiunto ai dati.
+Only connections already present in the JSON with both endpoints geolocated are drawn on the globe. No artists, connections or biographies from the mockup have been added to the data.
