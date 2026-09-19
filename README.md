@@ -12,7 +12,17 @@ Web-app statica importata da `FOG_Map_V0.zip`, con ricerca, filtri, elenco acces
 
 ## Anteprima locale
 
-Eseguire `python3 -m http.server 8080` nella cartella e aprire http://localhost:8080.
+Eseguire `python3 -m http.server 8080 --bind 127.0.0.1` nella cartella e aprire http://127.0.0.1:8080.
+
+La sezione portfolio è raggiungibile direttamente su http://127.0.0.1:8080/#practice; `#atlas` riporta alla mappa. La preview locale è accessibile sul computer che esegue il server.
+
+## Practice — revisione
+
+Il branch `spatial-practice-ctm` e la draft PR #1 restano in revisione fino all’approvazione della preview da parte di Gilles, prima del merge su `main`.
+
+L’atlante mantiene la propria griglia con globo e pannello; Practice segue nel normale flusso della pagina. I due casi spatial sono affiancati su desktop e impilati su mobile. La sala cinema Atmos/d&b è descritta come sviluppo futuro non ancora operativo, con infrastruttura d&b in valutazione; TENS resta ad alto livello.
+
+Verifica locale del 19 settembre 2026 nel browser integrato: controllo visivo desktop 1440 × 900 e mobile 390 × 844; assenza di overflow orizzontale anche a 320, 760, 768, 1024, 1280 e 1600 px; ricerca “Oslated”, apertura scheda mobile e navigazione Practice/Atlas funzionanti; nessun warning o errore console rilevato. Emulazione delle dimensioni, non test su dispositivi fisici.
 
 ## GitHub Pages
 

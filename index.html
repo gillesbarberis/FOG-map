@@ -1,22 +1,60 @@
 <!doctype html>
-<html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#020406"><title>FOG — Musical geography</title><link rel="stylesheet" href="style.css"></head>
+<html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#020406"><meta name="description" content="FOG — Gilles Barberis. Musical geography, collaborative music and spatial practice."><title>FOG — Atlas & Practice · Gilles Barberis</title><link rel="stylesheet" href="style.css"></head>
 <body>
-<header><a class="brand" href="./" aria-label="FOG Map, vista iniziale">FOG</a><div class="strap">MUSIC <b>/</b> PEOPLE <b>/</b> PLACES <b>/</b> NETWORKS</div><nav class="practice-nav" aria-label="FOG practice"><a href="#practice">PRACTICE</a></nav><div class="legend"><span><i class="gold"></i> LABEL / FESTIVAL</span><span><i class="white"></i> ARTIST / PRODUCER</span><span><i class="ring"></i> FOG PROJECT</span></div></header>
-<main><section class="world" aria-label="Mappa interattiva"><canvas id="earth" aria-hidden="true"></canvas><canvas id="map" aria-label="Globo terrestre interattivo: trascina per ruotare. Tutti gli elementi sono accessibili anche con il pulsante Esplora."></canvas>
+<header><a class="brand" href="./" aria-label="FOG Map, vista iniziale">FOG</a><div class="strap">MUSIC <b>/</b> PEOPLE <b>/</b> PLACES <b>/</b> NETWORKS</div><nav class="practice-nav" aria-label="FOG practice"><a href="#atlas">ATLAS</a><a href="#practice" lang="en">PRACTICE</a></nav><div class="legend"><span><i class="gold"></i> LABEL / FESTIVAL</span><span><i class="white"></i> ARTIST / PRODUCER</span><span><i class="ring"></i> FOG PROJECT</span></div></header>
+<main><div id="atlas" class="atlas-layout"><section class="world" aria-label="Mappa interattiva"><canvas id="earth" aria-hidden="true"></canvas><canvas id="map" aria-label="Globo terrestre interattivo: trascina per ruotare. Tutti gli elementi sono accessibili anche con il pulsante Esplora."></canvas>
 <div class="explore-wrap"><button id="explore" aria-expanded="false" aria-controls="explorer"><span>⌕</span> ESPLORA LA RETE <span id="total">71</span></button><section id="explorer" hidden><div class="explorer-top"><label for="search">CERCA NELLA RETE</label><button id="close-search" aria-label="Chiudi ricerca">×</button></div><input id="search" type="search" placeholder="Artista, label, paese…" autocomplete="off"><div class="filter-row"><label for="type">Tipo</label><select id="type"><option value="all">Tutti</option><option value="label">Labels</option><option value="artist">Artisti</option><option value="festival">Festival</option><option value="project">Progetti</option></select></div><p id="count" aria-live="polite"></p><div id="results"></div></section></div>
 <div class="map-bottom"><div class="nav"><button id="west" aria-label="Ruota verso ovest">‹</button><button id="east" aria-label="Ruota verso est">›</button><button id="reset" aria-label="Ripristina vista">◎</button><span>TRASCINA PER ESPLORARE</span></div><div id="coordinates">LAT 25.0° &nbsp; LON −20.0°</div></div><div class="zoom"><button id="plus" aria-label="Ingrandisci">+</button><button id="minus" aria-label="Riduci">−</button></div><div class="loading" id="loading">CARICAMENTO DEL GLOBO</div>
 </section>
-<section id="practice" class="practice">
-  <div class="practice-head"><div class="eyebrow">FOG / CURRENT PRACTICE</div><h1>Sound as material,<br>space as composition.</h1><p>FOG extends beyond the radio atlas into an evolving practice connecting music, collaboration, immersive sound, professional film audio and experimental instruments.</p></div>
+<aside id="panel" aria-label="Dettagli della rete"><div id="detail" aria-live="polite"></div></aside></div>
+<section id="practice" class="practice" lang="en" aria-labelledby="practice-title">
+  <div class="practice-head">
+    <div class="eyebrow">GILLES BARBERIS / FOG / CURRENT PRACTICE</div>
+    <h1 id="practice-title">Sound as material,<br>space as composition.</h1>
+    <p>My practice connects electronic music, collaboration and spatial listening with nearly two decades of work in film sound. FOG is a place to trace these connections — from the radio atlas to compositions and instruments in development.</p>
+  </div>
   <div class="practice-grid">
-    <article class="practice-card"><div class="card-no">01</div><h2>MUSIC &amp; COLLABORATION</h2><p>Electronic music developed through solo work and ongoing exchanges with other artists. Collaboration is part of the compositional method: material changes through listening, response and mutual transformation.</p><p class="card-note">Current collaborations include Arsène Martinet, Sorm and Recy.</p></article>
-    <article class="practice-card spatial"><div class="card-no">02</div><h2>SPATIAL PRACTICE</h2><h3>Zoonoses / SPAT</h3><p>Originally released on AEDI Records, <em>Zoonoses</em> was later reopened in Ableton for Serra Madre: Immersive Listening in Bologna. Movement and reverberation became more than placement decisions and began to reshape parts of the composition.</p><h3>Acusmatiq material / Dolby Atmos</h3><p>An excerpt from a partly improvised live set was developed during Atmos 360 at Fonoprint. The material was still embryonic: sound selection, composition and spatial decisions developed together inside the immersive process.</p></article>
-    <article class="practice-card question"><div class="card-no">03</div><h2>CURRENT QUESTION</h2><blockquote>If a work is conceived for immersive listening, how can space become an integral part of composition from its beginning — without allowing a single spatial system to define the compositional language?</blockquote><p>The next step is to explore spatial decisions as part of shared listening, response and composition, rather than as a final layer applied to finished material.</p></article>
-    <article class="practice-card"><div class="card-no">04</div><h2>PROFESSIONAL PRACTICE</h2><p>Nearly two decades in film sound restoration and post-production at L’Immagine Ritrovata / Cineteca di Bologna have shaped an approach to sound in which artistic intention, technical formats and playback systems are never quite the same thing.</p><p class="card-note">Current professional context is also moving toward immersive cinema workflows, alongside the development of a new Dolby Atmos cinema mixing environment with d&amp;b-based infrastructure under consideration.</p></article>
-    <article class="practice-card"><div class="card-no">05</div><h2>INSTRUMENT R&amp;D</h2><p>TENS is an ongoing family of experimental electroacoustic instruments. Current prototypes explore multiple independent outputs and the possibility of treating separation, routing and spatial behaviour as properties of the source and gesture — before a renderer is chosen.</p><p class="card-note">Public documentation intentionally remains high-level while the instruments are in development.</p></article>
-    <article class="practice-card fog-card"><div class="card-no">06</div><h2>FOG / RADIO &amp; RESEARCH</h2><p>FOG is a monthly radio project built through musical geography: research into local scenes, labels and listening cultures, combined with selections, field material and contributions from artists based in each place.</p><a href="#earth">RETURN TO THE ATLAS ↑</a></article>
+    <article class="practice-card music">
+      <div class="card-no" aria-hidden="true">01</div><h2>Music &amp; Collaboration</h2>
+      <p>I develop electronic music through solo work and ongoing exchanges with other artists. Listening and responding to one another changes the material and the direction of a piece.</p>
+      <p class="card-note">Current collaborations include Arsène Martinet, Sorm and Recy.</p>
+    </article>
+    <article class="practice-card spatial">
+      <div class="card-no" aria-hidden="true">02</div><h2>Spatial Practice</h2>
+      <div class="spatial-cases">
+        <section><div class="eyebrow">SPAT / SERRA MADRE · BOLOGNA</div><h3>Zoonoses</h3>
+          <p>Originally released on AEDI Records, <em>Zoonoses</em> was reopened in Ableton for Serra Madre: Immersive Listening, working with SPAT. Movement and reverberation began to reshape the composition itself.</p>
+          <p class="card-note">A released work became material for a new spatial reading.</p>
+        </section>
+        <section><div class="eyebrow">DOLBY ATMOS / ATMOS 360 · FONOPRINT</div><h3>Acusmatiq material</h3>
+          <p>An excerpt from a partly improvised Acusmatiq live set was developed during Atmos 360 at Fonoprint. With the material still taking shape, sound selection, composition and spatial mixing developed together.</p>
+          <p class="card-note">Spatial decisions entered while the music was still being composed.</p>
+        </section>
+      </div>
+    </article>
+    <article class="practice-card question">
+      <div class="card-no" aria-hidden="true">03</div><h2>Current Question</h2>
+      <blockquote>How can space become part of composition from the beginning, while keeping the musical language open beyond any single spatial system?</blockquote>
+      <p>I want to explore this through shared listening, response and composition, bringing spatial decisions into the exchange from the outset.</p>
+    </article>
+    <article class="practice-card professional">
+      <div class="card-no" aria-hidden="true">04</div><h2>Professional Practice</h2>
+      <h3>Film sound / preservation</h3>
+      <p>For nearly two decades I have worked in film sound restoration and post-production at L’Immagine Ritrovata / Cineteca di Bologna. Working with historical sound has shaped how I think about artistic intention as formats and playback systems change.</p>
+      <div class="development"><div class="eyebrow">IN DEVELOPMENT / NOT YET OPERATIONAL</div><p>A future Dolby Atmos cinema mixing room is in development for the new L’Immagine Ritrovata site, with d&amp;b infrastructure under consideration. This prospective environment connects with my exploration of spatial composition across different systems.</p></div>
+    </article>
+    <article class="practice-card instruments">
+      <div class="card-no" aria-hidden="true">05</div><h2>Instrument R&amp;D</h2><h3>TENS</h3>
+      <p>TENS is an ongoing family of experimental electroacoustic instruments exploring multiple independent outputs. The research considers how gesture and the sound source can shape spatial possibilities from the start.</p>
+      <p class="card-note">Ongoing instrument research · prototypes in development.</p>
+    </article>
+    <article class="practice-card fog-card">
+      <div class="card-no" aria-hidden="true">06</div><h2>FOG / Radio &amp; Research</h2>
+      <p>FOG is a monthly radio project built through musical geography: research into local scenes, labels and listening cultures, combined with selections, field material and contributions from artists based in each place. The atlas traces the people, places and relationships encountered along the way.</p>
+      <a href="#atlas">EXPLORE THE ATLAS <span aria-hidden="true">↑</span></a>
+    </article>
   </div>
 </section>
-<aside id="panel" aria-label="Dettagli della rete"><div id="detail" aria-live="polite"></div></aside></main>
+</main>
 <footer><span>FOG ATLAS <span class="muted">/</span> V0.2</span><span>10 LUOGHI V0 <span class="muted">·</span> 61 GEOGRAFIE DA VERIFICARE</span><a href="https://github.com/gillesbarberis/FOG-map#stato-dei-dati" target="_blank" rel="noopener">DATI & FONTI ↗</a></footer>
 <script src="app.js"></script></body></html>
