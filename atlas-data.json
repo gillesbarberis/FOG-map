@@ -1,0 +1,3468 @@
+{
+  "version": 1,
+  "playlist": "https://soundcloud.com/gilles_barberis/sets/fog",
+  "episodes": [
+    {
+      "id": "FOG_JAP",
+      "name": "FOG_JAP",
+      "country": "Japan",
+      "lat": 36.2,
+      "lon": 138.25,
+      "angularSpan": 18,
+      "anchor_note": "Representative country anchor, not an artist location.",
+      "focusIds": [
+        "fhss"
+      ],
+      "guestIds": [
+        "fhss"
+      ],
+      "recordingIds": [
+        "2361046511",
+        "2395019760"
+      ],
+      "source": "https://soundcloud.com/gilles_barberis/sets/fog"
+    },
+    {
+      "id": "FOG_MEX",
+      "name": "FOG_MEX",
+      "country": "Mexico",
+      "lat": 23.63,
+      "lon": -102.55,
+      "angularSpan": 22,
+      "anchor_note": "Representative country anchor, not an artist location.",
+      "focusIds": [
+        "st"
+      ],
+      "guestIds": [
+        "eafhm"
+      ],
+      "recordingIds": [
+        "2361045119",
+        "2374096649"
+      ],
+      "source": "https://soundcloud.com/gilles_barberis/sets/fog"
+    },
+    {
+      "id": "FOG_KOR",
+      "name": "FOG_KOR",
+      "country": "South Korea",
+      "lat": 36.2,
+      "lon": 127.8,
+      "angularSpan": 8,
+      "anchor_note": "Representative country anchor, not an artist location.",
+      "focusIds": [
+        "oslated",
+        "huinali"
+      ],
+      "guestIds": [
+        "recy"
+      ],
+      "recordingIds": [
+        "2375330147",
+        "2374091774"
+      ],
+      "source": "https://soundcloud.com/gilles_barberis/sets/fog"
+    },
+    {
+      "id": "FOG_FRA",
+      "name": "FOG_FRA",
+      "country": "France",
+      "lat": 46.2,
+      "lon": 2.2,
+      "angularSpan": 12,
+      "anchor_note": "Representative country anchor, not an artist location.",
+      "focusIds": [
+        "melifera",
+        "vallee"
+      ],
+      "guestIds": [
+        "nawl"
+      ],
+      "recordingIds": [
+        "2396427804",
+        "2396433579"
+      ],
+      "source": "https://soundcloud.com/gilles_barberis/sets/fog"
+    }
+  ],
+  "recordings": [
+    {
+      "id": "2361046511",
+      "title": "FOG Japan",
+      "url": "https://soundcloud.com/gilles_barberis/fog-japan",
+      "role": "main",
+      "description": "Asami’s Theme -  @tochigi-canopy\nPuppetmaster - Kenji Kawai on Miya Records\nAjal - @tasoko_daisuke on @liquiddropgroove\nWonderscape Numinous - @deep-step on @primary_colours_music\nTemperament - @ctafad on @melifera_records\nDirection - @ctafad on @oslated\nPomme - WAV (@wwata & @vvoiski ) on @delsinrecords\nSalvation - @iori927 & Tasoko on visionary recordings\nSearching - @wata on @kompakt\nNevilla - @hironori-takahashi on @kin-ben-label\nThe Opposite Shore - @sooishi on @sohaso\nTactile Drift - @herbalistekmusic on @ethosrecords\nSelf Replication (@brendonmoeller Remix) - @deep-step on @primary_colours_music\nTrip Eden - @susumuyokotaofficial on Skintone Records",
+      "checked_at": "2026-09-19"
+    },
+    {
+      "id": "2395019760",
+      "title": "FOG Japan invites Yoichiro Kawakami",
+      "url": "https://soundcloud.com/gilles_barberis/fog-japan-invites-yoichiro",
+      "role": "guest",
+      "description": "Forbidden Hawaiian Sound Service is a DJ and selector blending sounds from around the world into atmospheric sets spanning balearic,ambient,jazz,and dance music. While he was touring Europe we had the honour and the pleasure to have him recording a precious ambient set as an addendum to our pilot first FOG episode. \n\n@forbiddenhawaii\n\n\ntracklist \n\nUki Reflection - Sabi @sabi_records \nApplet W . You're me @yu_su @scottg_ailey\nGekkoh @susumuyokotaofficial\nThe Water Molecule - Asuna & Opitope @user-31962072 @user964125504 @chihei-hatakeyama\nChaparral - Total Blue @music-from-memory\nColored Air - 日向敏文 @toshifumihinata\nStrange Attractor  - 細野晴臣  @haruomihosono \nNavigations - 細野晴臣 @haruomihosono\nRising Moon - Inoue Kaoru @kaoru324\n波光 - 深草アキ @aki-fukakusa\nA Sea Of Love - Huerco S. @inciensorecs @huerco_s",
+      "checked_at": "2026-09-19"
+    },
+    {
+      "id": "2361045119",
+      "title": "FOG Mexico",
+      "url": "https://soundcloud.com/gilles_barberis/fog-mexico",
+      "role": "main",
+      "description": "music by @enabofficial @simonegattodj @javiermarimon @aionlazura  raptagog: @fred-small @koscoy @piante-vive  tadhe: @arturo-salerno  @avsluta @saphileaum hod: @951012 @eafhmlive @orcasilent @maxfigueroa_music @corellmusic  and molotov",
+      "checked_at": "2026-09-19"
+    },
+    {
+      "id": "2374096649",
+      "title": "FOG Mexico invites Eafhm",
+      "url": "https://soundcloud.com/gilles_barberis/eafhm-x-fog-mexico-1",
+      "role": "guest",
+      "description": "",
+      "checked_at": "2026-09-19"
+    },
+    {
+      "id": "2375330147",
+      "title": "FOG Korea",
+      "url": "https://soundcloud.com/gilles_barberis/fog-korea",
+      "role": "main",
+      "description": "FOG presents @oslated\n\n1. @piante-vive - Clorofilla [OSL040]\n2. @irina-kotik @gilleswasserman - 고요 [OSC009]\n3. @sanjib-4 - Angel's Entrance [HNL027]\n4. @v-a-y-u - 우주농담 [0SC009]\n5. @nightseaproject - w510 [HNC003]\n6. @doltzdeep - Kemuri [HNL019]\n7. Olorun @tristanboltz - Optical Node [OSL043]\n8. @adhemarmusic - Touching The Clouds [OSP004]\n9. Saša Delimar @inf001 - Too Far Away (HNL025]\n10. @nightseaproject - Park St [OSC010]\n11. @aspetuck - To Catch A Falling Leaf [OSL038]\n12. @sanjib-4 - Distant Communion [OSL008]\n13. Racco - 0b [HNL001]\n14. @saphileaum - 상상력 [OSC010]\n15. @oreste-music - 깊은밤 갑자기 [OSC010]",
+      "checked_at": "2026-09-19"
+    },
+    {
+      "id": "2396427804",
+      "title": "FOG France",
+      "url": "https://soundcloud.com/gilles_barberis/fog-france-1",
+      "role": "main",
+      "description": "FOG presents @melifera_records\n\nThe Last Rays Before Nightfall @gaspard_polar\nWadis (Sauvage Dub Trio) @biocym @sauvage-dub-trio\nKan Bulak @vardaemusic\nSaloya @katodevidts\nGaia Horizon @vicecitybeats\nLaw of the Jungle @gaspard_polar\nBloom @jorgefons\nTipa (Sindh Remix) @orbinnun @Sindh \nNocturnal Squall @nawl_music\nAscending Through Leaves @caldera-caldera\nHawa @umanyazar\nJord @elisa-batti",
+      "checked_at": "2026-09-19"
+    },
+    {
+      "id": "2396433579",
+      "title": "FOG France invites Nawl",
+      "url": "https://soundcloud.com/gilles_barberis/fog-france-invites-nawl",
+      "role": "guest",
+      "description": "@nawl_music\n\"Glimmer and fade\" \nThis podcast is an interpretation of the alteration of time unique to the Vallée Électrique festival. Here, hours stretch out. The mind navigates between subaqueous immersion and shared waves. Captivated by the collective energy, the listener refuses to tune out, until collapsing from exhaustion. The mind then finds peace, in the wake of the last glimmer, like a candle going out.",
+      "checked_at": "2026-09-19"
+    },
+    {
+      "id": "2374091774",
+      "title": "FOG Korea invites Recy",
+      "url": "https://soundcloud.com/gilles_barberis/recy-x-fog-korea",
+      "role": "guest",
+      "description": "Recy, based in Seoul, seamlessly weaves percussive elements with expansive, nature-inspired soundscapes. As a producer and DJ active in Korea’s underground scene, he crafts immersive experiences, translating raw, stimulating textures into a primal language for the dancefloor. With releases on highly respected labels, he continues to push the boundaries of his sonic identity.\n\n1. Material Things / Pike - Drums for Menelik [Intertoto Remix] [2024/12th Isle]\n2. @ellellellellellellellelle - Guardarsi Indietro [2019/Oslated]\n3. @mownofficial - Patience [2021/Circular Limited]\n4. @enabofficial - Liminal [2026/Secuencias Temporales]\n5. @marco_shuttle - I Fail. You Fall. [2017/Spazio Disponibile]\n6. @robert_istoc - Experience [2026/Qilla Records]\n7. @adampits - Plateau [2026/Fur:ther Sessions]\n8. dj-fix1 & earthdog_jek - Coyote Club (@humanspacemachine Remix) [2025/Earth Dog]\n9. @solarythm_deeptech_side  & @klara_vedis - Fragmentation reality [2021/Annulled Music]\n10. Dåggěr - Drift [2022/QEONE]\n11. @johnplazamusic - Azulejo [2026/Liquid Drop Groove]\n12. @batuuk & @donato-dozzy - Drift [2026/!K7 Records]\n13. @shoall - Median [2025/Animalia]\n14. @priori-ties - Sub Lux (Sansibar Remix) [2024/Kalahari Oyster Cult]\n15. @templerat - Cloud Ladder 雲梯 [2026/Buttheads]\n16. @biocym - Aeriform (w/ SHFT) [2026/space•lab]\n17. @Lyderlyderlyder - Helichrysum [2022/Jazz-o-Tech]\n18. @yingtuitive - blue [2025/Third Place]",
+      "checked_at": "2026-09-19"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "st",
+      "name": "Secuencias Temporales",
+      "type": "label",
+      "verification_status": "provided_unverified",
+      "sources": [],
+      "appearances": [],
+      "location": {
+        "lat": 19.433,
+        "lon": -99.133,
+        "city": "Mexico City",
+        "country": "Mexico",
+        "precision": "city",
+        "status": "provided_unverified",
+        "sources": []
+      },
+      "appearance_sources": []
+    },
+    {
+      "id": "eafhm",
+      "name": "EAFHM",
+      "type": "artist",
+      "verification_status": "provided_unverified",
+      "sources": [],
+      "appearances": [
+        "2361045119",
+        "2374096649"
+      ],
+      "location": {
+        "lat": 19.433,
+        "lon": -99.133,
+        "city": "Mexico City",
+        "country": "Mexico",
+        "precision": "city",
+        "status": "provided_unverified",
+        "sources": []
+      },
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/fog-mexico",
+        "https://soundcloud.com/gilles_barberis/eafhm-x-fog-mexico-1"
+      ]
+    },
+    {
+      "id": "oslated",
+      "name": "Oslated",
+      "type": "label",
+      "verification_status": "provided_unverified",
+      "sources": [],
+      "appearances": [],
+      "location": {
+        "lat": 33.5,
+        "lon": 126.531,
+        "city": "Jeju",
+        "country": "South Korea",
+        "precision": "city",
+        "status": "provided_unverified",
+        "sources": []
+      },
+      "appearance_sources": []
+    },
+    {
+      "id": "huinali",
+      "name": "Huinali Recordings",
+      "type": "label",
+      "verification_status": "provided_unverified",
+      "sources": [],
+      "appearances": [],
+      "location": {
+        "lat": 33.5,
+        "lon": 126.531,
+        "city": "Jeju",
+        "country": "South Korea",
+        "precision": "city",
+        "status": "provided_unverified",
+        "sources": []
+      },
+      "appearance_sources": []
+    },
+    {
+      "id": "cy",
+      "name": "CY",
+      "type": "artist",
+      "verification_status": "provided_unverified",
+      "sources": [],
+      "appearances": [],
+      "location": {
+        "lat": 37.567,
+        "lon": 126.978,
+        "city": "Seoul",
+        "country": "South Korea",
+        "precision": "city",
+        "status": "provided_unverified",
+        "sources": []
+      },
+      "appearance_sources": []
+    },
+    {
+      "id": "melifera",
+      "name": "Melifera Records",
+      "type": "label",
+      "verification_status": "provided_unverified",
+      "sources": [],
+      "appearances": [],
+      "location": {
+        "lat": 43.297,
+        "lon": 5.37,
+        "city": "Marseille / Lyon",
+        "country": "France",
+        "precision": "regional",
+        "status": "provided_unverified",
+        "sources": []
+      },
+      "appearance_sources": []
+    },
+    {
+      "id": "nawl",
+      "name": "NAWL",
+      "type": "artist",
+      "verification_status": "provided_unverified",
+      "sources": [],
+      "appearances": [
+        "2396427804",
+        "2396433579"
+      ],
+      "location": {
+        "lat": 45.764,
+        "lon": 4.836,
+        "city": "Lyon",
+        "country": "France",
+        "precision": "city",
+        "status": "provided_unverified",
+        "sources": []
+      },
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/fog-france-1",
+        "https://soundcloud.com/gilles_barberis/fog-france-invites-nawl"
+      ]
+    },
+    {
+      "id": "vallee",
+      "name": "La Vallée Électrique",
+      "type": "festival",
+      "verification_status": "provided_unverified",
+      "sources": [],
+      "appearances": [],
+      "location": {
+        "lat": 43.8,
+        "lon": 5.3,
+        "city": "Provence",
+        "country": "France",
+        "precision": "regional",
+        "status": "provided_unverified",
+        "sources": []
+      },
+      "appearance_sources": []
+    },
+    {
+      "id": "fhss",
+      "name": "Forbidden Hawaiian Sound Service",
+      "type": "artist",
+      "verification_status": "provided_unverified",
+      "sources": [],
+      "appearances": [
+        "2395019760"
+      ],
+      "location": {
+        "lat": 35.676,
+        "lon": 139.65,
+        "city": "Japan",
+        "country": "Japan",
+        "precision": "regional",
+        "status": "provided_unverified",
+        "sources": []
+      },
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/fog-japan-invites-yoichiro"
+      ]
+    },
+    {
+      "id": "FOG Mexico-0",
+      "name": "ena b.",
+      "type": "artist",
+      "verification_status": "pending",
+      "sources": [],
+      "appearances": [
+        "2361045119",
+        "2374091774"
+      ],
+      "location": {
+        "city": "Lisbon",
+        "country": "Portugal",
+        "lat": 38.7223,
+        "lon": -9.1393,
+        "precision": "city",
+        "status": "source_confirmed",
+        "sources": [
+          "https://soundcloud.com/enabofficial"
+        ],
+        "checked_at": "2026-09-19"
+      },
+      "aliases": [
+        "ENA"
+      ],
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/fog-mexico",
+        "https://soundcloud.com/gilles_barberis/recy-x-fog-korea"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "source_confirmed",
+        "sources": [
+          "https://soundcloud.com/enabofficial"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "FOG Mexico-1",
+      "name": "Simone Gatto",
+      "type": "artist",
+      "verification_status": "pending",
+      "sources": [],
+      "appearances": [
+        "2361045119"
+      ],
+      "location": {
+        "city": "Salento",
+        "country": "Italy",
+        "lat": 40.2,
+        "lon": 18.1,
+        "precision": "regional",
+        "status": "reported",
+        "sources": [
+          "https://www.yogalecce.com/simone-gatto/",
+          "https://cdm.link/out-ers-soundscapes-driven-by-real-research-into-the-feels/"
+        ],
+        "checked_at": "2026-09-19",
+        "note": "Professional practice spans Lecce and neighbouring Salento towns. Older Berlin artist profile conflicts; mapped at regional precision."
+      },
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/fog-mexico"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "reported",
+        "sources": [
+          "https://www.yogalecce.com/simone-gatto/",
+          "https://cdm.link/out-ers-soundscapes-driven-by-real-research-into-the-feels/"
+        ],
+        "note": "Professional practice spans Lecce and neighbouring Salento towns. Older Berlin artist profile conflicts; mapped at regional precision."
+      }
+    },
+    {
+      "id": "FOG Mexico-2",
+      "name": "Javier Marimon",
+      "type": "artist",
+      "verification_status": "pending",
+      "sources": [],
+      "appearances": [
+        "2361045119"
+      ],
+      "location": {
+        "city": "Madrid",
+        "country": "Spain",
+        "lat": 40.4168,
+        "lon": -3.7038,
+        "precision": "city",
+        "status": "reported",
+        "sources": [
+          "https://huinalidub.bandcamp.com/album/aoeooyi-hnl030"
+        ],
+        "checked_at": "2026-09-19",
+        "note": "April 2026 release identifies A Ras as Javier Marimon and places him in Madrid. Older artist Bandcamp lists Vilaboa."
+      },
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/fog-mexico"
+      ],
+      "aliases": [
+        "A Ras"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "reported",
+        "sources": [
+          "https://huinalidub.bandcamp.com/album/aoeooyi-hnl030"
+        ],
+        "note": "April 2026 release identifies A Ras as Javier Marimon and places him in Madrid. Older artist Bandcamp lists Vilaboa."
+      }
+    },
+    {
+      "id": "FOG Mexico-3",
+      "name": "Aiôn Lazura",
+      "type": "artist",
+      "verification_status": "pending",
+      "sources": [],
+      "appearances": [
+        "2361045119"
+      ],
+      "location": {
+        "city": "Grenoble",
+        "country": "France",
+        "lat": 45.1885,
+        "lon": 5.7245,
+        "precision": "city",
+        "status": "reported",
+        "sources": [
+          "https://secuenciastemporales.bandcamp.com/album/ai-n-lazura-light-collision-st048"
+        ],
+        "checked_at": "2026-09-19",
+        "note": "2022 release explicitly places production in Grenoble. Current base needs reconfirmation."
+      },
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/fog-mexico"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "reported",
+        "sources": [
+          "https://secuenciastemporales.bandcamp.com/album/ai-n-lazura-light-collision-st048"
+        ],
+        "note": "2022 release explicitly places production in Grenoble. Current base needs reconfirmation."
+      }
+    },
+    {
+      "id": "FOG Mexico-4",
+      "name": "raptAGOG",
+      "type": "artist",
+      "verification_status": "pending",
+      "sources": [],
+      "appearances": [
+        "2361045119"
+      ],
+      "location": {
+        "city": "Oslo",
+        "country": "Norway",
+        "lat": 59.9139,
+        "lon": 10.7522,
+        "precision": "city",
+        "status": "source_confirmed",
+        "sources": [
+          "https://www.fredsmallstudio.com/"
+        ],
+        "checked_at": "2026-09-19",
+        "note": "Artist website identifies Oslo base and Secuencias Temporales release. Not the US folk singer."
+      },
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/fog-mexico"
+      ],
+      "aliases": [
+        "Fred Small"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "source_confirmed",
+        "sources": [
+          "https://www.fredsmallstudio.com/"
+        ],
+        "note": "Artist website identifies Oslo base and Secuencias Temporales release. Not the US folk singer."
+      }
+    },
+    {
+      "id": "FOG Mexico-5",
+      "name": "Koscoy",
+      "type": "artist",
+      "verification_status": "pending",
+      "sources": [],
+      "appearances": [
+        "2361045119"
+      ],
+      "location": {
+        "city": "City not yet verified",
+        "country": "Mexico",
+        "lat": 23.6,
+        "lon": -102.5,
+        "precision": "country",
+        "status": "source_confirmed",
+        "sources": [
+          "https://soundcloud.com/koscoy"
+        ],
+        "checked_at": "2026-09-19",
+        "note": "Profile gives Mexico without an unambiguous city. Marker represents the country, not Mexico City."
+      },
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/fog-mexico"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "source_confirmed",
+        "sources": [
+          "https://soundcloud.com/koscoy"
+        ],
+        "note": "Profile gives Mexico without an unambiguous city. Marker represents the country, not Mexico City."
+      }
+    },
+    {
+      "id": "FOG Mexico-6",
+      "name": "Piante Vive",
+      "type": "artist",
+      "verification_status": "pending",
+      "sources": [],
+      "appearances": [
+        "2361045119",
+        "2375330147"
+      ],
+      "location": {
+        "city": "City not yet verified",
+        "country": "Italy",
+        "lat": 42.5,
+        "lon": 12.5,
+        "precision": "country",
+        "status": "source_confirmed",
+        "sources": [
+          "https://oslated.bandcamp.com/album/clorophilla-osl040"
+        ],
+        "checked_at": "2026-09-19",
+        "note": "2025 label release locates the duo in Italy; Milan is not confirmed for both members."
+      },
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/fog-mexico",
+        "https://soundcloud.com/gilles_barberis/fog-korea"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "source_confirmed",
+        "sources": [
+          "https://oslated.bandcamp.com/album/clorophilla-osl040"
+        ],
+        "note": "2025 label release locates the duo in Italy; Milan is not confirmed for both members."
+      }
+    },
+    {
+      "id": "FOG Mexico-7",
+      "name": "Tadhe",
+      "type": "artist",
+      "verification_status": "pending",
+      "sources": [],
+      "appearances": [
+        "2361045119"
+      ],
+      "location": {
+        "city": "San Valentino Torio",
+        "country": "Italy",
+        "lat": 40.79,
+        "lon": 14.601,
+        "precision": "city",
+        "status": "reported",
+        "sources": [
+          "https://secuenciastemporales.bandcamp.com/album/tadhe-pre-absence-st078"
+        ],
+        "checked_at": "2026-09-19",
+        "note": "2024 release identifies Tadhe as Arturo Salerno and specifies the production location."
+      },
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/fog-mexico"
+      ],
+      "aliases": [
+        "Arturo Salerno"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "reported",
+        "sources": [
+          "https://secuenciastemporales.bandcamp.com/album/tadhe-pre-absence-st078"
+        ],
+        "note": "2024 release identifies Tadhe as Arturo Salerno and specifies the production location."
+      }
+    },
+    {
+      "id": "FOG Mexico-8",
+      "name": "Avsluta",
+      "type": "artist",
+      "verification_status": "pending",
+      "sources": [],
+      "appearances": [
+        "2361045119"
+      ],
+      "location": {
+        "city": "London",
+        "country": "United Kingdom",
+        "lat": 51.5074,
+        "lon": -0.1278,
+        "precision": "city",
+        "status": "source_confirmed",
+        "sources": [
+          "https://soundcloud.com/avsluta"
+        ],
+        "checked_at": "2026-09-19",
+        "note": "Corroborated by RA biography."
+      },
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/fog-mexico"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "source_confirmed",
+        "sources": [
+          "https://soundcloud.com/avsluta"
+        ],
+        "note": "Corroborated by RA biography."
+      }
+    },
+    {
+      "id": "FOG Mexico-9",
+      "name": "Saphileaum",
+      "type": "artist",
+      "verification_status": "pending",
+      "sources": [],
+      "appearances": [
+        "2361045119",
+        "2375330147"
+      ],
+      "location": {
+        "city": "Tbilisi",
+        "country": "Georgia",
+        "lat": 41.7151,
+        "lon": 44.8271,
+        "precision": "city",
+        "status": "source_confirmed",
+        "sources": [
+          "https://saphileaum.bandcamp.com/"
+        ],
+        "checked_at": "2026-09-19"
+      },
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/fog-mexico",
+        "https://soundcloud.com/gilles_barberis/fog-korea"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "source_confirmed",
+        "sources": [
+          "https://saphileaum.bandcamp.com/"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "FOG Mexico-10",
+      "name": "Hod",
+      "type": "artist",
+      "verification_status": "pending",
+      "sources": [],
+      "appearances": [
+        "2361045119"
+      ],
+      "location": {
+        "city": "Medellín",
+        "country": "Colombia",
+        "lat": 6.2442,
+        "lon": -75.5812,
+        "precision": "city",
+        "status": "source_confirmed",
+        "sources": [
+          "https://soundcloud.com/951012"
+        ],
+        "checked_at": "2026-09-19",
+        "note": ""
+      },
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/fog-mexico"
+      ],
+      "aliases": [
+        "951012"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "source_confirmed",
+        "sources": [
+          "https://soundcloud.com/951012"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "FOG Mexico-11",
+      "name": "Orca Silent",
+      "type": "artist",
+      "verification_status": "pending",
+      "sources": [],
+      "appearances": [
+        "2361045119"
+      ],
+      "location": {
+        "city": "Smithers, BC",
+        "country": "Canada",
+        "lat": 54.7824,
+        "lon": -127.1686,
+        "precision": "city",
+        "status": "source_confirmed",
+        "sources": [
+          "https://soundcloud.com/orcasilent/tracks"
+        ],
+        "checked_at": "2026-09-19",
+        "note": "Profile lists Smithers / Wet’suwet’en Territory; label address in Victoria is not the artist location."
+      },
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/fog-mexico"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "source_confirmed",
+        "sources": [
+          "https://soundcloud.com/orcasilent/tracks"
+        ],
+        "note": "Profile lists Smithers / Wet’suwet’en Territory; label address in Victoria is not the artist location."
+      }
+    },
+    {
+      "id": "FOG Mexico-12",
+      "name": "Max Figueroa",
+      "type": "artist",
+      "verification_status": "pending",
+      "sources": [],
+      "appearances": [
+        "2361045119"
+      ],
+      "location": {
+        "city": "Mar del Plata",
+        "country": "Argentina",
+        "lat": -38.0055,
+        "lon": -57.5426,
+        "precision": "city",
+        "status": "source_confirmed",
+        "sources": [
+          "https://soundcloud.com/maxfigueroa_music"
+        ],
+        "checked_at": "2026-09-19",
+        "note": ""
+      },
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/fog-mexico"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "source_confirmed",
+        "sources": [
+          "https://soundcloud.com/maxfigueroa_music"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "FOG Mexico-13",
+      "name": "Corell",
+      "type": "artist",
+      "verification_status": "pending",
+      "sources": [],
+      "appearances": [
+        "2361045119"
+      ],
+      "location": {
+        "city": "Moscow",
+        "country": "Russia",
+        "lat": 55.7558,
+        "lon": 37.6173,
+        "precision": "city",
+        "status": "source_confirmed",
+        "sources": [
+          "https://corell.bandcamp.com/album/appx-12-melts-into-air"
+        ],
+        "checked_at": "2026-09-19",
+        "note": ""
+      },
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/fog-mexico"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "source_confirmed",
+        "sources": [
+          "https://corell.bandcamp.com/album/appx-12-melts-into-air"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "FOG Korea-0",
+      "name": "Irina Kotik",
+      "type": "artist",
+      "verification_status": "pending",
+      "sources": [],
+      "appearances": [
+        "2375330147"
+      ],
+      "location": {
+        "city": "Brooklyn, New York",
+        "country": "United States",
+        "lat": 40.6782,
+        "lon": -73.9442,
+        "precision": "city",
+        "status": "source_confirmed",
+        "sources": [
+          "https://soundcloud.com/irina-kotik"
+        ],
+        "checked_at": "2026-09-19",
+        "note": ""
+      },
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/fog-korea"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "source_confirmed",
+        "sources": [
+          "https://soundcloud.com/irina-kotik"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "FOG Korea-1",
+      "name": "Gilles Wasserman",
+      "type": "artist",
+      "verification_status": "pending",
+      "sources": [],
+      "appearances": [
+        "2375330147"
+      ],
+      "location": {
+        "city": "Brooklyn, New York",
+        "country": "United States",
+        "lat": 40.6782,
+        "lon": -73.9442,
+        "precision": "city",
+        "status": "source_confirmed",
+        "sources": [
+          "https://linktr.ee/gilleswasserman"
+        ],
+        "checked_at": "2026-09-19",
+        "note": "Artist link page explicitly states Brooklyn-based."
+      },
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/fog-korea"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "source_confirmed",
+        "sources": [
+          "https://linktr.ee/gilleswasserman"
+        ],
+        "note": "Artist link page explicitly states Brooklyn-based."
+      }
+    },
+    {
+      "id": "FOG Korea-2",
+      "name": "Sanjib",
+      "type": "artist",
+      "verification_status": "pending",
+      "sources": [],
+      "appearances": [
+        "2375330147"
+      ],
+      "location": {
+        "city": "Lyon",
+        "country": "France",
+        "lat": 45.764,
+        "lon": 4.8357,
+        "precision": "city",
+        "status": "reported",
+        "sources": [
+          "https://ra.co/dj/jibis/biography"
+        ],
+        "checked_at": "2026-09-19",
+        "note": "Biography connects Sanjib alias to Lyon-scene artist Jibis."
+      },
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/fog-korea"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "reported",
+        "sources": [
+          "https://ra.co/dj/jibis/biography"
+        ],
+        "note": "Biography connects Sanjib alias to Lyon-scene artist Jibis."
+      }
+    },
+    {
+      "id": "FOG Korea-3",
+      "name": "Vayu",
+      "type": "artist",
+      "verification_status": "pending",
+      "sources": [],
+      "appearances": [
+        "2375330147"
+      ],
+      "location": null,
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/fog-korea"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "unresolved",
+        "sources": [
+          "https://soundcloud.com/v-a-y-u",
+          "https://affin.bandcamp.com/album/nysiads"
+        ],
+        "note": "Affin identifies the French sound designer Vâyu, but nationality does not establish a current base. SoundCloud gives no city."
+      }
+    },
+    {
+      "id": "FOG Korea-4",
+      "name": "Night Sea Project",
+      "type": "artist",
+      "verification_status": "pending",
+      "sources": [],
+      "appearances": [
+        "2375330147"
+      ],
+      "location": {
+        "city": "Berkeley, California",
+        "country": "United States",
+        "lat": 37.8715,
+        "lon": -122.273,
+        "precision": "city",
+        "status": "source_confirmed",
+        "sources": [
+          "https://soundcloud.com/nightseaproject"
+        ],
+        "checked_at": "2026-09-19",
+        "note": ""
+      },
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/fog-korea"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "source_confirmed",
+        "sources": [
+          "https://soundcloud.com/nightseaproject"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "FOG Korea-5",
+      "name": "Doltz",
+      "type": "artist",
+      "verification_status": "pending",
+      "sources": [],
+      "appearances": [
+        "2375330147"
+      ],
+      "location": {
+        "city": "City not yet verified",
+        "country": "Japan",
+        "lat": 36,
+        "lon": 138,
+        "precision": "country",
+        "status": "source_confirmed",
+        "sources": [
+          "https://ra.co/dj/doltz"
+        ],
+        "checked_at": "2026-09-19",
+        "note": "Artist profile gives Japan. Performance locations do not establish a home city."
+      },
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/fog-korea"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "source_confirmed",
+        "sources": [
+          "https://ra.co/dj/doltz"
+        ],
+        "note": "Artist profile gives Japan. Performance locations do not establish a home city."
+      }
+    },
+    {
+      "id": "FOG Korea-6",
+      "name": "Olorun / Tristan Boltz",
+      "type": "artist",
+      "verification_status": "pending",
+      "sources": [],
+      "appearances": [
+        "2375330147"
+      ],
+      "location": {
+        "city": "City not yet verified",
+        "country": "France",
+        "lat": 46.6,
+        "lon": 2.4,
+        "precision": "country",
+        "status": "source_confirmed",
+        "sources": [
+          "https://oslated.bandcamp.com/album/merged-id-osl043"
+        ],
+        "checked_at": "2026-09-19",
+        "note": "April 2026 label release identifies Olorun / Tristan Boltz in France; no city given."
+      },
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/fog-korea"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "source_confirmed",
+        "sources": [
+          "https://oslated.bandcamp.com/album/merged-id-osl043"
+        ],
+        "note": "April 2026 label release identifies Olorun / Tristan Boltz in France; no city given."
+      }
+    },
+    {
+      "id": "FOG Korea-7",
+      "name": "Adhémar",
+      "type": "artist",
+      "verification_status": "pending",
+      "sources": [],
+      "appearances": [
+        "2375330147"
+      ],
+      "location": {
+        "city": "Paris",
+        "country": "France",
+        "lat": 48.8566,
+        "lon": 2.3522,
+        "precision": "city",
+        "status": "source_confirmed",
+        "sources": [
+          "https://soundcloud.com/adhemarmusic"
+        ],
+        "checked_at": "2026-09-19"
+      },
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/fog-korea"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "source_confirmed",
+        "sources": [
+          "https://soundcloud.com/adhemarmusic"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "FOG Korea-8",
+      "name": "Saša Delimar",
+      "type": "artist",
+      "verification_status": "pending",
+      "sources": [],
+      "appearances": [
+        "2375330147"
+      ],
+      "location": {
+        "city": "Berlin",
+        "country": "Germany",
+        "lat": 52.52,
+        "lon": 13.405,
+        "precision": "city",
+        "status": "source_confirmed",
+        "sources": [
+          "https://delimar.bandcamp.com/"
+        ],
+        "checked_at": "2026-09-19",
+        "note": ""
+      },
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/fog-korea"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "source_confirmed",
+        "sources": [
+          "https://delimar.bandcamp.com/"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "FOG Korea-9",
+      "name": "Aspetuck",
+      "type": "artist",
+      "verification_status": "pending",
+      "sources": [],
+      "appearances": [
+        "2375330147"
+      ],
+      "location": {
+        "city": "Hudson, New York",
+        "country": "United States",
+        "lat": 42.2529,
+        "lon": -73.791,
+        "precision": "city",
+        "status": "source_confirmed",
+        "sources": [
+          "https://aspetuck.bandcamp.com/album/aspetuck-001"
+        ],
+        "checked_at": "2026-09-19",
+        "note": "Artist profile lists Hudson; RA and ASIP confirm Hudson Valley / upstate NY."
+      },
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/fog-korea"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "source_confirmed",
+        "sources": [
+          "https://aspetuck.bandcamp.com/album/aspetuck-001"
+        ],
+        "note": "Artist profile lists Hudson; RA and ASIP confirm Hudson Valley / upstate NY."
+      }
+    },
+    {
+      "id": "FOG Korea-10",
+      "name": "Racco",
+      "type": "artist",
+      "verification_status": "pending",
+      "sources": [],
+      "appearances": [
+        "2375330147"
+      ],
+      "location": {
+        "city": "Guarujá",
+        "country": "Brazil",
+        "lat": -23.9931,
+        "lon": -46.2564,
+        "precision": "city",
+        "status": "reported",
+        "sources": [
+          "https://huinalidub.bandcamp.com/album/bada-ep-hnl001",
+          "https://ra.co/dj/racco"
+        ],
+        "checked_at": "2026-09-19",
+        "note": "2019 release gives Guarujá; RA profile corroborates the city but current base needs reconfirmation."
+      },
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/fog-korea"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "reported",
+        "sources": [
+          "https://huinalidub.bandcamp.com/album/bada-ep-hnl001",
+          "https://ra.co/dj/racco"
+        ],
+        "note": "2019 release gives Guarujá; RA profile corroborates the city but current base needs reconfirmation."
+      }
+    },
+    {
+      "id": "FOG Korea-11",
+      "name": "Oreste",
+      "type": "artist",
+      "verification_status": "pending",
+      "sources": [],
+      "appearances": [
+        "2375330147"
+      ],
+      "location": {
+        "city": "Méribel",
+        "country": "France",
+        "lat": 45.397,
+        "lon": 6.565,
+        "precision": "city",
+        "status": "source_confirmed",
+        "sources": [
+          "https://oslated.bandcamp.com/album/arcana-amissa-temporum-oblitum-osl041"
+        ],
+        "checked_at": "2026-09-19",
+        "note": "December 2025 release explicitly places Oreste in Méribel."
+      },
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/fog-korea"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "source_confirmed",
+        "sources": [
+          "https://oslated.bandcamp.com/album/arcana-amissa-temporum-oblitum-osl041"
+        ],
+        "note": "December 2025 release explicitly places Oreste in Méribel."
+      }
+    },
+    {
+      "id": "FOG France-0",
+      "name": "Gaspard Polar",
+      "type": "artist",
+      "verification_status": "pending",
+      "sources": [],
+      "appearances": [
+        "2396427804"
+      ],
+      "location": {
+        "city": "Lyon",
+        "country": "France",
+        "lat": 45.764,
+        "lon": 4.8357,
+        "precision": "city",
+        "status": "reported",
+        "sources": [
+          "https://melifera-records.bandcamp.com/album/jungle-electronica"
+        ],
+        "checked_at": "2026-09-19",
+        "note": "Release identifies artist in Lyon; Marseille is mastering and label location."
+      },
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/fog-france-1"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "reported",
+        "sources": [
+          "https://melifera-records.bandcamp.com/album/jungle-electronica"
+        ],
+        "note": "Release identifies artist in Lyon; Marseille is mastering and label location."
+      }
+    },
+    {
+      "id": "FOG France-1",
+      "name": "Biocym",
+      "type": "artist",
+      "verification_status": "pending",
+      "sources": [],
+      "appearances": [
+        "2396427804",
+        "2374091774"
+      ],
+      "location": {
+        "city": "Milan",
+        "country": "Italy",
+        "lat": 45.4642,
+        "lon": 9.19,
+        "precision": "city",
+        "status": "source_confirmed",
+        "sources": [
+          "https://soundcloud.com/biocym"
+        ],
+        "checked_at": "2026-09-19",
+        "note": "Artist profile states Milan; corroborated by Technokunst podcast March 2026."
+      },
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/fog-france-1",
+        "https://soundcloud.com/gilles_barberis/recy-x-fog-korea"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "source_confirmed",
+        "sources": [
+          "https://soundcloud.com/biocym"
+        ],
+        "note": "Artist profile states Milan; corroborated by Technokunst podcast March 2026."
+      }
+    },
+    {
+      "id": "FOG France-2",
+      "name": "Sauvage Dub Trio",
+      "type": "artist",
+      "verification_status": "pending",
+      "sources": [],
+      "appearances": [
+        "2396427804"
+      ],
+      "location": null,
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/fog-france-1"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "unresolved",
+        "sources": [
+          "https://soundcloud.com/sauvage-dub-trio",
+          "https://artoseleven.bandcamp.com/",
+          "https://melifera-records.bandcamp.com/album/wadis-variations"
+        ],
+        "note": "The trio and member Arto are identified; no shared working base is established. The label address is not used."
+      }
+    },
+    {
+      "id": "FOG France-3",
+      "name": "Vardae",
+      "type": "artist",
+      "verification_status": "pending",
+      "sources": [],
+      "appearances": [
+        "2396427804"
+      ],
+      "location": {
+        "city": "Lyon",
+        "country": "France",
+        "lat": 45.764,
+        "lon": 4.8357,
+        "precision": "city",
+        "status": "source_confirmed",
+        "sources": [
+          "https://vardae.bandcamp.com/music"
+        ],
+        "checked_at": "2026-09-19"
+      },
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/fog-france-1"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "source_confirmed",
+        "sources": [
+          "https://vardae.bandcamp.com/music"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "FOG France-4",
+      "name": "Kato De Vidts",
+      "type": "artist",
+      "verification_status": "pending",
+      "sources": [],
+      "appearances": [
+        "2396427804"
+      ],
+      "location": {
+        "city": "Brussels",
+        "country": "Belgium",
+        "lat": 50.8503,
+        "lon": 4.3517,
+        "precision": "city",
+        "status": "reported",
+        "sources": [
+          "https://www.delayed.nyc/delayed-blog/favorite-mixes-from-october-2023"
+        ],
+        "checked_at": "2026-09-19",
+        "note": "2023 editorial identifies the artist and acoustic engineer as Brussels-based; current city needs reconfirmation."
+      },
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/fog-france-1"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "reported",
+        "sources": [
+          "https://www.delayed.nyc/delayed-blog/favorite-mixes-from-october-2023"
+        ],
+        "note": "2023 editorial identifies the artist and acoustic engineer as Brussels-based; current city needs reconfirmation."
+      }
+    },
+    {
+      "id": "FOG France-5",
+      "name": "Vice City",
+      "type": "artist",
+      "verification_status": "pending",
+      "sources": [],
+      "appearances": [
+        "2396427804"
+      ],
+      "location": {
+        "city": "Tainan",
+        "country": "Taiwan",
+        "lat": 22.9997,
+        "lon": 120.227,
+        "precision": "city",
+        "status": "reported",
+        "sources": [
+          "https://wodjmag.com/melifera-records-presente-women-everyday-vol-2-un-ep-compilant-les-talentueuses-elisa-batti-irina-kotik-slow-dimension-vice-ciy-et-kato-de-vidts/"
+        ],
+        "checked_at": "2026-09-19",
+        "note": "2023 artist profile gives Tainan; public SoundCloud profile confirms Taiwan. City needs reconfirmation."
+      },
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/fog-france-1"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "reported",
+        "sources": [
+          "https://wodjmag.com/melifera-records-presente-women-everyday-vol-2-un-ep-compilant-les-talentueuses-elisa-batti-irina-kotik-slow-dimension-vice-ciy-et-kato-de-vidts/"
+        ],
+        "note": "2023 artist profile gives Tainan; public SoundCloud profile confirms Taiwan. City needs reconfirmation."
+      }
+    },
+    {
+      "id": "FOG France-6",
+      "name": "Jorge Fons",
+      "type": "artist",
+      "verification_status": "pending",
+      "sources": [],
+      "appearances": [
+        "2396427804"
+      ],
+      "location": {
+        "city": "Utrecht",
+        "country": "Netherlands",
+        "lat": 52.0907,
+        "lon": 5.1214,
+        "precision": "city",
+        "status": "reported",
+        "sources": [
+          "https://soundcloud.com/paradox-sotorrecords/paradox-podcast-178-jorge-fons"
+        ],
+        "checked_at": "2026-09-19",
+        "note": "2024 podcast explicitly identifies Utrecht base."
+      },
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/fog-france-1"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "reported",
+        "sources": [
+          "https://soundcloud.com/paradox-sotorrecords/paradox-podcast-178-jorge-fons"
+        ],
+        "note": "2024 podcast explicitly identifies Utrecht base."
+      }
+    },
+    {
+      "id": "FOG France-7",
+      "name": "Orbin Nun",
+      "type": "artist",
+      "verification_status": "pending",
+      "sources": [],
+      "appearances": [
+        "2396427804"
+      ],
+      "location": {
+        "city": "Tel Aviv",
+        "country": "Israel",
+        "lat": 32.0853,
+        "lon": 34.7818,
+        "precision": "city",
+        "status": "source_confirmed",
+        "sources": [
+          "https://soundcloud.com/orbinnun"
+        ],
+        "checked_at": "2026-09-19",
+        "note": ""
+      },
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/fog-france-1"
+      ],
+      "aliases": [
+        "Alpak"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "source_confirmed",
+        "sources": [
+          "https://soundcloud.com/orbinnun"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "FOG France-8",
+      "name": "Sindh",
+      "type": "artist",
+      "verification_status": "pending",
+      "sources": [],
+      "appearances": [
+        "2396427804"
+      ],
+      "location": {
+        "city": "Pernand-Vergelesses",
+        "country": "France",
+        "lat": 47.079,
+        "lon": 4.853,
+        "precision": "city",
+        "status": "reported",
+        "sources": [
+          "https://www.nachtblumen.com/features/in-conversation-with-sindh"
+        ],
+        "checked_at": "2026-09-19",
+        "note": "Artist states his working base in a 2024 interview; previous Lyon base is historical."
+      },
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/fog-france-1"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "reported",
+        "sources": [
+          "https://www.nachtblumen.com/features/in-conversation-with-sindh"
+        ],
+        "note": "Artist states his working base in a 2024 interview; previous Lyon base is historical."
+      }
+    },
+    {
+      "id": "FOG France-9",
+      "name": "Caldera",
+      "type": "artist",
+      "verification_status": "pending",
+      "sources": [],
+      "appearances": [
+        "2396427804"
+      ],
+      "location": {
+        "city": "London",
+        "country": "United Kingdom",
+        "lat": 51.5074,
+        "lon": -0.1278,
+        "precision": "city",
+        "status": "source_confirmed",
+        "sources": [
+          "https://bandcamp.com/calderamusik"
+        ],
+        "checked_at": "2026-09-19",
+        "note": "Artist account and Yoyaku identify London; alias Loop LF."
+      },
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/fog-france-1"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "source_confirmed",
+        "sources": [
+          "https://bandcamp.com/calderamusik"
+        ],
+        "note": "Artist account and Yoyaku identify London; alias Loop LF."
+      }
+    },
+    {
+      "id": "FOG France-10",
+      "name": "Uman Yazar",
+      "type": "artist",
+      "verification_status": "pending",
+      "sources": [],
+      "appearances": [
+        "2396427804"
+      ],
+      "location": null,
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/fog-france-1"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "unresolved",
+        "sources": [
+          "https://soundcloud.com/umanyazar",
+          "https://melifera-records.bandcamp.com/album/ritmo-sagrado"
+        ],
+        "note": "Artist and 2026 release checked. No city is stated; the label studio and festival locations are not a residence."
+      }
+    },
+    {
+      "id": "FOG France-11",
+      "name": "Elisa Batti",
+      "type": "artist",
+      "verification_status": "pending",
+      "sources": [],
+      "appearances": [
+        "2396427804"
+      ],
+      "location": {
+        "city": "Amsterdam",
+        "country": "Netherlands",
+        "lat": 52.3676,
+        "lon": 4.9041,
+        "precision": "city",
+        "status": "source_confirmed",
+        "sources": [
+          "https://ra.co/dj/elisabatti/biography"
+        ],
+        "checked_at": "2026-09-19",
+        "note": ""
+      },
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/fog-france-1"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "source_confirmed",
+        "sources": [
+          "https://ra.co/dj/elisabatti/biography"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "FOG Japan-0",
+      "name": "Tochigi Canopy",
+      "type": "artist",
+      "verification_status": "pending",
+      "sources": [],
+      "appearances": [
+        "2361046511"
+      ],
+      "location": {
+        "city": "City not yet verified",
+        "country": "United Kingdom",
+        "lat": 54,
+        "lon": -2,
+        "precision": "country",
+        "status": "source_confirmed",
+        "sources": [
+          "https://tochigicanopy.bandcamp.com/album/collecting-things-lp"
+        ],
+        "checked_at": "2026-09-19",
+        "note": "Artist Bandcamp profile lists UK. The Japanese project name does not establish residence in Japan."
+      },
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/fog-japan"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "source_confirmed",
+        "sources": [
+          "https://tochigicanopy.bandcamp.com/album/collecting-things-lp"
+        ],
+        "note": "Artist Bandcamp profile lists UK. The Japanese project name does not establish residence in Japan."
+      }
+    },
+    {
+      "id": "FOG Japan-1",
+      "name": "Kenji Kawai",
+      "type": "artist",
+      "verification_status": "pending",
+      "sources": [],
+      "appearances": [
+        "2361046511"
+      ],
+      "location": {
+        "city": "Tokyo",
+        "country": "Japan",
+        "lat": 35.6762,
+        "lon": 139.6503,
+        "precision": "city",
+        "status": "source_confirmed",
+        "sources": [
+          "https://www.arturia.com/stories/kenji-kawai"
+        ],
+        "checked_at": "2026-09-19",
+        "note": ""
+      },
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/fog-japan"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "source_confirmed",
+        "sources": [
+          "https://www.arturia.com/stories/kenji-kawai"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "FOG Japan-2",
+      "name": "Tasoko Daisuke",
+      "type": "artist",
+      "verification_status": "pending",
+      "sources": [],
+      "appearances": [
+        "2361046511"
+      ],
+      "location": {
+        "city": "Okinawa",
+        "country": "Japan",
+        "lat": 26.5,
+        "lon": 127.9,
+        "precision": "regional",
+        "status": "source_confirmed",
+        "sources": [
+          "https://soundcloud.com/tasoko_daisuke"
+        ],
+        "checked_at": "2026-09-19",
+        "note": "Regional marker; city not specified."
+      },
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/fog-japan"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "source_confirmed",
+        "sources": [
+          "https://soundcloud.com/tasoko_daisuke"
+        ],
+        "note": "Regional marker; city not specified."
+      }
+    },
+    {
+      "id": "FOG Japan-3",
+      "name": "Altone",
+      "type": "artist",
+      "verification_status": "pending",
+      "sources": [],
+      "appearances": [
+        "2361046511"
+      ],
+      "location": {
+        "city": "Tokyo",
+        "country": "Japan",
+        "lat": 35.6762,
+        "lon": 139.6503,
+        "precision": "city",
+        "status": "source_confirmed",
+        "sources": [
+          "https://soundcloud.com/deep-step"
+        ],
+        "checked_at": "2026-09-19",
+        "note": ""
+      },
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/fog-japan"
+      ],
+      "aliases": [
+        "Deep Step"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "source_confirmed",
+        "sources": [
+          "https://soundcloud.com/deep-step"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "FOG Japan-4",
+      "name": "CTAFAD",
+      "type": "artist",
+      "verification_status": "pending",
+      "sources": [],
+      "appearances": [
+        "2361046511"
+      ],
+      "location": {
+        "city": "Osaka",
+        "country": "Japan",
+        "lat": 34.6937,
+        "lon": 135.5023,
+        "precision": "city",
+        "status": "source_confirmed",
+        "sources": [
+          "https://soundcloud.com/ctafad"
+        ],
+        "checked_at": "2026-09-19",
+        "note": ""
+      },
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/fog-japan"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "source_confirmed",
+        "sources": [
+          "https://soundcloud.com/ctafad"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "FOG Japan-5",
+      "name": "WAV",
+      "type": "artist",
+      "verification_status": "pending",
+      "sources": [],
+      "appearances": [
+        "2361046511"
+      ],
+      "location": null,
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/fog-japan"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "unresolved",
+        "sources": [
+          "https://soundcloud.com/gilles_barberis/fog-japan"
+        ],
+        "note": "Collaboration between Wata Igarashi and Voiski, whose individual bases are Tokyo and Paris. A single shared location is not established."
+      }
+    },
+    {
+      "id": "FOG Japan-6",
+      "name": "Wata Igarashi",
+      "type": "artist",
+      "verification_status": "pending",
+      "sources": [],
+      "appearances": [
+        "2361046511"
+      ],
+      "location": {
+        "city": "Tokyo",
+        "country": "Japan",
+        "lat": 35.6762,
+        "lon": 139.6503,
+        "precision": "city",
+        "status": "source_confirmed",
+        "sources": [
+          "https://soundcloud.com/wata"
+        ],
+        "checked_at": "2026-09-19",
+        "note": ""
+      },
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/fog-japan"
+      ],
+      "aliases": [
+        "Wata"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "source_confirmed",
+        "sources": [
+          "https://soundcloud.com/wata"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "FOG Japan-7",
+      "name": "Voiski",
+      "type": "artist",
+      "verification_status": "pending",
+      "sources": [],
+      "appearances": [
+        "2361046511"
+      ],
+      "location": {
+        "city": "Paris",
+        "country": "France",
+        "lat": 48.8566,
+        "lon": 2.3522,
+        "precision": "city",
+        "status": "source_confirmed",
+        "sources": [
+          "https://voiski.bandcamp.com/"
+        ],
+        "checked_at": "2026-09-19"
+      },
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/fog-japan"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "source_confirmed",
+        "sources": [
+          "https://voiski.bandcamp.com/"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "FOG Japan-8",
+      "name": "Iori",
+      "type": "artist",
+      "verification_status": "pending",
+      "sources": [],
+      "appearances": [
+        "2361046511"
+      ],
+      "location": {
+        "city": "Tokyo",
+        "country": "Japan",
+        "lat": 35.6762,
+        "lon": 139.6503,
+        "precision": "city",
+        "status": "source_confirmed",
+        "sources": [
+          "https://ra.co/dj/iori"
+        ],
+        "checked_at": "2026-09-19",
+        "note": "Profile explicitly distinguishes Okinawa origin from Tokyo base."
+      },
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/fog-japan"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "source_confirmed",
+        "sources": [
+          "https://ra.co/dj/iori"
+        ],
+        "note": "Profile explicitly distinguishes Okinawa origin from Tokyo base."
+      }
+    },
+    {
+      "id": "FOG Japan-9",
+      "name": "Hironori Takahashi",
+      "type": "artist",
+      "verification_status": "pending",
+      "sources": [],
+      "appearances": [
+        "2361046511"
+      ],
+      "location": {
+        "city": "Tokyo",
+        "country": "Japan",
+        "lat": 35.6762,
+        "lon": 139.6503,
+        "precision": "city",
+        "status": "reported",
+        "sources": [
+          "https://ra.co/dj/hironoritakahashi/biography"
+        ],
+        "checked_at": "2026-09-19",
+        "note": "Biography states working in Tokyo; grew up in Morioka."
+      },
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/fog-japan"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "reported",
+        "sources": [
+          "https://ra.co/dj/hironoritakahashi/biography"
+        ],
+        "note": "Biography states working in Tokyo; grew up in Morioka."
+      }
+    },
+    {
+      "id": "FOG Japan-10",
+      "name": "So Oishi",
+      "type": "artist",
+      "verification_status": "pending",
+      "sources": [],
+      "appearances": [
+        "2361046511"
+      ],
+      "location": {
+        "city": "Tokyo",
+        "country": "Japan",
+        "lat": 35.6762,
+        "lon": 139.6503,
+        "precision": "city",
+        "status": "source_confirmed",
+        "sources": [
+          "https://soundcloud.com/sooishi"
+        ],
+        "checked_at": "2026-09-19",
+        "note": ""
+      },
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/fog-japan"
+      ],
+      "aliases": [
+        "S.O.Oishi"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "source_confirmed",
+        "sources": [
+          "https://soundcloud.com/sooishi"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "FOG Japan-11",
+      "name": "Herbalistek",
+      "type": "artist",
+      "verification_status": "pending",
+      "sources": [],
+      "appearances": [
+        "2361046511"
+      ],
+      "location": {
+        "city": "Tokyo",
+        "country": "Japan",
+        "lat": 35.6762,
+        "lon": 139.6503,
+        "precision": "city",
+        "status": "source_confirmed",
+        "sources": [
+          "https://www.deltacommit.com/"
+        ],
+        "checked_at": "2026-09-19",
+        "note": "Current artist agency biography."
+      },
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/fog-japan"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "source_confirmed",
+        "sources": [
+          "https://www.deltacommit.com/"
+        ],
+        "note": "Current artist agency biography."
+      }
+    },
+    {
+      "id": "FOG Japan-12",
+      "name": "Susumu Yokota",
+      "type": "artist",
+      "verification_status": "pending",
+      "sources": [],
+      "appearances": [
+        "2361046511",
+        "2395019760"
+      ],
+      "location": null,
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/fog-japan",
+        "https://soundcloud.com/gilles_barberis/fog-japan-invites-yoichiro"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "unresolved",
+        "sources": [
+          "https://www.theleaflabel.com/susumu-yokota-rip/",
+          "https://www.susumuyokota.com/"
+        ],
+        "note": "Yokota died in 2015. A historical working-base record is needed; no current residence is assigned."
+      }
+    },
+    {
+      "id": "FOG Japan-13",
+      "name": "Sabi",
+      "type": "artist",
+      "verification_status": "pending",
+      "sources": [],
+      "appearances": [
+        "2395019760"
+      ],
+      "location": {
+        "city": "City not yet verified",
+        "country": "Japan",
+        "lat": 36,
+        "lon": 138,
+        "precision": "country",
+        "status": "reported",
+        "sources": [
+          "https://jp.linkedin.com/in/taropeterlittle",
+          "https://merckrecords.bandcamp.com/album/aurora-2",
+          "https://merckrecords.bandcamp.com/track/colourblind"
+        ],
+        "checked_at": "2026-09-19",
+        "note": "Uki Reflection is the Merck artist Sabi (Taro Peter Little). Public professional profile lists Japan. The sabi_records tag in the episode refers to a different label; its Tokyo location is not used."
+      },
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/fog-japan-invites-yoichiro"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "reported",
+        "sources": [
+          "https://jp.linkedin.com/in/taropeterlittle",
+          "https://merckrecords.bandcamp.com/album/aurora-2",
+          "https://merckrecords.bandcamp.com/track/colourblind"
+        ],
+        "note": "Uki Reflection is the Merck artist Sabi (Taro Peter Little). Public professional profile lists Japan. The sabi_records tag in the episode refers to a different label; its Tokyo location is not used."
+      }
+    },
+    {
+      "id": "FOG Japan-14",
+      "name": "Yu Su",
+      "type": "artist",
+      "verification_status": "pending",
+      "sources": [],
+      "appearances": [
+        "2395019760"
+      ],
+      "location": {
+        "city": "London",
+        "country": "United Kingdom",
+        "lat": 51.5074,
+        "lon": -0.1278,
+        "precision": "city",
+        "status": "source_confirmed",
+        "sources": [
+          "https://yusu.bandcamp.com/music"
+        ],
+        "checked_at": "2026-09-19",
+        "note": "Current artist profile says London; supersedes older Vancouver biographies."
+      },
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/fog-japan-invites-yoichiro"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "source_confirmed",
+        "sources": [
+          "https://yusu.bandcamp.com/music"
+        ],
+        "note": "Current artist profile says London; supersedes older Vancouver biographies."
+      }
+    },
+    {
+      "id": "FOG Japan-15",
+      "name": "Scott Gailey",
+      "type": "artist",
+      "verification_status": "pending",
+      "sources": [],
+      "appearances": [
+        "2395019760"
+      ],
+      "location": {
+        "city": "Vancouver",
+        "country": "Canada",
+        "lat": 49.2827,
+        "lon": -123.1207,
+        "precision": "city",
+        "status": "source_confirmed",
+        "sources": [
+          "https://clanofthepaintedlady.com/credits-1"
+        ],
+        "checked_at": "2026-09-19",
+        "note": ""
+      },
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/fog-japan-invites-yoichiro"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "source_confirmed",
+        "sources": [
+          "https://clanofthepaintedlady.com/credits-1"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "FOG Japan-16",
+      "name": "Asuna & Opitope",
+      "type": "artist",
+      "verification_status": "pending",
+      "sources": [],
+      "appearances": [
+        "2395019760"
+      ],
+      "location": null,
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/fog-japan-invites-yoichiro"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "unresolved",
+        "sources": [
+          "https://chiheihatakeyama.bandcamp.com/album/the-crepuscular-grove"
+        ],
+        "note": "ASUNA is described as based in Kanazawa. Opitope is a separate duo; the collaboration is not assigned solely to ASUNA’s city."
+      }
+    },
+    {
+      "id": "FOG Japan-17",
+      "name": "Total Blue",
+      "type": "artist",
+      "verification_status": "pending",
+      "sources": [],
+      "appearances": [
+        "2395019760"
+      ],
+      "location": {
+        "city": "Los Angeles",
+        "country": "United States",
+        "lat": 34.0522,
+        "lon": -118.2437,
+        "precision": "city",
+        "status": "source_confirmed",
+        "sources": [
+          "https://www.musicfrommemory.com/release.php?release_id=8852"
+        ],
+        "checked_at": "2026-09-19",
+        "note": ""
+      },
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/fog-japan-invites-yoichiro"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "source_confirmed",
+        "sources": [
+          "https://www.musicfrommemory.com/release.php?release_id=8852"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "FOG Japan-18",
+      "name": "Toshifumi Hinata",
+      "type": "artist",
+      "verification_status": "pending",
+      "sources": [],
+      "appearances": [
+        "2395019760"
+      ],
+      "location": null,
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/fog-japan-invites-yoichiro"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "unresolved",
+        "sources": [
+          "https://toshifumihinata.com/timeline/",
+          "https://toshifumihinata.com/about/"
+        ],
+        "note": "Official timeline identifies Tokyo birth and earlier work in Minnesota, but no current working base. Those historical places are not treated as current."
+      }
+    },
+    {
+      "id": "FOG Japan-19",
+      "name": "Haruomi Hosono",
+      "type": "artist",
+      "verification_status": "pending",
+      "sources": [],
+      "appearances": [
+        "2395019760"
+      ],
+      "location": null,
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/fog-japan-invites-yoichiro"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "unresolved",
+        "sources": [
+          "https://mikenogami.com/"
+        ],
+        "note": "Public recording history establishes Tokyo sessions, not a current working base. Contemporary studio confirmation is still needed."
+      }
+    },
+    {
+      "id": "FOG Japan-20",
+      "name": "Inoue Kaoru",
+      "type": "artist",
+      "verification_status": "pending",
+      "sources": [],
+      "appearances": [
+        "2395019760"
+      ],
+      "location": {
+        "city": "Tokyo",
+        "country": "Japan",
+        "lat": 35.6762,
+        "lon": 139.6503,
+        "precision": "city",
+        "status": "source_confirmed",
+        "sources": [
+          "https://seedsandground.bandcamp.com/album/sacred-days"
+        ],
+        "checked_at": "2026-09-19",
+        "note": "Artist-run label biography explicitly identifies Kaoru Inoue as based in Tokyo."
+      },
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/fog-japan-invites-yoichiro"
+      ],
+      "aliases": [
+        "Kaoru Inoue",
+        "Chari Chari"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "source_confirmed",
+        "sources": [
+          "https://seedsandground.bandcamp.com/album/sacred-days"
+        ],
+        "note": "Artist-run label biography explicitly identifies Kaoru Inoue as based in Tokyo."
+      }
+    },
+    {
+      "id": "FOG Japan-21",
+      "name": "Aki Fukakusa",
+      "type": "artist",
+      "verification_status": "pending",
+      "sources": [],
+      "appearances": [
+        "2395019760"
+      ],
+      "location": null,
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/fog-japan-invites-yoichiro"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "unresolved",
+        "sources": [
+          "https://akifukakusa.jp/discographynew/wpage/profile.html",
+          "https://akifukakusa.jp/"
+        ],
+        "note": "Official biography gives Aichi origin and career history; no current working city is stated."
+      }
+    },
+    {
+      "id": "FOG Japan-22",
+      "name": "Huerco S.",
+      "type": "artist",
+      "verification_status": "pending",
+      "sources": [],
+      "appearances": [
+        "2395019760"
+      ],
+      "location": {
+        "city": "Brooklyn, New York",
+        "country": "United States",
+        "lat": 40.6782,
+        "lon": -73.9442,
+        "precision": "city",
+        "status": "reported",
+        "sources": [
+          "https://www.meakusma-festival.be/artist/huerco-s/"
+        ],
+        "checked_at": "2026-09-19",
+        "note": "Festival biography states Brooklyn, corroborated by NTS. Biography date is unclear; current base needs reconfirmation."
+      },
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/fog-japan-invites-yoichiro"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "reported",
+        "sources": [
+          "https://www.meakusma-festival.be/artist/huerco-s/"
+        ],
+        "note": "Festival biography states Brooklyn, corroborated by NTS. Biography date is unclear; current base needs reconfirmation."
+      }
+    },
+    {
+      "id": "recy",
+      "name": "Recy",
+      "type": "artist",
+      "location": {
+        "city": "Seoul",
+        "country": "South Korea",
+        "lat": 37.5665,
+        "lon": 126.978,
+        "precision": "city",
+        "status": "source_confirmed",
+        "sources": [
+          "https://soundcloud.com/gilles_barberis/recy-x-fog-korea"
+        ],
+        "checked_at": "2026-09-19"
+      },
+      "appearances": [
+        "2374091774"
+      ],
+      "verification_status": "pending",
+      "sources": [],
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/recy-x-fog-korea"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "source_confirmed",
+        "sources": [
+          "https://soundcloud.com/gilles_barberis/recy-x-fog-korea"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "material-things",
+      "name": "Material Things",
+      "type": "artist",
+      "location": null,
+      "appearances": [
+        "2374091774"
+      ],
+      "verification_status": "pending",
+      "sources": [],
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/recy-x-fog-korea"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "unresolved",
+        "sources": [
+          "https://12thisle.bandcamp.com/album/rain-cymbals",
+          "https://12thisle.bandcamp.com/album/2015-2020"
+        ],
+        "note": "Identity verified as Stewart Brown. Glasgow is the label location; London explicitly describes collaborator Pike, not Material Things."
+      }
+    },
+    {
+      "id": "pike",
+      "name": "Pike",
+      "type": "artist",
+      "location": {
+        "city": "London",
+        "country": "United Kingdom",
+        "lat": 51.5074,
+        "lon": -0.1278,
+        "precision": "city",
+        "status": "source_confirmed",
+        "sources": [
+          "https://12thisle.bandcamp.com/album/rain-cymbals"
+        ],
+        "checked_at": "2026-09-19",
+        "note": "2025 release identifies the collaborator as London-based percussionist Pike."
+      },
+      "appearances": [
+        "2374091774"
+      ],
+      "verification_status": "pending",
+      "sources": [],
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/recy-x-fog-korea"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "source_confirmed",
+        "sources": [
+          "https://12thisle.bandcamp.com/album/rain-cymbals"
+        ],
+        "note": "2025 release identifies the collaborator as London-based percussionist Pike."
+      }
+    },
+    {
+      "id": "intertoto",
+      "name": "Intertoto",
+      "type": "artist",
+      "location": {
+        "city": "London",
+        "country": "United Kingdom",
+        "lat": 51.5074,
+        "lon": -0.1278,
+        "precision": "city",
+        "status": "source_confirmed",
+        "sources": [
+          "https://ra.co/dj/intertoto"
+        ],
+        "checked_at": "2026-09-19",
+        "note": ""
+      },
+      "appearances": [
+        "2374091774"
+      ],
+      "verification_status": "pending",
+      "sources": [],
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/recy-x-fog-korea"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "source_confirmed",
+        "sources": [
+          "https://ra.co/dj/intertoto"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "elle",
+      "name": "Elle",
+      "type": "artist",
+      "location": {
+        "city": "Milan",
+        "country": "Italy",
+        "lat": 45.4642,
+        "lon": 9.19,
+        "precision": "city",
+        "status": "reported",
+        "sources": [
+          "https://oslated.bandcamp.com/album/tutto-tutto-osl009"
+        ],
+        "checked_at": "2026-09-19",
+        "note": "2019 release explicitly identifies Elle in Milan; current base needs reconfirmation."
+      },
+      "appearances": [
+        "2374091774"
+      ],
+      "verification_status": "pending",
+      "sources": [],
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/recy-x-fog-korea"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "reported",
+        "sources": [
+          "https://oslated.bandcamp.com/album/tutto-tutto-osl009"
+        ],
+        "note": "2019 release explicitly identifies Elle in Milan; current base needs reconfirmation."
+      }
+    },
+    {
+      "id": "mown",
+      "name": "Mown",
+      "type": "artist",
+      "location": {
+        "city": "French Alps",
+        "country": "France",
+        "lat": 45.5,
+        "lon": 6.4,
+        "precision": "regional",
+        "status": "source_confirmed",
+        "sources": [
+          "https://soundcloud.com/mownofficial"
+        ],
+        "checked_at": "2026-09-19",
+        "note": "Regional marker. Artist deliberately gives only the French Alps."
+      },
+      "appearances": [
+        "2374091774"
+      ],
+      "verification_status": "pending",
+      "sources": [],
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/recy-x-fog-korea"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "source_confirmed",
+        "sources": [
+          "https://soundcloud.com/mownofficial"
+        ],
+        "note": "Regional marker. Artist deliberately gives only the French Alps."
+      }
+    },
+    {
+      "id": "marco-shuttle",
+      "name": "Marco Shuttle",
+      "type": "artist",
+      "location": {
+        "city": "Berlin",
+        "country": "Germany",
+        "lat": 52.52,
+        "lon": 13.405,
+        "precision": "city",
+        "status": "source_confirmed",
+        "sources": [
+          "https://www.the-airhouse.com/soop-1/marco-shuttle"
+        ],
+        "checked_at": "2026-09-19",
+        "note": ""
+      },
+      "appearances": [
+        "2374091774"
+      ],
+      "verification_status": "pending",
+      "sources": [],
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/recy-x-fog-korea"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "source_confirmed",
+        "sources": [
+          "https://www.the-airhouse.com/soop-1/marco-shuttle"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "robert-istoc",
+      "name": "Robert Istoc",
+      "type": "artist",
+      "location": {
+        "city": "Bucharest",
+        "country": "Romania",
+        "lat": 44.4268,
+        "lon": 26.1025,
+        "precision": "city",
+        "status": "source_confirmed",
+        "sources": [
+          "https://phtm.bandcamp.com/album/robert-istoc-roadtrips-lp-incl-tommy-lewis-remix"
+        ],
+        "checked_at": "2026-09-19",
+        "note": ""
+      },
+      "appearances": [
+        "2374091774"
+      ],
+      "verification_status": "pending",
+      "sources": [],
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/recy-x-fog-korea"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "source_confirmed",
+        "sources": [
+          "https://phtm.bandcamp.com/album/robert-istoc-roadtrips-lp-incl-tommy-lewis-remix"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "adam-pits",
+      "name": "Adam Pits",
+      "type": "artist",
+      "location": {
+        "city": "London",
+        "country": "United Kingdom",
+        "lat": 51.5074,
+        "lon": -0.1278,
+        "precision": "city",
+        "status": "source_confirmed",
+        "sources": [
+          "https://soundcloud.com/adampits"
+        ],
+        "checked_at": "2026-09-19",
+        "note": ""
+      },
+      "appearances": [
+        "2374091774"
+      ],
+      "verification_status": "pending",
+      "sources": [],
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/recy-x-fog-korea"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "source_confirmed",
+        "sources": [
+          "https://soundcloud.com/adampits"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "dj-fix1",
+      "name": "djfix",
+      "type": "artist",
+      "location": {
+        "city": "Brooklyn, New York",
+        "country": "United States",
+        "lat": 40.6782,
+        "lon": -73.9442,
+        "precision": "city",
+        "status": "source_confirmed",
+        "sources": [
+          "https://soundcloud.com/purespacefm/ps-op001"
+        ],
+        "checked_at": "2026-09-19",
+        "note": ""
+      },
+      "appearances": [
+        "2374091774"
+      ],
+      "verification_status": "pending",
+      "sources": [],
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/recy-x-fog-korea"
+      ],
+      "aliases": [
+        "dj-fix1"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "source_confirmed",
+        "sources": [
+          "https://soundcloud.com/purespacefm/ps-op001"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "earthdog-jek",
+      "name": "Jek",
+      "type": "artist",
+      "location": {
+        "city": "Brooklyn, New York",
+        "country": "United States",
+        "lat": 40.6782,
+        "lon": -73.9442,
+        "precision": "city",
+        "status": "source_confirmed",
+        "sources": [
+          "https://soundcloud.com/purespacefm/ps-op001"
+        ],
+        "checked_at": "2026-09-19",
+        "note": ""
+      },
+      "appearances": [
+        "2374091774"
+      ],
+      "verification_status": "pending",
+      "sources": [],
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/recy-x-fog-korea"
+      ],
+      "aliases": [
+        "earthdog_jek"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "source_confirmed",
+        "sources": [
+          "https://soundcloud.com/purespacefm/ps-op001"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "human-space-machine",
+      "name": "Human Space Machine",
+      "type": "artist",
+      "location": {
+        "city": "Amsterdam",
+        "country": "Netherlands",
+        "lat": 52.3676,
+        "lon": 4.9041,
+        "precision": "city",
+        "status": "source_confirmed",
+        "sources": [
+          "https://humanspacemachine.bandcamp.com/album/nowhere01-substance"
+        ],
+        "checked_at": "2026-09-19",
+        "note": "Artist Bandcamp profile lists Amsterdam."
+      },
+      "appearances": [
+        "2374091774"
+      ],
+      "verification_status": "pending",
+      "sources": [],
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/recy-x-fog-korea"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "source_confirmed",
+        "sources": [
+          "https://humanspacemachine.bandcamp.com/album/nowhere01-substance"
+        ],
+        "note": "Artist Bandcamp profile lists Amsterdam."
+      }
+    },
+    {
+      "id": "solarythm",
+      "name": "Solarythm",
+      "type": "artist",
+      "location": {
+        "city": "Nantes",
+        "country": "France",
+        "lat": 47.2184,
+        "lon": -1.5536,
+        "precision": "city",
+        "status": "source_confirmed",
+        "sources": [
+          "https://soundcloud.com/deep-space-series/dss-099-solarythm"
+        ],
+        "checked_at": "2026-09-19",
+        "note": ""
+      },
+      "appearances": [
+        "2374091774"
+      ],
+      "verification_status": "pending",
+      "sources": [],
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/recy-x-fog-korea"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "source_confirmed",
+        "sources": [
+          "https://soundcloud.com/deep-space-series/dss-099-solarythm"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "klara-vedis",
+      "name": "Klara Vedis",
+      "type": "artist",
+      "location": {
+        "city": "Skopje",
+        "country": "North Macedonia",
+        "lat": 41.9981,
+        "lon": 21.4254,
+        "precision": "city",
+        "status": "source_confirmed",
+        "sources": [
+          "https://soundcloud.com/klara_vedis"
+        ],
+        "checked_at": "2026-09-19",
+        "note": ""
+      },
+      "appearances": [
+        "2374091774"
+      ],
+      "verification_status": "pending",
+      "sources": [],
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/recy-x-fog-korea"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "source_confirmed",
+        "sources": [
+          "https://soundcloud.com/klara_vedis"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "dagger",
+      "name": "Dåggěr",
+      "type": "artist",
+      "location": null,
+      "appearances": [
+        "2374091774"
+      ],
+      "verification_status": "pending",
+      "sources": [],
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/recy-x-fog-korea"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "unresolved",
+        "sources": [
+          "https://qeone.bandcamp.com/album/dawn-chorus",
+          "https://soundcloud.com/dagger_1"
+        ],
+        "note": "Label biography establishes Pereira origin, not current residence. Artist SoundCloud could not be retrieved; Munich is the label location."
+      }
+    },
+    {
+      "id": "john-plaza",
+      "name": "John Plaza",
+      "type": "artist",
+      "location": {
+        "city": "Barcelona",
+        "country": "Spain",
+        "lat": 41.3874,
+        "lon": 2.1686,
+        "precision": "city",
+        "status": "source_confirmed",
+        "sources": [
+          "https://soundcloud.com/johnplazamusic"
+        ],
+        "checked_at": "2026-09-19",
+        "note": ""
+      },
+      "appearances": [
+        "2374091774"
+      ],
+      "verification_status": "pending",
+      "sources": [],
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/recy-x-fog-korea"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "source_confirmed",
+        "sources": [
+          "https://soundcloud.com/johnplazamusic"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "batu",
+      "name": "Batu",
+      "type": "artist",
+      "location": {
+        "city": "Bristol",
+        "country": "United Kingdom",
+        "lat": 51.4545,
+        "lon": -2.5879,
+        "precision": "city",
+        "status": "source_confirmed",
+        "sources": [
+          "https://soundcloud.com/batuuk"
+        ],
+        "checked_at": "2026-09-19",
+        "note": ""
+      },
+      "appearances": [
+        "2374091774"
+      ],
+      "verification_status": "pending",
+      "sources": [],
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/recy-x-fog-korea"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "source_confirmed",
+        "sources": [
+          "https://soundcloud.com/batuuk"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "donato-dozzy",
+      "name": "Donato Dozzy",
+      "type": "artist",
+      "location": {
+        "city": "Rome",
+        "country": "Italy",
+        "lat": 41.9028,
+        "lon": 12.4964,
+        "precision": "city",
+        "status": "reported",
+        "sources": [
+          "https://www.villalontana.it/donatodozzysynthi/"
+        ],
+        "checked_at": "2026-09-19",
+        "note": "Performance presenter describes the artist as Rome-based."
+      },
+      "appearances": [
+        "2374091774"
+      ],
+      "verification_status": "pending",
+      "sources": [],
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/recy-x-fog-korea"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "reported",
+        "sources": [
+          "https://www.villalontana.it/donatodozzysynthi/"
+        ],
+        "note": "Performance presenter describes the artist as Rome-based."
+      }
+    },
+    {
+      "id": "shoal",
+      "name": "Shoal",
+      "type": "artist",
+      "location": {
+        "city": "Utrecht",
+        "country": "Netherlands",
+        "lat": 52.0907,
+        "lon": 5.1214,
+        "precision": "city",
+        "status": "source_confirmed",
+        "sources": [
+          "https://harmonyrec.com/Artists-Shoal"
+        ],
+        "checked_at": "2026-09-19",
+        "note": ""
+      },
+      "appearances": [
+        "2374091774"
+      ],
+      "verification_status": "pending",
+      "sources": [],
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/recy-x-fog-korea"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "source_confirmed",
+        "sources": [
+          "https://harmonyrec.com/Artists-Shoal"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "priori",
+      "name": "Priori",
+      "type": "artist",
+      "location": {
+        "city": "Montreal",
+        "country": "Canada",
+        "lat": 45.5019,
+        "lon": -73.5674,
+        "precision": "city",
+        "status": "source_confirmed",
+        "sources": [
+          "https://soundcloud.com/priori-ties"
+        ],
+        "checked_at": "2026-09-19",
+        "note": ""
+      },
+      "appearances": [
+        "2374091774"
+      ],
+      "verification_status": "pending",
+      "sources": [],
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/recy-x-fog-korea"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "source_confirmed",
+        "sources": [
+          "https://soundcloud.com/priori-ties"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "sansibar",
+      "name": "Sansibar",
+      "type": "artist",
+      "location": {
+        "city": "Helsinki",
+        "country": "Finland",
+        "lat": 60.1699,
+        "lon": 24.9384,
+        "precision": "city",
+        "status": "reported",
+        "sources": [
+          "https://strumandiodine.com/artist/sansibar/"
+        ],
+        "checked_at": "2026-09-19",
+        "note": "Presenter biography explicitly identifies Helsinki-based Sunny Seppä."
+      },
+      "appearances": [
+        "2374091774"
+      ],
+      "verification_status": "pending",
+      "sources": [],
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/recy-x-fog-korea"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "reported",
+        "sources": [
+          "https://strumandiodine.com/artist/sansibar/"
+        ],
+        "note": "Presenter biography explicitly identifies Helsinki-based Sunny Seppä."
+      }
+    },
+    {
+      "id": "temple-rat",
+      "name": "Temple Rat",
+      "type": "artist",
+      "location": {
+        "city": "Berlin",
+        "country": "Germany",
+        "lat": 52.52,
+        "lon": 13.405,
+        "precision": "city",
+        "status": "source_confirmed",
+        "sources": [
+          "https://ra.co/dj/templerat",
+          "https://www.templerat.me/studio"
+        ],
+        "checked_at": "2026-09-19",
+        "note": "Current artist profile identifies Berlin. Artist studio operates in both Berlin and Shanghai."
+      },
+      "appearances": [
+        "2374091774"
+      ],
+      "verification_status": "pending",
+      "sources": [],
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/recy-x-fog-korea"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "source_confirmed",
+        "sources": [
+          "https://ra.co/dj/templerat",
+          "https://www.templerat.me/studio"
+        ],
+        "note": "Current artist profile identifies Berlin. Artist studio operates in both Berlin and Shanghai."
+      }
+    },
+    {
+      "id": "shft",
+      "name": "SHFT",
+      "type": "artist",
+      "location": {
+        "city": "New Delhi",
+        "country": "India",
+        "lat": 28.6139,
+        "lon": 77.209,
+        "precision": "city",
+        "status": "source_confirmed",
+        "sources": [
+          "https://ra.co/dj/shft/biography"
+        ],
+        "checked_at": "2026-09-19",
+        "note": ""
+      },
+      "appearances": [
+        "2374091774"
+      ],
+      "verification_status": "pending",
+      "sources": [],
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/recy-x-fog-korea"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "source_confirmed",
+        "sources": [
+          "https://ra.co/dj/shft/biography"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "lyder",
+      "name": "Lyder",
+      "type": "artist",
+      "location": {
+        "city": "Munich",
+        "country": "Germany",
+        "lat": 48.1351,
+        "lon": 11.582,
+        "precision": "city",
+        "status": "source_confirmed",
+        "sources": [
+          "https://soundcloud.com/lyderlyderlyder"
+        ],
+        "checked_at": "2026-09-19",
+        "note": ""
+      },
+      "appearances": [
+        "2374091774"
+      ],
+      "verification_status": "pending",
+      "sources": [],
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/recy-x-fog-korea"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "source_confirmed",
+        "sources": [
+          "https://soundcloud.com/lyderlyderlyder"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "yingtuitive",
+      "name": "Yingtuitive",
+      "type": "artist",
+      "location": null,
+      "appearances": [
+        "2374091774"
+      ],
+      "verification_status": "pending",
+      "sources": [],
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/recy-x-fog-korea"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "unresolved",
+        "sources": [
+          "https://soundcloud.com/yingtuitive"
+        ],
+        "note": "Artist explicitly lists London / Singapore. Both bases are preserved here; a single primary point would be arbitrary.",
+        "declared_bases": [
+          {
+            "city": "London",
+            "country": "United Kingdom"
+          },
+          {
+            "city": "Singapore",
+            "country": "Singapore"
+          }
+        ]
+      }
+    },
+    {
+      "id": "brendon-moeller",
+      "name": "Brendon Moeller",
+      "type": "artist",
+      "location": {
+        "city": "Patterson, New York",
+        "country": "United States",
+        "lat": 41.5137,
+        "lon": -73.6062,
+        "precision": "city",
+        "status": "reported",
+        "sources": [
+          "https://www.linkedin.com/in/brendonmoeller"
+        ],
+        "checked_at": "2026-09-19",
+        "note": "Public professional profile identifies Patterson; city-level mapping only. Artist Bandcamp uses broader New York."
+      },
+      "appearances": [
+        "2361046511"
+      ],
+      "verification_status": "pending",
+      "sources": [],
+      "appearance_sources": [
+        "https://soundcloud.com/gilles_barberis/fog-japan"
+      ],
+      "geography_research": {
+        "checked_at": "2026-09-19",
+        "status": "reported",
+        "sources": [
+          "https://www.linkedin.com/in/brendonmoeller"
+        ],
+        "note": "Public professional profile identifies Patterson; city-level mapping only. Artist Bandcamp uses broader New York."
+      }
+    }
+  ],
+  "relations": [
+    {
+      "source": "eafhm",
+      "target": "st",
+      "kind": "founder_of",
+      "verification_status": "provided_unverified",
+      "sources": []
+    },
+    {
+      "source": "nawl",
+      "target": "melifera",
+      "kind": "released_on",
+      "verification_status": "provided_unverified",
+      "sources": []
+    },
+    {
+      "source": "nawl",
+      "target": "vallee",
+      "kind": "festival_context",
+      "verification_status": "provided_unverified",
+      "sources": []
+    },
+    {
+      "source": "FOG Mexico-0",
+      "target": "st",
+      "kind": "released_on",
+      "verification_status": "provided_unverified",
+      "sources": []
+    },
+    {
+      "source": "FOG Mexico-1",
+      "target": "st",
+      "kind": "released_on",
+      "verification_status": "provided_unverified",
+      "sources": []
+    },
+    {
+      "source": "FOG Mexico-2",
+      "target": "st",
+      "kind": "released_on",
+      "verification_status": "provided_unverified",
+      "sources": []
+    },
+    {
+      "source": "FOG Mexico-3",
+      "target": "st",
+      "kind": "released_on",
+      "verification_status": "provided_unverified",
+      "sources": []
+    },
+    {
+      "source": "FOG Mexico-4",
+      "target": "st",
+      "kind": "released_on",
+      "verification_status": "provided_unverified",
+      "sources": []
+    },
+    {
+      "source": "FOG Mexico-5",
+      "target": "st",
+      "kind": "released_on",
+      "verification_status": "provided_unverified",
+      "sources": []
+    },
+    {
+      "source": "FOG Mexico-6",
+      "target": "st",
+      "kind": "released_on",
+      "verification_status": "provided_unverified",
+      "sources": []
+    },
+    {
+      "source": "FOG Mexico-7",
+      "target": "st",
+      "kind": "released_on",
+      "verification_status": "provided_unverified",
+      "sources": []
+    },
+    {
+      "source": "FOG Mexico-8",
+      "target": "st",
+      "kind": "released_on",
+      "verification_status": "provided_unverified",
+      "sources": []
+    },
+    {
+      "source": "FOG Mexico-9",
+      "target": "st",
+      "kind": "released_on",
+      "verification_status": "provided_unverified",
+      "sources": []
+    },
+    {
+      "source": "FOG Mexico-10",
+      "target": "st",
+      "kind": "released_on",
+      "verification_status": "provided_unverified",
+      "sources": []
+    },
+    {
+      "source": "FOG Mexico-11",
+      "target": "st",
+      "kind": "released_on",
+      "verification_status": "provided_unverified",
+      "sources": []
+    },
+    {
+      "source": "FOG Mexico-12",
+      "target": "st",
+      "kind": "released_on",
+      "verification_status": "provided_unverified",
+      "sources": []
+    },
+    {
+      "source": "FOG Mexico-13",
+      "target": "st",
+      "kind": "released_on",
+      "verification_status": "provided_unverified",
+      "sources": []
+    },
+    {
+      "source": "FOG France-0",
+      "target": "melifera",
+      "kind": "released_on",
+      "verification_status": "provided_unverified",
+      "sources": []
+    },
+    {
+      "source": "FOG France-1",
+      "target": "melifera",
+      "kind": "released_on",
+      "verification_status": "provided_unverified",
+      "sources": []
+    },
+    {
+      "source": "FOG France-2",
+      "target": "melifera",
+      "kind": "released_on",
+      "verification_status": "provided_unverified",
+      "sources": []
+    },
+    {
+      "source": "FOG France-3",
+      "target": "melifera",
+      "kind": "released_on",
+      "verification_status": "provided_unverified",
+      "sources": []
+    },
+    {
+      "source": "FOG France-4",
+      "target": "melifera",
+      "kind": "released_on",
+      "verification_status": "provided_unverified",
+      "sources": []
+    },
+    {
+      "source": "FOG France-5",
+      "target": "melifera",
+      "kind": "released_on",
+      "verification_status": "provided_unverified",
+      "sources": []
+    },
+    {
+      "source": "FOG France-6",
+      "target": "melifera",
+      "kind": "released_on",
+      "verification_status": "provided_unverified",
+      "sources": []
+    },
+    {
+      "source": "FOG France-7",
+      "target": "melifera",
+      "kind": "released_on",
+      "verification_status": "provided_unverified",
+      "sources": []
+    },
+    {
+      "source": "FOG France-8",
+      "target": "melifera",
+      "kind": "released_on",
+      "verification_status": "provided_unverified",
+      "sources": []
+    },
+    {
+      "source": "FOG France-9",
+      "target": "melifera",
+      "kind": "released_on",
+      "verification_status": "provided_unverified",
+      "sources": []
+    },
+    {
+      "source": "FOG France-10",
+      "target": "melifera",
+      "kind": "released_on",
+      "verification_status": "provided_unverified",
+      "sources": []
+    },
+    {
+      "source": "FOG France-11",
+      "target": "melifera",
+      "kind": "released_on",
+      "verification_status": "provided_unverified",
+      "sources": []
+    },
+    {
+      "source": "FOG Japan-4",
+      "target": "melifera",
+      "kind": "released_on",
+      "verification_status": "source_confirmed",
+      "sources": [
+        "https://soundcloud.com/gilles_barberis/fog-japan"
+      ]
+    },
+    {
+      "source": "FOG Japan-4",
+      "target": "oslated",
+      "kind": "released_on",
+      "verification_status": "source_confirmed",
+      "sources": [
+        "https://soundcloud.com/gilles_barberis/fog-japan"
+      ]
+    },
+    {
+      "source": "FOG Mexico-6",
+      "target": "oslated",
+      "kind": "released_on",
+      "verification_status": "source_confirmed",
+      "sources": [
+        "https://soundcloud.com/gilles_barberis/fog-korea"
+      ]
+    },
+    {
+      "source": "FOG Mexico-9",
+      "target": "oslated",
+      "kind": "released_on",
+      "verification_status": "source_confirmed",
+      "sources": [
+        "https://soundcloud.com/gilles_barberis/fog-korea"
+      ]
+    },
+    {
+      "source": "FOG Korea-7",
+      "target": "oslated",
+      "kind": "released_on",
+      "verification_status": "source_confirmed",
+      "sources": [
+        "https://soundcloud.com/gilles_barberis/fog-korea"
+      ]
+    }
+  ]
+}

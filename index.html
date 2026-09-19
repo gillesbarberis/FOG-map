@@ -1,10 +1,64 @@
 <!doctype html>
-<html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#020406"><title>FOG — Musical geography</title><link rel="stylesheet" href="style.css"></head>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#020406"><meta name="description" content="FOG — Gilles Barberis. Musical geography, collaborative music and spatial practice."><title>FOG — Atlas & Practice · Gilles Barberis</title><link rel="stylesheet" href="style.css"></head>
 <body>
-<header><a class="brand" href="./" aria-label="FOG Map, vista iniziale">FOG</a><div class="strap">MUSIC <b>/</b> PEOPLE <b>/</b> PLACES <b>/</b> NETWORKS</div><div class="legend"><span><i class="gold"></i> LABEL / FESTIVAL</span><span><i class="white"></i> ARTIST / PRODUCER</span><span><i class="ring"></i> FOG PROJECT</span></div></header>
-<main><section class="world" aria-label="Mappa interattiva"><canvas id="earth" aria-hidden="true"></canvas><canvas id="map" aria-label="Globo terrestre interattivo: trascina per ruotare. Tutti gli elementi sono accessibili anche con il pulsante Esplora."></canvas>
-<div class="explore-wrap"><button id="explore" aria-expanded="false" aria-controls="explorer"><span>⌕</span> ESPLORA LA RETE <span id="total">71</span></button><section id="explorer" hidden><div class="explorer-top"><label for="search">CERCA NELLA RETE</label><button id="close-search" aria-label="Chiudi ricerca">×</button></div><input id="search" type="search" placeholder="Artista, label, paese…" autocomplete="off"><div class="filter-row"><label for="type">Tipo</label><select id="type"><option value="all">Tutti</option><option value="label">Labels</option><option value="artist">Artisti</option><option value="festival">Festival</option><option value="project">Progetti</option></select></div><p id="count" aria-live="polite"></p><div id="results"></div></section></div>
-<div class="map-bottom"><div class="nav"><button id="west" aria-label="Ruota verso ovest">‹</button><button id="east" aria-label="Ruota verso est">›</button><button id="reset" aria-label="Ripristina vista">◎</button><span>TRASCINA PER ESPLORARE</span></div><div id="coordinates">LAT 25.0° &nbsp; LON −20.0°</div></div><div class="zoom"><button id="plus" aria-label="Ingrandisci">+</button><button id="minus" aria-label="Riduci">−</button></div><div class="loading" id="loading">CARICAMENTO DEL GLOBO</div>
-</section><aside id="panel" aria-label="Dettagli della rete"><div id="detail" aria-live="polite"></div></aside></main>
-<footer><span>FOG ATLAS <span class="muted">/</span> V0.2</span><span>10 LUOGHI V0 <span class="muted">·</span> 61 GEOGRAFIE DA VERIFICARE</span><a href="https://github.com/gillesbarberis/FOG-map#stato-dei-dati" target="_blank" rel="noopener">DATI & FONTI ↗</a></footer>
-<script src="app.js"></script></body></html>
+<header><a class="brand" href="./" aria-label="FOG Map, home">FOG</a><div class="strap">MUSIC <b>/</b> PEOPLE <b>/</b> PLACES <b>/</b> NETWORKS</div><nav class="practice-nav" aria-label="FOG practice"><a href="#atlas">ATLAS</a><a href="#practice" lang="en">PRACTICE</a></nav><div class="legend"><span><i class="gold"></i> FOCUS</span><span><i class="white"></i> GUEST / PRODUCER</span><span><i class="ring"></i> FOG EPISODE</span></div></header>
+<main><div id="atlas" class="atlas-layout"><section class="world" aria-label="Interactive map"><canvas id="earth" aria-hidden="true"></canvas><canvas id="map" aria-label="Interactive globe: drag to rotate. Country episode labels are clickable. All entries are also accessible through the Explore button."></canvas><div id="map-labels" aria-label="Visible atlas locations"></div><div class="map-context"><span id="map-level">FOG / EPISODES</span><button id="episode-return" hidden></button></div>
+<div class="explore-wrap"><button id="explore" aria-expanded="false" aria-controls="explorer"><span>⌕</span> EXPLORE FOG <span id="total">4</span></button><section id="explorer" hidden><div class="explorer-top"><label for="search">SEARCH THE NETWORK</label><button id="close-search" aria-label="Close search">×</button></div><input id="search" type="search" placeholder="Artist, label, country…" autocomplete="off"><div class="filter-row"><label for="type">Type</label><select id="type"><option value="all">All</option><option value="episode">Episodes</option><option value="label">Labels</option><option value="artist">Artists</option><option value="festival">Festivals</option></select></div><p id="count" aria-live="polite"></p><div id="results"></div></section></div>
+<div class="map-bottom"><div class="nav"><button id="west" aria-label="Rotate west">‹</button><button id="east" aria-label="Rotate east">›</button><button id="reset" aria-label="Reset view">◎</button><span>DRAG TO EXPLORE</span></div><div id="coordinates">LAT 25.0° &nbsp; LON −20.0°</div></div><div class="zoom"><output id="zoom-value" aria-label="Zoom level">1.0×</output><button id="plus" aria-label="Zoom in">+</button><button id="minus" aria-label="Zoom out">−</button></div><div class="loading" id="loading">LOADING THE GLOBE</div>
+</section>
+<aside id="panel" aria-label="Network details"><div id="detail" aria-live="polite"></div></aside></div>
+<section id="practice" class="practice" lang="en" aria-labelledby="practice-title">
+  <div class="practice-head">
+    <div class="eyebrow">GILLES BARBERIS / FOG / CURRENT PRACTICE</div>
+    <h1 id="practice-title">Sound as material,<br>space as composition.</h1>
+    <p>My practice connects electronic music, collaboration and spatial listening with nearly two decades of work in film sound. FOG is a place to trace these connections — from the radio atlas to compositions and instruments in development.</p>
+  </div>
+  <div class="practice-grid">
+    <article class="practice-card music">
+      <div class="card-no" aria-hidden="true">01</div><h2>Music &amp; Collaboration</h2>
+      <p>I develop electronic music through solo work and ongoing exchanges with other artists. Listening and responding to one another changes the material and the direction of a piece.</p>
+      <p class="card-note">Current collaborations include Arsène Martinet, Sorm and Recy.</p>
+    </article>
+    <article class="practice-card spatial">
+      <div class="card-no" aria-hidden="true">02</div><h2>Spatial Practice</h2>
+      <div class="spatial-cases">
+        <section><div class="eyebrow">SPAT / SERRA MADRE · BOLOGNA</div><h3>Zoonoses</h3>
+          <p>Originally released on AEDI Records, <em>Zoonoses</em> was reopened in Ableton for Serra Madre: Immersive Listening, working with SPAT. Movement and reverberation began to reshape the composition itself.</p>
+          <p class="card-note">A released work became material for a new spatial reading.</p>
+        </section>
+        <section><div class="eyebrow">DOLBY ATMOS / ATMOS 360 · FONOPRINT</div><h3>Acusmatiq material</h3>
+          <p>An excerpt from a partly improvised Acusmatiq live set was developed during Atmos 360 at Fonoprint. With the material still taking shape, sound selection, composition and spatial mixing developed together.</p>
+          <p class="card-note">Spatial decisions entered while the music was still being composed.</p>
+        </section>
+      </div>
+    </article>
+    <article class="practice-card question">
+      <div class="card-no" aria-hidden="true">03</div><h2>Current Question</h2>
+      <blockquote>How can space become part of composition from the beginning, while keeping the musical language open beyond any single spatial system?</blockquote>
+      <p>I want to explore this through shared listening, response and composition, bringing spatial decisions into the exchange from the outset.</p>
+    </article>
+    <article class="practice-card professional">
+      <div class="card-no" aria-hidden="true">04</div><h2>Professional Practice</h2>
+      <h3>Film sound / preservation</h3>
+      <p>For nearly two decades I have worked in film sound restoration and post-production at L’Immagine Ritrovata / Cineteca di Bologna. Working with historical sound has shaped how I think about artistic intention as formats and playback systems change.</p>
+      <div class="development"><div class="eyebrow">IN DEVELOPMENT / NOT YET OPERATIONAL</div><p>A future Dolby Atmos cinema mixing room is in development for the new L’Immagine Ritrovata site, with d&amp;b infrastructure under consideration. This prospective environment connects with my exploration of spatial composition across different systems.</p></div>
+    </article>
+    <article class="practice-card instruments">
+      <div class="card-no" aria-hidden="true">05</div><h2>Instrument R&amp;D</h2><h3>TENS</h3>
+      <p>TENS is an ongoing family of experimental electroacoustic instruments exploring multiple independent outputs. The research considers how gesture and the sound source can shape spatial possibilities from the start.</p>
+      <p class="card-note">Ongoing instrument research · prototypes in development.</p>
+    </article>
+    <article class="practice-card fog-card">
+      <div class="card-no" aria-hidden="true">06</div><h2>FOG / Radio &amp; Research</h2>
+      <p>FOG is a monthly radio project built through musical geography: research into local scenes, labels and listening cultures, combined with selections, field material and contributions from artists based in each place. The atlas traces the people, places and relationships encountered along the way.</p>
+      <a href="#atlas">EXPLORE THE ATLAS <span aria-hidden="true">↑</span></a>
+    </article>
+  </div>
+</section>
+</main>
+<footer><span>FOG ATLAS <span class="muted">/</span> V0.2</span><span>4 COUNTRIES / 8 RECORDINGS <span class="muted">·</span> GEOGRAPHY IN PROGRESS</span><a href="https://github.com/gillesbarberis/FOG-map#stato-dei-dati" target="_blank" rel="noopener">DATA & SOURCES ↗</a></footer>
+<aside id="listening-player" aria-label="FOG listening player" hidden>
+  <div class="player-heading"><div><span class="eyebrow">NOW LISTENING</span><h2 id="playing-title"></h2></div><button id="minimize-player" aria-label="Expand or minimize player" aria-expanded="true" aria-controls="player-content">−</button><button id="close-player" aria-label="Close player">×</button></div>
+  <div id="player-content"><p id="player-status" class="note" role="status" hidden></p><div id="soundcloud-host"></div><a id="player-source" target="_blank" rel="noopener">OPEN ON SOUNDCLOUD ↗</a></div>
+</aside>
+<script src="atlas-model.js"></script><script src="app.js"></script></body></html>
