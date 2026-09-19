@@ -41,8 +41,25 @@ function drawArc(e){
   const a=B[e.source],b=B[e.target];if(!located(a)||!located(b))return false;
   if(!arcCache.has(e.id))arcCache.set(e.id,M.arc(a,b));
   ctx.beginPath();let pen=false;
-  for(const n of arcCache.get(e.id)){const p=project(n,n.alt);if(p.v<=.015){pen=false;continue}if(pen)ctx.lineTo(p.x,p.y);else ctx.moveTo(p.x,p.y);pen=true;}
-  ctx.strokeStyle=e.kind==='appears_in'?'rgba(255,197,104,.78)':'rgba(155,201,228,.60)';ctx.lineWidth=e.kind==='appears_in'?1.3:1;ctx.stroke();return true;
+  const points=arcCache.get(e.id),start=project(a),end=project(b),dx=end.x-start.x,dy=end.y-start.y,length=Math.hypot(dx,dy);
+  // A slight screen-space bow keeps routes legible even when viewed end-on.
+  const bow=Math.min(70,length*.16);
+  if(start.v>.015&&end.v>.015){
+    // Projected flight-map curves keep both ends anchored without curling at the horizon.
+    ctx.moveTo(start.x,start.y);
+    ctx.quadraticCurveTo((start.x+end.x)/2-(length?dy/length:0)*bow*2,(start.y+end.y)/2+(length?dx/length:0)*bow*2,end.x,end.y);
+  }else{
+    points.forEach(n=>{const p=project(n);if(p.v<=.015){pen=false;return}
+      if(pen)ctx.lineTo(p.x,p.y);else ctx.moveTo(p.x,p.y);pen=true;});
+  }
+  // A flight-map route, with a soft bloom and a fine luminous core.
+  const warm=e.kind==='appears_in',rgb=warm?'255,197,104':'155,201,228';
+  ctx.save();ctx.lineCap='round';ctx.lineJoin='round';
+  ctx.shadowColor=`rgba(${rgb},.8)`;ctx.shadowBlur=15;
+  ctx.strokeStyle=`rgba(${rgb},.10)`;ctx.lineWidth=7;ctx.stroke();
+  ctx.shadowBlur=7;ctx.strokeStyle=`rgba(${rgb},.30)`;ctx.lineWidth=3;ctx.stroke();
+  ctx.shadowBlur=0;ctx.strokeStyle=warm?'rgba(255,229,178,.94)':'rgba(208,234,250,.86)';ctx.lineWidth=1;ctx.stroke();
+  ctx.restore();return true;
 }
 function visibleNodes(active,stages){
   return G.all.filter(n=>{
@@ -50,6 +67,7 @@ function visibleNodes(active,stages){
     if(n.type==='episode')return stages[n.id]!=='detail';
     if(active.nodeIds.has(n.id))return true;
     const role=G.role(n);
+    if(role==='producer'&&n.appearances.length&&zoom>=3&&project(n).v>.85)return true;
     return G.episodes.some(ep=>{
       if(stages[ep.id]==='episodes')return false;
       if([...ep.focusIds,...ep.guestIds].includes(n.id))return true;
@@ -60,7 +78,7 @@ function visibleNodes(active,stages){
 function marker(n,p,active){
   const role=G.role(n),emphasis=n.id===selected||n.id===hovered,dim=active.nodeIds.size&&!active.nodeIds.has(n.id);
   const style={episode:{r:5,color:'#ffd17e',alpha:1,glow:16},focus:{r:4.8,color:'#ffd17e',alpha:1,glow:16},guest:{r:3.8,color:'#dae9f3',alpha:.72,glow:9},producer:{r:2.7,color:'#b9cbd8',alpha:.46,glow:4}}[role];
-  ctx.globalAlpha=dim?.24:emphasis?1:style.alpha;ctx.fillStyle=style.color;ctx.shadowColor=style.color;ctx.shadowBlur=emphasis?20:style.glow;
+  ctx.globalAlpha=dim?.24:emphasis?1:active.nodeIds.has(n.id)?Math.max(.8,style.alpha):style.alpha;ctx.fillStyle=style.color;ctx.shadowColor=style.color;ctx.shadowBlur=emphasis?20:style.glow;
   ctx.beginPath();ctx.arc(p.x,p.y,style.r+(emphasis?1.3:0),0,Math.PI*2);ctx.fill();ctx.shadowBlur=0;
   if(role==='episode'||emphasis){ctx.strokeStyle=style.color;ctx.lineWidth=.8;ctx.beginPath();ctx.arc(p.x,p.y,style.r+5,0,Math.PI*2);ctx.stroke()}
   ctx.globalAlpha=1;hits.push({n,x:p.x,y:p.y});
@@ -69,10 +87,10 @@ function placeLabels(visible,active){
   const used=new Set(),boxes=[];
   const sorted=[...visible].sort((a,b)=>(b.n.id===selected)-(a.n.id===selected)||(b.n.type==='episode')-(a.n.type==='episode'));
   for(const {n,p} of sorted){
-    const role=G.role(n),inScene=G.episodes.some(ep=>stage(ep)!=='episodes'&&[...ep.focusIds,...ep.guestIds].includes(n.id)),wanted=role==='episode'||((role==='focus'||role==='guest')&&inScene)||n.id===selected||n.id===hovered;
+    const role=G.role(n),inScene=G.episodes.some(ep=>stage(ep)!=='episodes'&&[...ep.focusIds,...ep.guestIds].includes(n.id)),wanted=role==='episode'||((role==='focus'||role==='guest')&&inScene)||(role==='producer'&&(active.nodeIds.has(n.id)||(zoom>=3&&p.v>.85)||G.episodes.some(ep=>stage(ep)==='detail'&&n.country===ep.country)))||n.id===selected||n.id===hovered;
     if(!wanted)continue;
     let el=labelElements.get(n.id);
-    if(!el){el=document.createElement('button');el.className='map-label '+role;el.dataset.node=n.id;el.setAttribute('aria-label',`Open ${n.name}${n.type==='episode'?' · '+n.country:''}`);el.innerHTML=`<span>${esc(n.name)}</span><small>${esc(n.type==='episode'?n.country:role==='guest'?'GUEST MIX':n.city)}</small>`;$('#map-labels').append(el);labelElements.set(n.id,el)}
+    if(!el){el=document.createElement('button');el.className='map-label '+role;el.dataset.node=n.id;el.setAttribute('aria-label',`Open ${n.name}${n.type==='episode'?' · '+n.country:''}`);el.innerHTML=`<span>${esc(n.name)}</span><small>${esc(n.type==='episode'?n.country:role==='guest'?'GUEST MIX':n.location?.precision==='country'?n.country:n.city)}</small>`;$('#map-labels').append(el);labelElements.set(n.id,el)}
     el.hidden=false;el.classList.toggle('selected',n.id===selected);el.classList.toggle('lit',active.nodeIds.has(n.id));el.classList.toggle('dimmed',active.nodeIds.size>0&&!active.nodeIds.has(n.id));
     const w=el.offsetWidth,h=el.offsetHeight,offsets=[[15,-h/2],[-w-15,-h/2],[15,20],[-w-15,20],[15,-h-20],[-w-15,-h-20],[15,h+18],[-w-15,h+18],[15,-2*h-18],[-w-15,-2*h-18],[15,2*h+30],[-w-15,2*h+30]];
     let box;
@@ -94,7 +112,7 @@ function draw(){
   $('#coordinates').textContent=`LAT ${(pitch*180/Math.PI).toFixed(1)}°   LON ${(((-yaw*180/Math.PI+180)%360+360)%360-180).toFixed(1)}°`;
   $('#zoom-value').textContent=zoom.toFixed(1)+'×';
   // Readable state on the rendered surface also supports regression checks.
-  canvas.dataset.selected=selected||'';canvas.dataset.hovered=hovered||'';canvas.dataset.arcCount=String(arcCount);canvas.dataset.level=nearby?stages[nearby.id]:'episodes';
+  canvas.dataset.visibleProducers=visible.filter(({n})=>G.role(n)==='producer').map(({n})=>n.id).join('|');canvas.dataset.selected=selected||'';canvas.dataset.hovered=hovered||'';canvas.dataset.arcCount=String(arcCount);canvas.dataset.level=nearby?stages[nearby.id]:'episodes';
 }
 function size(){const r=canvas.getBoundingClientRect();W=r.width;H=r.height;dpr=Math.min(devicePixelRatio||1,2);canvas.width=Math.round(W*dpr);canvas.height=Math.round(H*dpr);earth.width=canvas.width;earth.height=canvas.height;ctx.setTransform(dpr,0,0,dpr,0,0);requestDraw()}new ResizeObserver(size).observe(canvas);
 function row(n,subtitle){const role=G.role(n);return `<button class="network-row" data-node="${esc(n.id)}"><i class="${role==='episode'?'ring':role==='focus'?'gold':'white'}"></i><span>${esc(n.name)}<small>${esc(subtitle||n.city+(n.country&&n.city!==n.country?' · '+n.country:''))}</small></span><span class="arrow">↗</span></button>`}
@@ -120,9 +138,14 @@ function overview(){
   $('#pending').onclick=()=>{filter='artist';$('#type').value=filter;query='';$('#search').value='';openSearch();results()};
 }
 function locationNote(n){
-  if(!n.location)return '<p class="note">Location research in progress. This artist remains in the tracklists while their home base is being confirmed.</p>';
-  const sources=n.location.sources||[];
-  return `<p class="note">${n.location.status==='source_confirmed'?'City-level location, confirmed from a public source.':'Location supplied in the original atlas; verification pending.'}${sources.map((s,i)=>` <a href="${esc(s)}" target="_blank" rel="noopener">Source${sources.length>1?' '+(i+1):''} ↗</a>`).join('')}</p>`;
+  const record=n.location||n.geography_research, sources=record?.sources||[];
+  let text='Location research in progress.';
+  if(n.location){
+    const precision={city:'City-level position',regional:'Approximate regional position',country:'Country-level position; city not yet verified'}[record.precision]||'Approximate position';
+    const status={source_confirmed:'supported by a public source',reported:'reported in a public source; current base needs reconfirmation',provided_unverified:'supplied in the original atlas; verification pending'}[record.status]||'verification pending';
+    text=precision+' — '+status+'.';
+  }
+  return `<p class="note">${esc(text)}${record?.note?' '+esc(record.note):''}${record?.checked_at?' Checked '+esc(record.checked_at)+'.':''}${sources.map((s,i)=>` <a href="${esc(s)}" target="_blank" rel="noopener">Source${sources.length>1?' '+(i+1):''} ↗</a>`).join('')}</p>`;
 }
 function choose(n,focus=true){
   selected=n.id;hovered=null;

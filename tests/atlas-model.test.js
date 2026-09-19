@@ -11,7 +11,9 @@ test('all references resolve, and every country has two different recordings',()
   graph.nodes.forEach(n=>n.appearances.forEach(id=>assert.ok(graph.recordings[id])));
 });
 test('episode country never supplies missing producer coordinates',()=>{
-  const n=graph.byId['FOG Japan-7'];assert.equal(n.name,'Voiski');assert.equal(M.located(n),false);assert.equal(n.country,'');
+  const fixture=structuredClone(data);fixture.nodes.find(n=>n.id==='FOG Japan-7').location=null;
+  const n=M.create(fixture).byId['FOG Japan-7'];assert.equal(M.located(n),false);assert.equal(n.country,'');
+  assert.equal(graph.byId['FOG Japan-7'].country,'France');
   assert.equal(graph.byId['FOG Mexico-0'].country,'Portugal');
 });
 test('a producer can connect to several episodes without changing their location',()=>{
@@ -35,4 +37,27 @@ test('semantic detail requires country scale and centering',()=>{
 test('arcs remain finite and connect exact endpoints, including antipodes',()=>{
   for(const b of [{lat:0,lon:180},{lat:48.8566,lon:2.3522}]){const points=M.arc({lat:0,lon:0},b);assert.equal(points.length,65);assert.ok(points.every(p=>Number.isFinite(p.lat)&&Number.isFinite(p.lon)));assert.ok(Math.abs(points.at(-1).lat-b.lat)<.0001);}
   assert.deepEqual(M.arc({lat:0,lon:0},{lat:0,lon:0}),[]);
+});
+
+test('researched geography retains precision, evidence and unresolved cases',()=>{
+  for(const n of data.nodes){
+    if(n.location){
+      const l=n.location;
+      assert.ok(Number.isFinite(l.lat)&&Math.abs(l.lat)<=90,n.id);
+      assert.ok(Number.isFinite(l.lon)&&Math.abs(l.lon)<=180,n.id);
+      assert.ok(['city','regional','country'].includes(l.precision),n.id);
+      if(l.status!=='provided_unverified'){
+        assert.ok(l.sources.length>0,n.id);
+        assert.ok(l.sources.every(s=>new URL(s).protocol==='https:'),n.id);
+        assert.match(l.checked_at,/^\d{4}-\d{2}-\d{2}$/);
+      }
+    }else{
+      assert.equal(n.geography_research.status,'unresolved',n.id);
+      assert.ok(n.geography_research.sources.length>0,n.id);
+    }
+  }
+  assert.equal(graph.byId['FOG Japan-13'].location.precision,'country');
+  assert.ok(!graph.byId['FOG Japan-13'].location.sources.includes('https://soundcloud.com/sabi_records'));
+  assert.equal(M.located(graph.byId.yingtuitive),false);
+  assert.equal(graph.byId.yingtuitive.geography_research.declared_bases.length,2);
 });
