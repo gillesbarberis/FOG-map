@@ -1,8 +1,8 @@
 # Artist geography research
 
-Checked 19 September 2026. Public professional geography only; no street addresses.
+Initial research checked 19 September 2026; Vâyu and Sauvage Dub Trio updated 20 September 2026. Public professional geography only; no street addresses.
 
-84 of 96 entities have map coordinates: 75 sourced or reported positions and 9 inherited positions still awaiting verification. 12 have no single defensible mapped base yet.
+86 of 96 entities have map coordinates: 77 sourced or reported positions and 9 inherited positions still awaiting verification. 10 have no single defensible mapped base yet.
 
 Sources include artist websites, SoundCloud and Bandcamp profiles, release notes, radio, festival and agency biographies, interviews and public professional profiles. Search results were checked against track and alias identity. Label addresses, birthplace, nationality and gig locations do not establish a current working base.
 
@@ -96,22 +96,12 @@ A source checked today may contain an old biography. `reported` marks dated or q
 | Voiski | Paris, France | city / source_confirmed |  [Source 1](https://voiski.bandcamp.com/) |
 | Wata Igarashi | Tokyo, Japan | city / source_confirmed |  [Source 1](https://soundcloud.com/wata) |
 | Yu Su | London, United Kingdom | city / source_confirmed | Current artist profile says London; supersedes older Vancouver biographies. [Source 1](https://yusu.bandcamp.com/music) |
+| Vâyu | Finistère, France | regional / editorial_confirmed | |
+| Sauvage Dub Trio | Marseille / Lyon, France | regional / editorial_confirmed | |
 
 ## Unresolved geography
 
 These artists remain searchable and in their recording panels. Missing coordinates are never replaced with their episode’s country.
-
-### Vayu
-
-Affin identifies the French sound designer Vâyu, but nationality does not establish a current base. SoundCloud gives no city.
-
-Sources checked: [Source 1](https://soundcloud.com/v-a-y-u), [Source 2](https://affin.bandcamp.com/album/nysiads).
-
-### Sauvage Dub Trio
-
-The trio and member Arto are identified; no shared working base is established. The label address is not used.
-
-Sources checked: [Source 1](https://soundcloud.com/sauvage-dub-trio), [Source 2](https://artoseleven.bandcamp.com/), [Source 3](https://melifera-records.bandcamp.com/album/wadis-variations).
 
 ### Uman Yazar
 

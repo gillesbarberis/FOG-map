@@ -138,6 +138,7 @@ function overview(){
   $('#pending').onclick=()=>{filter='artist';$('#type').value=filter;query='';$('#search').value='';openSearch();results()};
 }
 function locationNote(n){
+  if(n.location?.status==='editorial_confirmed')return '';
   const record=n.location||n.geography_research, sources=record?.sources||[];
   let text='Location research in progress.';
   if(n.location){

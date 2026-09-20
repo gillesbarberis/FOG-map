@@ -931,26 +931,41 @@
     },
     {
       "id": "FOG Korea-3",
-      "name": "Vayu",
+      "name": "Vâyu",
       "type": "artist",
       "verification_status": "pending",
       "sources": [],
       "appearances": [
         "2375330147"
       ],
-      "location": null,
+      "location": {
+        "city": "Finistère",
+        "country": "France",
+        "lat": 48.25,
+        "lon": -4.0,
+        "precision": "regional",
+        "status": "editorial_confirmed",
+        "sources": [
+          "https://huinalidub.bandcamp.com/album/namtar-hnl015"
+        ],
+        "checked_at": "2026-09-20",
+        "note": ""
+      },
       "appearance_sources": [
         "https://soundcloud.com/gilles_barberis/fog-korea"
       ],
       "geography_research": {
-        "checked_at": "2026-09-19",
-        "status": "unresolved",
+        "checked_at": "2026-09-20",
+        "status": "editorial_confirmed",
         "sources": [
-          "https://soundcloud.com/v-a-y-u",
-          "https://affin.bandcamp.com/album/nysiads"
+          "https://huinalidub.bandcamp.com/album/namtar-hnl015"
         ],
-        "note": "Affin identifies the French sound designer Vâyu, but nationality does not establish a current base. SoundCloud gives no city."
-      }
+        "note": ""
+      },
+      "aliases": [
+        "Vayu",
+        "Maxime Mouttet"
+      ]
     },
     {
       "id": "FOG Korea-4",
@@ -1304,19 +1319,31 @@
       "appearances": [
         "2396427804"
       ],
-      "location": null,
+      "location": {
+        "lat": 43.297,
+        "lon": 5.37,
+        "city": "Marseille / Lyon",
+        "country": "France",
+        "precision": "regional",
+        "status": "editorial_confirmed",
+        "sources": [
+          "https://artoseleven.bandcamp.com/",
+          "https://melifera-records.bandcamp.com/album/wadis-variations"
+        ],
+        "checked_at": "2026-09-20",
+        "note": ""
+      },
       "appearance_sources": [
         "https://soundcloud.com/gilles_barberis/fog-france-1"
       ],
       "geography_research": {
-        "checked_at": "2026-09-19",
-        "status": "unresolved",
+        "checked_at": "2026-09-20",
+        "status": "editorial_confirmed",
         "sources": [
-          "https://soundcloud.com/sauvage-dub-trio",
           "https://artoseleven.bandcamp.com/",
           "https://melifera-records.bandcamp.com/album/wadis-variations"
         ],
-        "note": "The trio and member Arto are identified; no shared working base is established. The label address is not used."
+        "note": ""
       }
     },
     {
