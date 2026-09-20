@@ -140,7 +140,9 @@
       "url": "https://soundcloud.com/gilles_barberis/fog-france-invites-nawl",
       "role": "guest",
       "description": "@nawl_music\n\"Glimmer and fade\" \nThis podcast is an interpretation of the alteration of time unique to the Vallée Électrique festival. Here, hours stretch out. The mind navigates between subaqueous immersion and shared waves. Captivated by the collective energy, the listener refuses to tune out, until collapsing from exhaustion. The mind then finds peace, in the wake of the last glimmer, like a candle going out.",
-      "checked_at": "2026-09-19"
+      "checked_at": "2026-09-19",
+      "tracklist_status": "unavailable",
+      "tracklist_note": "No tracklist will be supplied; the guest recording remains available in full."
     },
     {
       "id": "2374091774",
@@ -3373,8 +3375,11 @@
       "source": "nawl",
       "target": "melifera",
       "kind": "released_on",
-      "verification_status": "provided_unverified",
-      "sources": []
+      "verification_status": "editorial_confirmed",
+      "sources": [
+        "https://soundcloud.com/gilles_barberis/fog-france-1"
+      ],
+      "confirmation": "Confirmed by Gilles Barberis, curator of the selection, on 2026-09-20."
     },
     {
       "source": "nawl",
@@ -3485,85 +3490,121 @@
       "source": "FOG France-0",
       "target": "melifera",
       "kind": "released_on",
-      "verification_status": "provided_unverified",
-      "sources": []
+      "verification_status": "editorial_confirmed",
+      "sources": [
+        "https://soundcloud.com/gilles_barberis/fog-france-1"
+      ],
+      "confirmation": "Confirmed by Gilles Barberis, curator of the selection, on 2026-09-20."
     },
     {
       "source": "FOG France-1",
       "target": "melifera",
       "kind": "released_on",
-      "verification_status": "provided_unverified",
-      "sources": []
+      "verification_status": "editorial_confirmed",
+      "sources": [
+        "https://soundcloud.com/gilles_barberis/fog-france-1"
+      ],
+      "confirmation": "Confirmed by Gilles Barberis, curator of the selection, on 2026-09-20."
     },
     {
       "source": "FOG France-2",
       "target": "melifera",
       "kind": "released_on",
-      "verification_status": "provided_unverified",
-      "sources": []
+      "verification_status": "editorial_confirmed",
+      "sources": [
+        "https://soundcloud.com/gilles_barberis/fog-france-1"
+      ],
+      "confirmation": "Confirmed by Gilles Barberis, curator of the selection, on 2026-09-20."
     },
     {
       "source": "FOG France-3",
       "target": "melifera",
       "kind": "released_on",
-      "verification_status": "provided_unverified",
-      "sources": []
+      "verification_status": "editorial_confirmed",
+      "sources": [
+        "https://soundcloud.com/gilles_barberis/fog-france-1"
+      ],
+      "confirmation": "Confirmed by Gilles Barberis, curator of the selection, on 2026-09-20."
     },
     {
       "source": "FOG France-4",
       "target": "melifera",
       "kind": "released_on",
-      "verification_status": "provided_unverified",
-      "sources": []
+      "verification_status": "editorial_confirmed",
+      "sources": [
+        "https://soundcloud.com/gilles_barberis/fog-france-1"
+      ],
+      "confirmation": "Confirmed by Gilles Barberis, curator of the selection, on 2026-09-20."
     },
     {
       "source": "FOG France-5",
       "target": "melifera",
       "kind": "released_on",
-      "verification_status": "provided_unverified",
-      "sources": []
+      "verification_status": "editorial_confirmed",
+      "sources": [
+        "https://soundcloud.com/gilles_barberis/fog-france-1"
+      ],
+      "confirmation": "Confirmed by Gilles Barberis, curator of the selection, on 2026-09-20."
     },
     {
       "source": "FOG France-6",
       "target": "melifera",
       "kind": "released_on",
-      "verification_status": "provided_unverified",
-      "sources": []
+      "verification_status": "editorial_confirmed",
+      "sources": [
+        "https://soundcloud.com/gilles_barberis/fog-france-1"
+      ],
+      "confirmation": "Confirmed by Gilles Barberis, curator of the selection, on 2026-09-20."
     },
     {
       "source": "FOG France-7",
       "target": "melifera",
       "kind": "released_on",
-      "verification_status": "provided_unverified",
-      "sources": []
+      "verification_status": "editorial_confirmed",
+      "sources": [
+        "https://soundcloud.com/gilles_barberis/fog-france-1"
+      ],
+      "confirmation": "Confirmed by Gilles Barberis, curator of the selection, on 2026-09-20."
     },
     {
       "source": "FOG France-8",
       "target": "melifera",
       "kind": "released_on",
-      "verification_status": "provided_unverified",
-      "sources": []
+      "verification_status": "editorial_confirmed",
+      "sources": [
+        "https://soundcloud.com/gilles_barberis/fog-france-1"
+      ],
+      "confirmation": "Confirmed by Gilles Barberis, curator of the selection, on 2026-09-20."
     },
     {
       "source": "FOG France-9",
       "target": "melifera",
       "kind": "released_on",
-      "verification_status": "provided_unverified",
-      "sources": []
+      "verification_status": "editorial_confirmed",
+      "sources": [
+        "https://soundcloud.com/gilles_barberis/fog-france-1"
+      ],
+      "confirmation": "Confirmed by Gilles Barberis, curator of the selection, on 2026-09-20."
     },
     {
       "source": "FOG France-10",
       "target": "melifera",
       "kind": "released_on",
-      "verification_status": "provided_unverified",
-      "sources": []
+      "verification_status": "editorial_confirmed",
+      "sources": [
+        "https://soundcloud.com/gilles_barberis/fog-france-1"
+      ],
+      "confirmation": "Confirmed by Gilles Barberis, curator of the selection, on 2026-09-20."
     },
     {
       "source": "FOG France-11",
       "target": "melifera",
       "kind": "released_on",
-      "verification_status": "provided_unverified",
-      "sources": []
+      "verification_status": "editorial_confirmed",
+      "sources": [
+        "https://soundcloud.com/gilles_barberis/fog-france-1"
+      ],
+      "confirmation": "Confirmed by Gilles Barberis, curator of the selection, on 2026-09-20."
     },
     {
       "source": "FOG Japan-4",
@@ -3625,6 +3666,83 @@
       "sources": [
         "https://delsinrecords.bandcamp.com/album/9719-ep"
       ]
+    },
+    {
+      "source": "FOG France-1",
+      "target": "st",
+      "kind": "released_on",
+      "verification_status": "source_confirmed",
+      "sources": [
+        "https://secuenciastemporales.bandcamp.com/album/biocym-narrow-slopes-st015"
+      ],
+      "evidence": "Narrow Slopes [ST015]",
+      "checked_at": "2026-09-20"
+    },
+    {
+      "source": "FOG France-1",
+      "target": "oslated",
+      "kind": "released_on",
+      "verification_status": "source_confirmed",
+      "sources": [
+        "https://oslated.bandcamp.com/album/chimhyangmoo-osc005"
+      ],
+      "evidence": "Artemis — Chimhyangmoo [OSC005]",
+      "checked_at": "2026-09-20"
+    },
+    {
+      "source": "FOG France-5",
+      "target": "oslated",
+      "kind": "released_on",
+      "verification_status": "source_confirmed",
+      "sources": [
+        "https://oslated.bandcamp.com/album/fantasma-reconstruction-osl002r"
+      ],
+      "evidence": "Fantasma (Reconstruction) [OSL002R]",
+      "checked_at": "2026-09-20"
+    },
+    {
+      "source": "FOG France-3",
+      "target": "oslated",
+      "kind": "featured_on",
+      "verification_status": "source_confirmed",
+      "sources": [
+        "https://soundcloud.com/oslated/vardae-glow-annulled-music"
+      ],
+      "evidence": "Glow — Annulled Music; featured on the Oslated platform",
+      "checked_at": "2026-09-20"
+    },
+    {
+      "source": "FOG France-10",
+      "target": "oslated",
+      "kind": "featured_on",
+      "verification_status": "source_confirmed",
+      "sources": [
+        "https://soundcloud.com/oslated/uman-yazar-siratalnur-orbitando"
+      ],
+      "evidence": "Siratalnur — Orbitando; featured on the Oslated platform",
+      "checked_at": "2026-09-20"
+    },
+    {
+      "source": "FOG France-2",
+      "target": "oslated",
+      "kind": "featured_on",
+      "verification_status": "source_confirmed",
+      "sources": [
+        "https://soundcloud.com/oslated/biocym-wadis-sauvage-dub-trio-remix-melifera-records"
+      ],
+      "evidence": "Wadis (Sauvage Dub Trio Remix) — Melifera; featured on the Oslated platform",
+      "checked_at": "2026-09-20"
+    },
+    {
+      "source": "FOG France-8",
+      "target": "oslated",
+      "kind": "performed_at",
+      "verification_status": "source_confirmed",
+      "sources": [
+        "https://ra.co/dj/s-pill"
+      ],
+      "evidence": "Oslated Night with Sindh (Live), Atdge Seoul, 12 December 2025",
+      "checked_at": "2026-09-20"
     }
   ]
 }
