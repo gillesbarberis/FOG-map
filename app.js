@@ -64,6 +64,7 @@ function drawArc(e){
 function visibleNodes(active,stages){
   return G.all.filter(n=>{
     if(!located(n))return false;
+    if(n.type==='hub')return true;
     if(n.type==='episode')return stages[n.id]!=='detail';
     if(active.nodeIds.has(n.id))return true;
     const role=G.role(n);
@@ -85,9 +86,9 @@ function marker(n,p,active){
 }
 function placeLabels(visible,active){
   const used=new Set(),boxes=[];
-  const sorted=[...visible].sort((a,b)=>(b.n.id===selected)-(a.n.id===selected)||(b.n.type==='episode')-(a.n.type==='episode'));
+  const sorted=[...visible].sort((a,b)=>(b.n.id===selected)-(a.n.id===selected)||(b.n.type==='hub')-(a.n.type==='hub')||(b.n.type==='episode')-(a.n.type==='episode'));
   for(const {n,p} of sorted){
-    const role=G.role(n),inScene=G.episodes.some(ep=>stage(ep)!=='episodes'&&[...ep.focusIds,...ep.guestIds].includes(n.id)),wanted=role==='episode'||((role==='focus'||role==='guest')&&inScene)||(role==='producer'&&(active.nodeIds.has(n.id)||(zoom>=3&&p.v>.85)||G.episodes.some(ep=>stage(ep)==='detail'&&n.country===ep.country)))||n.id===selected||n.id===hovered;
+    const role=G.role(n),inScene=G.episodes.some(ep=>stage(ep)!=='episodes'&&[...ep.focusIds,...ep.guestIds].includes(n.id)),wanted=n.type==='hub'||role==='episode'||((role==='focus'||role==='guest')&&inScene)||(role==='producer'&&(active.nodeIds.has(n.id)||(zoom>=3&&p.v>.85)||G.episodes.some(ep=>stage(ep)==='detail'&&n.country===ep.country)))||n.id===selected||n.id===hovered;
     if(!wanted)continue;
     let el=labelElements.get(n.id);
     if(!el){el=document.createElement('button');el.className='map-label '+role;el.dataset.node=n.id;el.setAttribute('aria-label',`Open ${n.name}${n.type==='episode'?' · '+n.country:''}`);el.innerHTML=`<span>${esc(n.name)}</span><small>${esc(n.type==='episode'?n.country:role==='guest'?'GUEST MIX':n.location?.precision==='country'?n.country:n.city)}</small>`;$('#map-labels').append(el);labelElements.set(n.id,el)}
@@ -95,7 +96,7 @@ function placeLabels(visible,active){
     const w=el.offsetWidth,h=el.offsetHeight,offsets=[[15,-h/2],[-w-15,-h/2],[15,20],[-w-15,20],[15,-h-20],[-w-15,-h-20],[15,h+18],[-w-15,h+18],[15,-2*h-18],[-w-15,-2*h-18],[15,2*h+30],[-w-15,2*h+30]];
     let box;
     for(const [dx,dy] of offsets){const q={x:p.x+dx,y:p.y+dy,w,h};if(q.x<8||q.x+w>W-8||q.y<48||q.y+h>H-70)continue;if(boxes.some(b=>q.x<b.x+b.w+5&&q.x+w+5>b.x&&q.y<b.y+b.h+3&&q.y+h+3>b.y))continue;box=q;break}
-    if(!box){if(n.type!=='episode'&&n.id!==selected){el.hidden=true;continue}box={x:Math.max(8,Math.min(W-w-8,p.x+15)),y:Math.max(48,Math.min(H-h-70,p.y-h/2)),w,h}}
+    if(!box){if(n.type!=='episode'&&n.type!=='hub'&&n.id!==selected){el.hidden=true;continue}box={x:Math.max(8,Math.min(W-w-8,p.x+15)),y:Math.max(48,Math.min(H-h-70,p.y-h/2)),w,h}}
     boxes.push(box);el.style.transform=`translate(${Math.round(box.x)}px,${Math.round(box.y)}px)`;used.add(n.id);
     ctx.beginPath();ctx.moveTo(p.x,p.y);ctx.lineTo(box.x>p.x?box.x:box.x+box.w,box.y+box.h/2);ctx.strokeStyle='rgba(164,184,204,.32)';ctx.lineWidth=.6;ctx.stroke();
   }
@@ -143,7 +144,9 @@ function choose(n,focus=true){
   if(located(n)){yaw=-n.lon*Math.PI/180;pitch=n.lat*Math.PI/180;}
   else if(n.type!=='episode'){const ep=relatedEpisodes(n)[0];if(ep){yaw=-ep.lon*Math.PI/180;pitch=ep.lat*Math.PI/180;}}
   const close='<button class="back" id="close-detail" aria-label="Close details">×</button>';
-  if(n.type==='episode'){
+  if(n.type==='hub'){
+    detail.innerHTML=`${close}<div class="eyebrow">FOG / BOLOGNA</div><h1 class="panel-title">FOG</h1><div class="location">Bologna · Italy</div><p class="intro">A radio and research project by Gilles Barberis. From Bologna, FOG connects every episode, artist, label, collective and festival in this atlas.</p><section class="section"><h2>EXPLORE THE EPISODES</h2>${G.episodes.map(ep=>row(ep,ep.country)).join('')}</section><section class="section"><h2>LISTEN</h2>${players(data.recordings.map(r=>r.id))}</section>`;
+  }else if(n.type==='episode'){
     const members=N.filter(p=>p.appearances.some(id=>n.recordingIds.includes(id))),pending=members.filter(p=>!located(p));
     detail.innerHTML=`${close}<div class="eyebrow">FOG / COUNTRY EPISODE</div><h1 class="panel-title">${esc(n.name)}</h1><p class="episode-country">${esc(n.country)}</p><p class="intro">${esc(n.focusIds.map(id=>B[id].name).join(' / '))}</p><button class="scene-button" data-scene="${esc(n.id)}">EXPLORE THE LOCAL SCENE +</button><section class="section"><h2>LISTEN / TWO RECORDINGS</h2>${players(n.recordingIds)}</section><section class="section"><h2>FOCUS & GUEST</h2>${[...new Set([...n.focusIds,...n.guestIds])].map(id=>row(B[id],n.guestIds.includes(id)?'Guest mix'+(n.focusIds.includes(id)?' / episode focus':''):'Episode focus')).join('')}</section><section class="section"><h2>PRODUCERS IN THESE RECORDINGS <span class="muted">/ ${members.length}</span></h2><p class="note">Connections follow the tracklists, wherever each artist is based.${pending.length?' '+pending.length+' locations are still being researched.':''}</p>${members.map(p=>row(p,located(p)?locationLabel(p):'Location to verify')).join('')}</section>`;
   }else{

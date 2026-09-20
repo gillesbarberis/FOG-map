@@ -5,10 +5,11 @@ const radians=d=>d*Math.PI/180;
 const located=n=>Number.isFinite(n.lat)&&Number.isFinite(n.lon);
 function create(data){
   const episodes=data.episodes.map(e=>({...e,type:'episode',city:e.country}));
-  const nodes=data.nodes.map(n=>({...n,...(n.location?{lat:n.location.lat,lon:n.location.lon,city:n.location.city,country:n.location.country}:{city:'Location to verify',country:''})}));
+  const nodes=[...data.nodes,...(data.hub?[data.hub]:[])].map(n=>({...n,...(n.location?{lat:n.location.lat,lon:n.location.lon,city:n.location.city,country:n.location.country}:{city:'Location to verify',country:''})}));
   const all=[...episodes,...nodes],byId=Object.fromEntries(all.map(n=>[n.id,n]));
   const recordings=Object.fromEntries(data.recordings.map(r=>[r.id,r]));
   const edges=data.relations.map(e=>({...e,id:`relation:${e.source}:${e.target}:${e.kind}`}));
+  if(data.hub)for(const n of all)if(n.id!==data.hub.id)edges.push({id:`hub:${n.id}`,source:n.id,target:data.hub.id,kind:'part_of_fog'});
   for(const ep of episodes){
     for(const n of nodes){
       const recordings=n.appearances.filter(id=>ep.recordingIds.includes(id));

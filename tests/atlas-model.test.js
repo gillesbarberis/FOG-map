@@ -82,3 +82,19 @@ test('Korea tracklist and cross-label releases stay distinct',()=>{
   assert.deepEqual(graph.episodeIds(graph.byId.solarythm),['FOG_KOR']);
   assert.deepEqual(graph.episodeIds(graph.byId.dagger),['FOG_KOR']);
 });
+
+
+test('FOG in Bologna connects every node without inventing tracklist appearances',()=>{
+  const hub=graph.byId.FOG_BOLOGNA;
+  assert.equal(hub.city,'Bologna');
+  assert.equal(hub.country,'Italy');
+  const network=graph.network(hub.id);
+  assert.equal(network.edgeIds.size,graph.all.length-1);
+  assert.equal(network.nodeIds.size,graph.all.length);
+  for(const n of graph.all){
+    assert.ok(graph.network(n.id).nodeIds.has(hub.id),n.id);
+    assert.ok(M.located(n),n.id);
+  }
+  assert.deepEqual(graph.episodeIds(hub),[]);
+  assert.deepEqual(graph.recordingIds(hub),[]);
+});

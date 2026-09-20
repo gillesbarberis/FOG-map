@@ -3930,5 +3930,23 @@
       "evidence": "Telekinetic Coercion — Commemorative Compilation [ST100A]",
       "checked_at": "2026-09-20"
     }
-  ]
+  ],
+  "hub": {
+    "id": "FOG_BOLOGNA",
+    "name": "FOG",
+    "type": "hub",
+    "appearances": [],
+    "location": {
+      "lat": 44.4949,
+      "lon": 11.3426,
+      "city": "Bologna",
+      "country": "Italy",
+      "precision": "city",
+      "status": "editorial_confirmed",
+      "sources": [
+        "https://soundcloud.com/gilles_barberis/sets/fog"
+      ],
+      "checked_at": "2026-09-20"
+    }
+  }
 }
