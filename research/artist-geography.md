@@ -1,8 +1,8 @@
 # Artist geography research
 
-Initial research checked 19 September 2026; Vâyu and Sauvage Dub Trio updated 20 September 2026. Public professional geography only; no street addresses.
+Initial research checked 19 September 2026; Vâyu, Sauvage Dub Trio and Uman Yazar updated 20 September 2026. Public professional geography only; no street addresses.
 
-86 of 96 entities have map coordinates: 77 sourced or reported positions and 9 inherited positions still awaiting verification. 10 have no single defensible mapped base yet.
+87 of 96 entities have map coordinates: 78 sourced, reported or editorially set positions and 9 inherited positions still awaiting verification. 9 have no single defensible mapped base yet.
 
 Sources include artist websites, SoundCloud and Bandcamp profiles, release notes, radio, festival and agency biographies, interviews and public professional profiles. Search results were checked against track and alias identity. Label addresses, birthplace, nationality and gig locations do not establish a current working base.
 
@@ -98,16 +98,11 @@ A source checked today may contain an old biography. `reported` marks dated or q
 | Yu Su | London, United Kingdom | city / source_confirmed | Current artist profile says London; supersedes older Vancouver biographies. [Source 1](https://yusu.bandcamp.com/music) |
 | Vâyu | Finistère, France | regional / editorial_confirmed | |
 | Sauvage Dub Trio | Marseille / Lyon, France | regional / editorial_confirmed | |
+| Uman Yazar | Marseille area, France | regional / editorial_confirmed | |
 
 ## Unresolved geography
 
 These artists remain searchable and in their recording panels. Missing coordinates are never replaced with their episode’s country.
-
-### Uman Yazar
-
-Artist and 2026 release checked. No city is stated; the label studio and festival locations are not a residence.
-
-Sources checked: [Source 1](https://soundcloud.com/umanyazar), [Source 2](https://melifera-records.bandcamp.com/album/ritmo-sagrado).
 
 ### WAV
 

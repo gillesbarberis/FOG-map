@@ -1595,18 +1595,29 @@
       "appearances": [
         "2396427804"
       ],
-      "location": null,
+      "location": {
+        "city": "Marseille area",
+        "country": "France",
+        "lat": 43.297,
+        "lon": 5.37,
+        "precision": "regional",
+        "status": "editorial_confirmed",
+        "sources": [
+          "https://soundcloud.com/umanyazar"
+        ],
+        "checked_at": "2026-09-20",
+        "note": ""
+      },
       "appearance_sources": [
         "https://soundcloud.com/gilles_barberis/fog-france-1"
       ],
       "geography_research": {
-        "checked_at": "2026-09-19",
-        "status": "unresolved",
+        "checked_at": "2026-09-20",
+        "status": "editorial_confirmed",
         "sources": [
-          "https://soundcloud.com/umanyazar",
-          "https://melifera-records.bandcamp.com/album/ritmo-sagrado"
+          "https://soundcloud.com/umanyazar"
         ],
-        "note": "Artist and 2026 release checked. No city is stated; the label studio and festival locations are not a residence."
+        "note": ""
       }
     },
     {
