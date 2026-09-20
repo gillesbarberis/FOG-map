@@ -2422,7 +2422,19 @@
       "id": "material-things",
       "name": "Material Things",
       "type": "artist",
-      "location": null,
+      "location": {
+        "city": "Glasgow",
+        "country": "United Kingdom",
+        "lat": 55.8642,
+        "lon": -4.2518,
+        "precision": "city",
+        "status": "editorial_confirmed",
+        "sources": [
+          "https://12thisle.bandcamp.com/album/rain-cymbals"
+        ],
+        "checked_at": "2026-09-20",
+        "note": ""
+      },
       "appearances": [
         "2374091774"
       ],
@@ -2432,13 +2444,12 @@
         "https://soundcloud.com/gilles_barberis/recy-x-fog-korea"
       ],
       "geography_research": {
-        "checked_at": "2026-09-19",
-        "status": "unresolved",
+        "checked_at": "2026-09-20",
+        "status": "editorial_confirmed",
         "sources": [
-          "https://12thisle.bandcamp.com/album/rain-cymbals",
-          "https://12thisle.bandcamp.com/album/2015-2020"
+          "https://12thisle.bandcamp.com/album/rain-cymbals"
         ],
-        "note": "Identity verified as Stewart Brown. Glasgow is the label location; London explicitly describes collaborator Pike, not Material Things."
+        "note": ""
       }
     },
     {

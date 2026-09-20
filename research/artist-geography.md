@@ -1,8 +1,8 @@
 # Artist geography research
 
-Initial research checked 19 September 2026; Vâyu, Sauvage Dub Trio and Uman Yazar updated 20 September 2026. Public professional geography only; no street addresses.
+Initial research checked 19 September 2026; Vâyu, Sauvage Dub Trio Uman Yazar and Material Things updated 20 September 2026. Public professional geography only; no street addresses.
 
-87 of 96 entities have map coordinates: 78 sourced, reported or editorially set positions and 9 inherited positions still awaiting verification. 9 have no single defensible mapped base yet.
+88 of 96 entities have map coordinates: 79 sourced, reported or editorially set positions and 9 inherited positions still awaiting verification. 8 have no single defensible mapped base yet.
 
 Sources include artist websites, SoundCloud and Bandcamp profiles, release notes, radio, festival and agency biographies, interviews and public professional profiles. Search results were checked against track and alias identity. Label addresses, birthplace, nationality and gig locations do not establish a current working base.
 
@@ -99,6 +99,7 @@ A source checked today may contain an old biography. `reported` marks dated or q
 | Vâyu | Finistère, France | regional / editorial_confirmed | |
 | Sauvage Dub Trio | Marseille / Lyon, France | regional / editorial_confirmed | |
 | Uman Yazar | Marseille area, France | regional / editorial_confirmed | |
+| Material Things | Glasgow, United Kingdom | city / editorial_confirmed | |
 
 ## Unresolved geography
 
@@ -139,12 +140,6 @@ Sources checked: [Source 1](https://mikenogami.com/).
 Official biography gives Aichi origin and career history; no current working city is stated.
 
 Sources checked: [Source 1](https://akifukakusa.jp/discographynew/wpage/profile.html), [Source 2](https://akifukakusa.jp/).
-
-### Material Things
-
-Identity verified as Stewart Brown. Glasgow is the label location; London explicitly describes collaborator Pike, not Material Things.
-
-Sources checked: [Source 1](https://12thisle.bandcamp.com/album/rain-cymbals), [Source 2](https://12thisle.bandcamp.com/album/2015-2020).
 
 ### Dåggěr
 
