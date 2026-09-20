@@ -3392,8 +3392,12 @@
       "source": "FOG Mexico-0",
       "target": "st",
       "kind": "released_on",
-      "verification_status": "provided_unverified",
-      "sources": []
+      "verification_status": "source_confirmed",
+      "sources": [
+        "https://soundcloud.com/gilles_barberis/recy-x-fog-korea"
+      ],
+      "evidence": "Liminal [Secuencias Temporales, 2026]",
+      "checked_at": "2026-09-20"
     },
     {
       "source": "FOG Mexico-1",
@@ -3631,7 +3635,9 @@
       "verification_status": "source_confirmed",
       "sources": [
         "https://soundcloud.com/gilles_barberis/fog-korea"
-      ]
+      ],
+      "evidence": "Clorofilla [OSL040]",
+      "checked_at": "2026-09-20"
     },
     {
       "source": "FOG Mexico-9",
@@ -3640,7 +3646,9 @@
       "verification_status": "source_confirmed",
       "sources": [
         "https://soundcloud.com/gilles_barberis/fog-korea"
-      ]
+      ],
+      "evidence": "상상력 [OSC010]",
+      "checked_at": "2026-09-20"
     },
     {
       "source": "FOG Korea-7",
@@ -3649,7 +3657,9 @@
       "verification_status": "source_confirmed",
       "sources": [
         "https://soundcloud.com/gilles_barberis/fog-korea"
-      ]
+      ],
+      "evidence": "Touching The Clouds [OSP004]",
+      "checked_at": "2026-09-20"
     },
     {
       "source": "FOG Japan-5",
@@ -3742,6 +3752,182 @@
         "https://ra.co/dj/s-pill"
       ],
       "evidence": "Oslated Night with Sindh (Live), Atdge Seoul, 12 December 2025",
+      "checked_at": "2026-09-20"
+    },
+    {
+      "source": "FOG Korea-0",
+      "target": "oslated",
+      "kind": "released_on",
+      "verification_status": "source_confirmed",
+      "sources": [
+        "https://soundcloud.com/gilles_barberis/fog-korea"
+      ],
+      "evidence": "고요 [OSC009]",
+      "checked_at": "2026-09-20"
+    },
+    {
+      "source": "FOG Korea-1",
+      "target": "oslated",
+      "kind": "released_on",
+      "verification_status": "source_confirmed",
+      "sources": [
+        "https://soundcloud.com/gilles_barberis/fog-korea"
+      ],
+      "evidence": "고요 [OSC009]",
+      "checked_at": "2026-09-20"
+    },
+    {
+      "source": "FOG Korea-2",
+      "target": "huinali",
+      "kind": "released_on",
+      "verification_status": "source_confirmed",
+      "sources": [
+        "https://soundcloud.com/gilles_barberis/fog-korea"
+      ],
+      "evidence": "Angel’s Entrance [HNL027]",
+      "checked_at": "2026-09-20"
+    },
+    {
+      "source": "FOG Korea-3",
+      "target": "oslated",
+      "kind": "released_on",
+      "verification_status": "source_confirmed",
+      "sources": [
+        "https://soundcloud.com/gilles_barberis/fog-korea"
+      ],
+      "evidence": "우주농담 [OSC009]",
+      "checked_at": "2026-09-20"
+    },
+    {
+      "source": "FOG Korea-4",
+      "target": "huinali",
+      "kind": "released_on",
+      "verification_status": "source_confirmed",
+      "sources": [
+        "https://soundcloud.com/gilles_barberis/fog-korea"
+      ],
+      "evidence": "w510 [HNC003]",
+      "checked_at": "2026-09-20"
+    },
+    {
+      "source": "FOG Korea-5",
+      "target": "huinali",
+      "kind": "released_on",
+      "verification_status": "source_confirmed",
+      "sources": [
+        "https://soundcloud.com/gilles_barberis/fog-korea"
+      ],
+      "evidence": "Kemuri [HNL019]",
+      "checked_at": "2026-09-20"
+    },
+    {
+      "source": "FOG Korea-6",
+      "target": "oslated",
+      "kind": "released_on",
+      "verification_status": "source_confirmed",
+      "sources": [
+        "https://soundcloud.com/gilles_barberis/fog-korea"
+      ],
+      "evidence": "Optical Node [OSL043]",
+      "checked_at": "2026-09-20"
+    },
+    {
+      "source": "FOG Korea-8",
+      "target": "huinali",
+      "kind": "released_on",
+      "verification_status": "source_confirmed",
+      "sources": [
+        "https://soundcloud.com/gilles_barberis/fog-korea"
+      ],
+      "evidence": "Too Far Away [HNL025]",
+      "checked_at": "2026-09-20"
+    },
+    {
+      "source": "FOG Korea-4",
+      "target": "oslated",
+      "kind": "released_on",
+      "verification_status": "source_confirmed",
+      "sources": [
+        "https://soundcloud.com/gilles_barberis/fog-korea"
+      ],
+      "evidence": "Park St [OSC010]",
+      "checked_at": "2026-09-20"
+    },
+    {
+      "source": "FOG Korea-9",
+      "target": "oslated",
+      "kind": "released_on",
+      "verification_status": "source_confirmed",
+      "sources": [
+        "https://soundcloud.com/gilles_barberis/fog-korea"
+      ],
+      "evidence": "To Catch A Falling Leaf [OSL038]",
+      "checked_at": "2026-09-20"
+    },
+    {
+      "source": "FOG Korea-2",
+      "target": "oslated",
+      "kind": "released_on",
+      "verification_status": "source_confirmed",
+      "sources": [
+        "https://soundcloud.com/gilles_barberis/fog-korea"
+      ],
+      "evidence": "Distant Communion [OSL008]",
+      "checked_at": "2026-09-20"
+    },
+    {
+      "source": "FOG Korea-10",
+      "target": "huinali",
+      "kind": "released_on",
+      "verification_status": "source_confirmed",
+      "sources": [
+        "https://soundcloud.com/gilles_barberis/fog-korea"
+      ],
+      "evidence": "0b [HNL001]",
+      "checked_at": "2026-09-20"
+    },
+    {
+      "source": "FOG Korea-11",
+      "target": "oslated",
+      "kind": "released_on",
+      "verification_status": "source_confirmed",
+      "sources": [
+        "https://soundcloud.com/gilles_barberis/fog-korea"
+      ],
+      "evidence": "깊은밤 갑자기 [OSC010]",
+      "checked_at": "2026-09-20"
+    },
+    {
+      "source": "elle",
+      "target": "oslated",
+      "kind": "released_on",
+      "verification_status": "source_confirmed",
+      "sources": [
+        "https://soundcloud.com/gilles_barberis/recy-x-fog-korea"
+      ],
+      "evidence": "Guardarsi Indietro [Oslated, 2019]",
+      "checked_at": "2026-09-20"
+    },
+    {
+      "source": "solarythm",
+      "target": "melifera",
+      "kind": "released_on",
+      "verification_status": "source_confirmed",
+      "sources": [
+        "https://melifera-records.bandcamp.com/album/opale"
+      ],
+      "evidence": "Opale",
+      "checked_at": "2026-09-20"
+    },
+    {
+      "source": "dagger",
+      "target": "st",
+      "kind": "released_on",
+      "verification_status": "source_confirmed",
+      "sources": [
+        "https://secuenciastemporales.bandcamp.com/track/d-gg-r-sz-r-gg-telekinetic-coercion"
+      ],
+      "evidence": "Telekinetic Coercion — Commemorative Compilation [ST100A]",
       "checked_at": "2026-09-20"
     }
   ]

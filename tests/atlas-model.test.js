@@ -65,3 +65,20 @@ test('researched geography retains precision, evidence and unresolved cases',()=
   assert.equal(graph.byId['FOG Japan-7'].city,'Paris');
   assert.equal(graph.byId.yingtuitive.geography_research.declared_bases.length,2);
 });
+
+
+test('Korea tracklist and cross-label releases stay distinct',()=>{
+  const has=(artist,label)=>graph.edges.some(e=>e.source===artist&&e.target===label&&e.kind==='released_on');
+  for(const n of data.nodes.filter(n=>n.appearances.includes('2375330147'))){
+    assert.ok(has(n.id,'oslated')||has(n.id,'huinali'),n.name);
+  }
+  assert.ok(has('FOG Korea-2','oslated')&&has('FOG Korea-2','huinali'));
+  assert.ok(has('FOG Korea-4','oslated')&&has('FOG Korea-4','huinali'));
+  for(const n of data.nodes.filter(n=>n.appearances.includes('2374091774'))){
+    assert.ok(graph.episodeIds(graph.byId[n.id]).includes('FOG_KOR'),n.name);
+  }
+  assert.ok(has('solarythm','melifera'));
+  assert.ok(has('dagger','st'));
+  assert.deepEqual(graph.episodeIds(graph.byId.solarythm),['FOG_KOR']);
+  assert.deepEqual(graph.episodeIds(graph.byId.dagger),['FOG_KOR']);
+});
