@@ -70,10 +70,12 @@ test('researched geography retains precision, evidence and unresolved cases',()=
 test('Korea tracklist and cross-label releases stay distinct',()=>{
   const has=(artist,label)=>graph.edges.some(e=>e.source===artist&&e.target===label&&e.kind==='released_on');
   for(const n of data.nodes.filter(n=>n.appearances.includes('2375330147'))){
-    assert.ok(has(n.id,'oslated')||has(n.id,'huinali'),n.name);
+    assert.ok(has(n.id,'oslated'),n.name);
   }
-  assert.ok(has('FOG Korea-2','oslated')&&has('FOG Korea-2','huinali'));
-  assert.ok(has('FOG Korea-4','oslated')&&has('FOG Korea-4','huinali'));
+  assert.ok(has('FOG Korea-2','oslated'));
+  assert.match(graph.edges.find(e=>e.source==='FOG Korea-2'&&e.target==='oslated').evidence,/HNL027.*OSL008/);
+  assert.ok(has('FOG Korea-4','oslated'));
+  assert.match(graph.edges.find(e=>e.source==='FOG Korea-4'&&e.target==='oslated').evidence,/HNC003.*OSC010/);
   for(const n of data.nodes.filter(n=>n.appearances.includes('2374091774'))){
     assert.ok(graph.episodeIds(graph.byId[n.id]).includes('FOG_KOR'),n.name);
   }
@@ -111,4 +113,22 @@ test('France episode reveals its cross-label network without expanding the entir
   assert.ok(!net.nodeIds.has('yingtuitive'));
   assert.ok(!graph.network('solarythm').nodeIds.has('FOG France-1'));
   assert.deepEqual(graph.episodeIds(graph.byId.solarythm),['FOG_KOR']);
+});
+
+
+test('country and focus share one selection and country-origin routes',()=>{
+  for(const [country,focus] of [['FOG_FRA','melifera'],['FOG_MEX','st'],['FOG_KOR','oslated']]){
+    assert.equal(graph.selectionId(focus),country);
+    const a=graph.visualNetwork(country),b=graph.visualNetwork(focus);
+    assert.deepEqual(a,b);
+    assert.ok(a.nodeIds.has(focus));
+    for(const e of graph.visualEdges.filter(e=>a.edgeIds.has(e.id)))assert.ok(e.source===country||e.target===country);
+  }
+  const france=graph.visualNetwork('FOG_FRA');
+  assert.ok(france.nodeIds.has('solarythm'));
+  const biocym=graph.visualNetwork('FOG France-1');
+  for(const id of ['FOG_FRA','FOG_KOR','FOG_MEX'])assert.ok(biocym.nodeIds.has(id));
+  assert.equal(graph.visualNetwork('FOG_BOLOGNA').edgeIds.size,graph.all.length-1);
+  assert.equal(new Set(graph.visualEdges.map(e=>[e.source,e.target].sort().join(':'))).size,graph.visualEdges.length);
+  assert.ok(!graph.visualEdges.some(e=>e.source==='FOG France-1'&&e.target==='melifera'));
 });

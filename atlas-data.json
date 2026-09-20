@@ -51,8 +51,7 @@
       "angularSpan": 8,
       "anchor_note": "Representative country anchor, not an artist location.",
       "focusIds": [
-        "oslated",
-        "huinali"
+        "oslated"
       ],
       "guestIds": [
         "recy"
@@ -198,7 +197,7 @@
     },
     {
       "id": "oslated",
-      "name": "Oslated",
+      "name": "Oslated / Huinali",
       "type": "label",
       "verification_status": "provided_unverified",
       "sources": [],
@@ -212,25 +211,12 @@
         "status": "provided_unverified",
         "sources": []
       },
-      "appearance_sources": []
-    },
-    {
-      "id": "huinali",
-      "name": "Huinali Recordings",
-      "type": "label",
-      "verification_status": "provided_unverified",
-      "sources": [],
-      "appearances": [],
-      "location": {
-        "lat": 33.5,
-        "lon": 126.531,
-        "city": "Jeju",
-        "country": "South Korea",
-        "precision": "city",
-        "status": "provided_unverified",
-        "sources": []
-      },
-      "appearance_sources": []
+      "appearance_sources": [],
+      "aliases": [
+        "Oslated",
+        "Huinali",
+        "Huinali Recordings"
+      ]
     },
     {
       "id": "cy",
@@ -3778,13 +3764,13 @@
     },
     {
       "source": "FOG Korea-2",
-      "target": "huinali",
+      "target": "oslated",
       "kind": "released_on",
       "verification_status": "source_confirmed",
       "sources": [
         "https://soundcloud.com/gilles_barberis/fog-korea"
       ],
-      "evidence": "Angel’s Entrance [HNL027]",
+      "evidence": "Angel’s Entrance [HNL027]; Distant Communion [OSL008]",
       "checked_at": "2026-09-20"
     },
     {
@@ -3800,18 +3786,18 @@
     },
     {
       "source": "FOG Korea-4",
-      "target": "huinali",
+      "target": "oslated",
       "kind": "released_on",
       "verification_status": "source_confirmed",
       "sources": [
         "https://soundcloud.com/gilles_barberis/fog-korea"
       ],
-      "evidence": "w510 [HNC003]",
+      "evidence": "w510 [HNC003]; Park St [OSC010]",
       "checked_at": "2026-09-20"
     },
     {
       "source": "FOG Korea-5",
-      "target": "huinali",
+      "target": "oslated",
       "kind": "released_on",
       "verification_status": "source_confirmed",
       "sources": [
@@ -3833,24 +3819,13 @@
     },
     {
       "source": "FOG Korea-8",
-      "target": "huinali",
-      "kind": "released_on",
-      "verification_status": "source_confirmed",
-      "sources": [
-        "https://soundcloud.com/gilles_barberis/fog-korea"
-      ],
-      "evidence": "Too Far Away [HNL025]",
-      "checked_at": "2026-09-20"
-    },
-    {
-      "source": "FOG Korea-4",
       "target": "oslated",
       "kind": "released_on",
       "verification_status": "source_confirmed",
       "sources": [
         "https://soundcloud.com/gilles_barberis/fog-korea"
       ],
-      "evidence": "Park St [OSC010]",
+      "evidence": "Too Far Away [HNL025]",
       "checked_at": "2026-09-20"
     },
     {
@@ -3865,19 +3840,8 @@
       "checked_at": "2026-09-20"
     },
     {
-      "source": "FOG Korea-2",
-      "target": "oslated",
-      "kind": "released_on",
-      "verification_status": "source_confirmed",
-      "sources": [
-        "https://soundcloud.com/gilles_barberis/fog-korea"
-      ],
-      "evidence": "Distant Communion [OSL008]",
-      "checked_at": "2026-09-20"
-    },
-    {
       "source": "FOG Korea-10",
-      "target": "huinali",
+      "target": "oslated",
       "kind": "released_on",
       "verification_status": "source_confirmed",
       "sources": [

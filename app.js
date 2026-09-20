@@ -34,7 +34,7 @@ const img=new Image();img.onload=()=>{gl.bindTexture(gl.TEXTURE_2D,texture);gl.t
 function drawEarth(){if(!gl||!textureReady)return;const {cx,cy,R}=geo();gl.viewport(0,0,earth.width,earth.height);gl.useProgram(program);gl.uniform2f(gl.getUniformLocation(program,'resolution'),earth.width,earth.height);gl.uniform2f(gl.getUniformLocation(program,'center'),cx*dpr,(H-cy)*dpr);gl.uniform1f(gl.getUniformLocation(program,'radius'),R*dpr);gl.uniform1f(gl.getUniformLocation(program,'yaw'),yaw);gl.uniform1f(gl.getUniformLocation(program,'pitch'),pitch);gl.drawArrays(gl.TRIANGLES,0,6)}
 function activeNetwork(){
   const nodeIds=new Set(),edgeIds=new Set();
-  for(const id of new Set([selected,hovered].filter(Boolean))){const network=G.network(id);network.nodeIds.forEach(n=>nodeIds.add(n));network.edgeIds.forEach(e=>edgeIds.add(e));}
+  for(const id of new Set([selected,hovered].filter(Boolean))){const network=G.visualNetwork(id);network.nodeIds.forEach(n=>nodeIds.add(n));network.edgeIds.forEach(e=>edgeIds.add(e));}
   return {nodeIds,edgeIds};
 }
 function drawArc(e){
@@ -53,12 +53,12 @@ function drawArc(e){
       if(pen)ctx.lineTo(p.x,p.y);else ctx.moveTo(p.x,p.y);pen=true;});
   }
   // A flight-map route, with a soft bloom and a fine luminous core.
-  const warm=e.kind==='appears_in',rgb=warm?'255,197,104':'155,201,228';
+  const rgb='255,197,104';
   ctx.save();ctx.lineCap='round';ctx.lineJoin='round';
   ctx.shadowColor=`rgba(${rgb},.8)`;ctx.shadowBlur=15;
   ctx.strokeStyle=`rgba(${rgb},.10)`;ctx.lineWidth=7;ctx.stroke();
   ctx.shadowBlur=7;ctx.strokeStyle=`rgba(${rgb},.30)`;ctx.lineWidth=3;ctx.stroke();
-  ctx.shadowBlur=0;ctx.strokeStyle=warm?'rgba(255,229,178,.94)':'rgba(208,234,250,.86)';ctx.lineWidth=1;ctx.stroke();
+  ctx.shadowBlur=0;ctx.strokeStyle='rgba(255,229,178,.94)';ctx.lineWidth=1;ctx.stroke();
   ctx.restore();return true;
 }
 function visibleNodes(active,stages){
@@ -105,7 +105,7 @@ function placeLabels(visible,active){
 function draw(){
   if(!W||!H)return;drawEarth();ctx.clearRect(0,0,W,H);hits=[];
   const active=activeNetwork(),stages=Object.fromEntries(G.episodes.map(e=>[e.id,stage(e)]));
-  let arcCount=0;for(const e of E)if(active.edgeIds.has(e.id)&&drawArc(e))arcCount++;
+  let arcCount=0;for(const e of G.visualEdges)if(active.edgeIds.has(e.id)&&drawArc(e))arcCount++;
   const visible=visibleNodes(active,stages);visible.forEach(({n,p})=>marker(n,p,active));placeLabels(visible,active);
   const nearby=G.episodes.filter(e=>stages[e.id]!=='episodes').sort((a,b)=>project(b).v-project(a).v)[0];
   $('#map-level').textContent=nearby?`${nearby.name} / ${stages[nearby.id]==='detail'?'PEOPLE & PLACES':'LOCAL SCENE'}`:'FOG / EPISODES';
@@ -140,6 +140,7 @@ function overview(){
 }
 function locationLabel(n){return n.location?.display_label||n.city+(n.country&&n.city!==n.country?' · '+n.country:'')}
 function choose(n,focus=true){
+  n=B[G.selectionId(n.id)];
   selected=n.id;hovered=null;
   if(located(n)){yaw=-n.lon*Math.PI/180;pitch=n.lat*Math.PI/180;}
   else if(n.type!=='episode'){const ep=relatedEpisodes(n)[0];if(ep){yaw=-ep.lon*Math.PI/180;pitch=ep.lat*Math.PI/180;}}

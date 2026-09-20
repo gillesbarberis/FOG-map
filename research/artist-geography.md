@@ -2,7 +2,7 @@
 
 Updated 20 September 2026. Public professional geography only; no street addresses.
 
-All 96 entities have map coordinates: 87 sourced, reported or editorially set positions and 9 inherited positions. Editorial map choices are not claims of independently confirmed residence or recording studios. Country and regional coordinates remain representative. Evidence is retained here, not shown in public artist cards.
+All 95 entities have map coordinates: 87 sourced, reported or editorially set positions and 8 inherited positions. Editorial map choices are not claims of independently confirmed residence or recording studios. Country and regional coordinates remain representative. Evidence is retained here, not shown in public artist cards.
 
 ## Mapped entities
 
@@ -39,7 +39,6 @@ All 96 entities have map coordinates: 87 sourced, reported or editorially set po
 | Hironori Takahashi | Tokyo, Japan | city / reported | Biography states working in Tokyo; grew up in Morioka. [Source 1](https://ra.co/dj/hironoritakahashi/biography) |
 | Hod | Medellín, Colombia | city / source_confirmed |  [Source 1](https://soundcloud.com/951012) |
 | Huerco S. | Brooklyn, New York, United States | city / reported | Festival biography states Brooklyn, corroborated by NTS. Biography date is unclear; current base needs reconfirmation. [Source 1](https://www.meakusma-festival.be/artist/huerco-s/) |
-| Huinali Recordings | Jeju, South Korea | city / provided_unverified |  Original atlas position |
 | Human Space Machine | Amsterdam, Netherlands | city / source_confirmed | Artist Bandcamp profile lists Amsterdam. [Source 1](https://humanspacemachine.bandcamp.com/album/nowhere01-substance) |
 | Inoue Kaoru | Tokyo, Japan | city / source_confirmed | Artist-run label biography explicitly identifies Kaoru Inoue as based in Tokyo. [Source 1](https://seedsandground.bandcamp.com/album/sacred-days) |
 | Intertoto | London, United Kingdom | city / source_confirmed |  [Source 1](https://ra.co/dj/intertoto) |
@@ -66,7 +65,7 @@ All 96 entities have map coordinates: 87 sourced, reported or editorially set po
 | Orbin Nun | Tel Aviv, Israel | city / source_confirmed |  [Source 1](https://soundcloud.com/orbinnun) |
 | Orca Silent | Smithers, BC, Canada | city / source_confirmed | Profile lists Smithers / Wet’suwet’en Territory; label address in Victoria is not the artist location. [Source 1](https://soundcloud.com/orcasilent/tracks) |
 | Oreste | Méribel, France | city / source_confirmed | December 2025 release explicitly places Oreste in Méribel. [Source 1](https://oslated.bandcamp.com/album/arcana-amissa-temporum-oblitum-osl041) |
-| Oslated | Jeju, South Korea | city / provided_unverified |  Original atlas position |
+| Oslated / Huinali | Jeju, South Korea | city / provided_unverified |  Original atlas position |
 | Piante Vive | Italy, Italy | country / source_confirmed | 2025 label release locates the duo in Italy; Milan is not confirmed for both members. [Source 1](https://oslated.bandcamp.com/album/clorophilla-osl040) |
 | Pike | London, United Kingdom | city / source_confirmed | 2025 release identifies the collaborator as London-based percussionist Pike. [Source 1](https://12thisle.bandcamp.com/album/rain-cymbals) |
 | Priori | Montreal, Canada | city / source_confirmed |  [Source 1](https://soundcloud.com/priori-ties) |

@@ -43,13 +43,38 @@ function create(data){
     }
     return {nodeIds,edgeIds};
   }
+  const focusCountry=new Map();
+  for(const ep of episodes)for(const id of ep.focusIds)if(byId[id].type!=='artist')focusCountry.set(id,ep.id);
+  const selectionId=id=>focusCountry.get(id)||id;
+  const visualMap=new Map();
+  function route(source,target){
+    if(source===target)return;
+    const key=[source,target].sort().join(':');
+    if(!visualMap.has(key))visualMap.set(key,{id:'route:'+key,source,target,kind:'country_connection'});
+  }
+  for(const edge of edges){
+    if(edge.kind==='part_of_fog'){route(edge.source,edge.target);continue}
+    const source=selectionId(edge.source),target=selectionId(edge.target);
+    if(byId[source].type==='episode'&&byId[target].type==='artist')route(source,target);
+    else if(byId[target].type==='episode'&&byId[source].type==='artist')route(target,source);
+  }
+  const visualEdges=[...visualMap.values()];
+  function visualNetwork(id){
+    id=selectionId(id);
+    const nodeIds=new Set([id]),edgeIds=new Set();
+    for(const edge of visualEdges)if(edge.source===id||edge.target===id){
+      edgeIds.add(edge.id);nodeIds.add(edge.source);nodeIds.add(edge.target);
+    }
+    for(const ep of episodes)if(nodeIds.has(ep.id))for(const focus of ep.focusIds)nodeIds.add(focus);
+    return {nodeIds,edgeIds};
+  }
   function role(n){
     if(n.type==='episode')return 'episode';
     if(episodes.some(e=>e.focusIds.includes(n.id)))return 'focus';
     if(episodes.some(e=>e.guestIds.includes(n.id)))return 'guest';
     return n.type==='artist'?'producer':'focus';
   }
-  return {episodes,nodes,all,byId,edges,recordings,episodeIds,recordingIds,network,role};
+  return {episodes,nodes,all,byId,edges,recordings,episodeIds,recordingIds,network,role,selectionId,visualEdges,visualNetwork};
 }
 function project(n,camera,geometry,alt=1){
   const a=radians(n.lat),b=radians(n.lon),X=Math.cos(a)*Math.sin(b),Y=Math.sin(a),Z=Math.cos(a)*Math.cos(b);
