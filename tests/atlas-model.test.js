@@ -58,6 +58,10 @@ test('researched geography retains precision, evidence and unresolved cases',()=
   }
   assert.equal(graph.byId['FOG Japan-13'].location.precision,'country');
   assert.ok(!graph.byId['FOG Japan-13'].location.sources.includes('https://soundcloud.com/sabi_records'));
-  assert.equal(M.located(graph.byId.yingtuitive),false);
+  assert.equal(graph.byId.yingtuitive.city,'London');
+  assert.ok(data.nodes.every(n=>M.located(graph.byId[n.id])));
+  const wav=graph.network('FOG Japan-5');
+  assert.ok(wav.nodeIds.has('FOG Japan-6')&&wav.nodeIds.has('FOG Japan-7'));
+  assert.equal(graph.byId['FOG Japan-7'].city,'Paris');
   assert.equal(graph.byId.yingtuitive.geography_research.declared_bases.length,2);
 });

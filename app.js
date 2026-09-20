@@ -115,7 +115,7 @@ function draw(){
   canvas.dataset.visibleProducers=visible.filter(({n})=>G.role(n)==='producer').map(({n})=>n.id).join('|');canvas.dataset.selected=selected||'';canvas.dataset.hovered=hovered||'';canvas.dataset.arcCount=String(arcCount);canvas.dataset.level=nearby?stages[nearby.id]:'episodes';
 }
 function size(){const r=canvas.getBoundingClientRect();W=r.width;H=r.height;dpr=Math.min(devicePixelRatio||1,2);canvas.width=Math.round(W*dpr);canvas.height=Math.round(H*dpr);earth.width=canvas.width;earth.height=canvas.height;ctx.setTransform(dpr,0,0,dpr,0,0);requestDraw()}new ResizeObserver(size).observe(canvas);
-function row(n,subtitle){const role=G.role(n);return `<button class="network-row" data-node="${esc(n.id)}"><i class="${role==='episode'?'ring':role==='focus'?'gold':'white'}"></i><span>${esc(n.name)}<small>${esc(subtitle||n.city+(n.country&&n.city!==n.country?' · '+n.country:''))}</small></span><span class="arrow">↗</span></button>`}
+function row(n,subtitle){const role=G.role(n);return `<button class="network-row" data-node="${esc(n.id)}"><i class="${role==='episode'?'ring':role==='focus'?'gold':'white'}"></i><span>${esc(n.name)}<small>${esc(subtitle||locationLabel(n))}</small></span><span class="arrow">↗</span></button>`}
 let currentRecording=null,playerTimer=null;
 function soundCloudURL(r,autoplay=false){
   const url=new URL(r.url);if(url.protocol!=='https:'||url.hostname!=='soundcloud.com')throw Error('Invalid recording URL');
@@ -137,17 +137,7 @@ function overview(){
   detail.innerHTML=`<div class="eyebrow">FOG / RADIO ATLAS</div><h1 class="panel-title">Follow the music.<br>Across borders.</h1><p class="intro">Start with an episode. Zoom into its country to meet the labels, guests and producers behind the music.</p><div class="stats"><div><strong>${G.episodes.length}</strong><span>COUNTRIES</span></div><div><strong>${data.recordings.length}</strong><span>RECORDINGS</span></div></div><section class="section"><h2>CHOOSE AN EPISODE</h2>${G.episodes.map(e=>row(e,e.country+' · '+e.focusIds.map(id=>B[id].name).join(' / '))).join('')}</section><p class="note">Hover to trace connections. Click to keep them lit. Zoom closer to reveal the local scene.</p><button class="network-row" id="pending"><span>Explore all producers<small>Across every FOG tracklist</small></span><span class="arrow">→</span></button>`;
   $('#pending').onclick=()=>{filter='artist';$('#type').value=filter;query='';$('#search').value='';openSearch();results()};
 }
-function locationNote(n){
-  if(n.location?.status==='editorial_confirmed')return '';
-  const record=n.location||n.geography_research, sources=record?.sources||[];
-  let text='Location research in progress.';
-  if(n.location){
-    const precision={city:'City-level position',regional:'Approximate regional position',country:'Country-level position; city not yet verified'}[record.precision]||'Approximate position';
-    const status={source_confirmed:'supported by a public source',reported:'reported in a public source; current base needs reconfirmation',provided_unverified:'supplied in the original atlas; verification pending'}[record.status]||'verification pending';
-    text=precision+' — '+status+'.';
-  }
-  return `<p class="note">${esc(text)}${record?.note?' '+esc(record.note):''}${record?.checked_at?' Checked '+esc(record.checked_at)+'.':''}${sources.map((s,i)=>` <a href="${esc(s)}" target="_blank" rel="noopener">Source${sources.length>1?' '+(i+1):''} ↗</a>`).join('')}</p>`;
-}
+function locationLabel(n){return n.location?.display_label||n.city+(n.country&&n.city!==n.country?' · '+n.country:'')}
 function choose(n,focus=true){
   selected=n.id;hovered=null;
   if(located(n)){yaw=-n.lon*Math.PI/180;pitch=n.lat*Math.PI/180;}
@@ -155,10 +145,10 @@ function choose(n,focus=true){
   const close='<button class="back" id="close-detail" aria-label="Close details">×</button>';
   if(n.type==='episode'){
     const members=N.filter(p=>p.appearances.some(id=>n.recordingIds.includes(id))),pending=members.filter(p=>!located(p));
-    detail.innerHTML=`${close}<div class="eyebrow">FOG / COUNTRY EPISODE</div><h1 class="panel-title">${esc(n.name)}</h1><p class="episode-country">${esc(n.country)}</p><p class="intro">${esc(n.focusIds.map(id=>B[id].name).join(' / '))}</p><button class="scene-button" data-scene="${esc(n.id)}">EXPLORE THE LOCAL SCENE +</button><section class="section"><h2>LISTEN / TWO RECORDINGS</h2>${players(n.recordingIds)}</section><section class="section"><h2>FOCUS & GUEST</h2>${[...new Set([...n.focusIds,...n.guestIds])].map(id=>row(B[id],n.guestIds.includes(id)?'Guest mix'+(n.focusIds.includes(id)?' / episode focus':''):'Episode focus')).join('')}</section><section class="section"><h2>PRODUCERS IN THESE RECORDINGS <span class="muted">/ ${members.length}</span></h2><p class="note">Connections follow the tracklists, wherever each artist is based.${pending.length?' '+pending.length+' locations are still being researched.':''}</p>${members.map(p=>row(p,located(p)?p.city+' · '+p.country:'Location to verify')).join('')}</section>`;
+    detail.innerHTML=`${close}<div class="eyebrow">FOG / COUNTRY EPISODE</div><h1 class="panel-title">${esc(n.name)}</h1><p class="episode-country">${esc(n.country)}</p><p class="intro">${esc(n.focusIds.map(id=>B[id].name).join(' / '))}</p><button class="scene-button" data-scene="${esc(n.id)}">EXPLORE THE LOCAL SCENE +</button><section class="section"><h2>LISTEN / TWO RECORDINGS</h2>${players(n.recordingIds)}</section><section class="section"><h2>FOCUS & GUEST</h2>${[...new Set([...n.focusIds,...n.guestIds])].map(id=>row(B[id],n.guestIds.includes(id)?'Guest mix'+(n.focusIds.includes(id)?' / episode focus':''):'Episode focus')).join('')}</section><section class="section"><h2>PRODUCERS IN THESE RECORDINGS <span class="muted">/ ${members.length}</span></h2><p class="note">Connections follow the tracklists, wherever each artist is based.${pending.length?' '+pending.length+' locations are still being researched.':''}</p>${members.map(p=>row(p,located(p)?locationLabel(p):'Location to verify')).join('')}</section>`;
   }else{
     const eps=relatedEpisodes(n),relationships=E.filter(e=>e.kind!=='appears_in'&&e.kind!=='episode_focus'&&e.kind!=='guest_mix'&&(e.source===n.id||e.target===n.id));
-    detail.innerHTML=`${close}<div class="eyebrow">${G.role(n)==='guest'?'GUEST / PRODUCER':n.type.toUpperCase()}</div><h1 class="panel-title">${esc(n.name)}</h1><div class="location">${esc(located(n)?n.city+' · '+n.country:'Location to verify')}</div>${locationNote(n)}<section class="section"><h2>HEARD IN FOG</h2>${eps.map(ep=>row(ep,ep.country)).join('')||'<p class="note">Episode links are being researched.</p>'}${players(G.recordingIds(n))}</section><section class="section"><h2>CONNECTED SCENES</h2>${relationships.map(e=>row(B[e.source===n.id?e.target:e.source],e.kind.replaceAll('_',' '))).join('')||'<p class="note">More connections will be added as the archive is researched.</p>'}</section>`;
+    detail.innerHTML=`${close}<div class="eyebrow">${G.role(n)==='guest'?'GUEST / PRODUCER':n.type.toUpperCase()}</div><h1 class="panel-title">${esc(n.name)}</h1><div class="location">${esc(located(n)?locationLabel(n):'Location to verify')}</div><section class="section"><h2>HEARD IN FOG</h2>${eps.map(ep=>row(ep,ep.country)).join('')||'<p class="note">Episode links are being researched.</p>'}${players(G.recordingIds(n))}</section><section class="section"><h2>CONNECTED SCENES</h2>${relationships.map(e=>row(B[e.source===n.id?e.target:e.source],e.kind.replaceAll('_',' '))).join('')||'<p class="note">More connections will be added as the archive is researched.</p>'}</section>`;
   }
   $('#close-detail').onclick=()=>{selected=null;hovered=null;overview();requestDraw()};$('#panel').scrollTop=0;closeSearch();requestDraw();
   if(focus&&innerWidth<=760)$('#panel').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth',block:'start'});
@@ -171,7 +161,7 @@ layer.addEventListener('pointerover',e=>{const b=e.target.closest('[data-node]')
 layer.addEventListener('pointerout',e=>{const b=e.target.closest('[data-node]');if(b&&!b.contains(e.relatedTarget)){hovered=null;requestDraw()}});
 layer.addEventListener('focusin',e=>{const b=e.target.closest('[data-node]');if(b){hovered=b.dataset.node;requestDraw()}});
 layer.addEventListener('focusout',()=>{hovered=null;requestDraw()});
-function results(){const rows=G.all.filter(match);$('#count').textContent=`${rows.length} ${rows.length===1?'result':'results'}`;$('#results').innerHTML=rows.map(n=>`<button class="result" data-node="${esc(n.id)}">${esc(n.name)}<small>${esc(n.type==='episode'?n.country+' · two recordings':located(n)?n.city+' · '+n.country:relatedEpisodes(n).map(e=>e.name).join(' / ')+' · location to verify')}</small></button>`).join('')||'<p class="note">No results. Try another name.</p>'}
+function results(){const rows=G.all.filter(match);$('#count').textContent=`${rows.length} ${rows.length===1?'result':'results'}`;$('#results').innerHTML=rows.map(n=>`<button class="result" data-node="${esc(n.id)}">${esc(n.name)}<small>${esc(n.type==='episode'?n.country+' · two recordings':located(n)?locationLabel(n):relatedEpisodes(n).map(e=>e.name).join(' / ')+' · location to verify')}</small></button>`).join('')||'<p class="note">No results. Try another name.</p>'}
 $('#results').addEventListener('click',delegatedClick);
 function openSearch(){$('#explorer').hidden=false;$('#explore').setAttribute('aria-expanded','true');$('#search').focus()}
 function closeSearch(){$('#explorer').hidden=true;$('#explore').setAttribute('aria-expanded','false')}
