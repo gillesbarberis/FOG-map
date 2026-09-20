@@ -98,3 +98,17 @@ test('FOG in Bologna connects every node without inventing tracklist appearances
   assert.deepEqual(graph.episodeIds(hub),[]);
   assert.deepEqual(graph.recordingIds(hub),[]);
 });
+
+
+test('France episode reveals its cross-label network without expanding the entire hub',()=>{
+  const net=graph.network('FOG_FRA');
+  for(const id of ['melifera','vallee','FOG France-1','st','oslated','solarythm','FOG_KOR','FOG_BOLOGNA'])assert.ok(net.nodeIds.has(id),id);
+  for(const [source,target] of [['FOG France-1','st'],['FOG France-1','oslated'],['solarythm','melifera'],['FOG France-5','oslated']]){
+    const edge=graph.edges.find(e=>e.source===source&&e.target===target&&e.kind==='released_on');
+    assert.ok(net.edgeIds.has(edge.id),source+' -> '+target);
+  }
+  assert.ok(!net.nodeIds.has('dagger'));
+  assert.ok(!net.nodeIds.has('yingtuitive'));
+  assert.ok(!graph.network('solarythm').nodeIds.has('FOG France-1'));
+  assert.deepEqual(graph.episodeIds(graph.byId.solarythm),['FOG_KOR']);
+});

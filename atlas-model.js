@@ -31,8 +31,15 @@ function create(data){
     const node=byId[id],nodeIds=new Set(),edgeIds=new Set();
     if(!node)return {nodeIds,edgeIds};
     nodeIds.add(id);
-    for(const edge of edges){
-      if(edge.source===id||edge.target===id){edgeIds.add(edge.id);nodeIds.add(edge.source);nodeIds.add(edge.target);}
+    const add=edge=>{edgeIds.add(edge.id);nodeIds.add(edge.source);nodeIds.add(edge.target)};
+    for(const edge of edges)if(edge.source===id||edge.target===id)add(edge);
+    if(node.type==='episode'){
+      // Expand this episode's people and focus organisations, never the global hub.
+      const seeds=new Set([...nodeIds].filter(key=>byId[key].type!=='hub'&&byId[key].type!=='episode'));
+      for(const edge of edges)if(seeds.has(edge.source)||seeds.has(edge.target))add(edge);
+      // Show which episodes feature artists reached through a focus organisation.
+      const artists=new Set([...nodeIds].filter(key=>byId[key].type==='artist'));
+      for(const edge of edges)if(edge.kind==='appears_in'&&artists.has(edge.source))add(edge);
     }
     return {nodeIds,edgeIds};
   }

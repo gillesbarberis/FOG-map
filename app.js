@@ -88,7 +88,7 @@ function placeLabels(visible,active){
   const used=new Set(),boxes=[];
   const sorted=[...visible].sort((a,b)=>(b.n.id===selected)-(a.n.id===selected)||(b.n.type==='hub')-(a.n.type==='hub')||(b.n.type==='episode')-(a.n.type==='episode'));
   for(const {n,p} of sorted){
-    const role=G.role(n),inScene=G.episodes.some(ep=>stage(ep)!=='episodes'&&[...ep.focusIds,...ep.guestIds].includes(n.id)),wanted=n.type==='hub'||role==='episode'||((role==='focus'||role==='guest')&&inScene)||(role==='producer'&&(active.nodeIds.has(n.id)||(zoom>=3&&p.v>.85)||G.episodes.some(ep=>stage(ep)==='detail'&&n.country===ep.country)))||n.id===selected||n.id===hovered;
+    const role=G.role(n),inScene=G.episodes.some(ep=>stage(ep)!=='episodes'&&[...ep.focusIds,...ep.guestIds].includes(n.id)),wanted=n.type==='hub'||role==='episode'||((role==='focus'||role==='guest')&&(inScene||active.nodeIds.has(n.id)))||(role==='producer'&&(active.nodeIds.has(n.id)||(zoom>=3&&p.v>.85)||G.episodes.some(ep=>stage(ep)==='detail'&&n.country===ep.country)))||n.id===selected||n.id===hovered;
     if(!wanted)continue;
     let el=labelElements.get(n.id);
     if(!el){el=document.createElement('button');el.className='map-label '+role;el.dataset.node=n.id;el.setAttribute('aria-label',`Open ${n.name}${n.type==='episode'?' · '+n.country:''}`);el.innerHTML=`<span>${esc(n.name)}</span><small>${esc(n.type==='episode'?n.country:role==='guest'?'GUEST MIX':n.location?.precision==='country'?n.country:n.city)}</small>`;$('#map-labels').append(el);labelElements.set(n.id,el)}
