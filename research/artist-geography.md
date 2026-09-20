@@ -1,8 +1,8 @@
 # Artist geography research
 
-Initial research checked 19 September 2026; Vâyu, Sauvage Dub Trio Uman Yazar and Material Things updated 20 September 2026. Public professional geography only; no street addresses.
+Initial research checked 19 September 2026; Vâyu, Sauvage Dub Trio Uman Yazar Material Things and Dåggěr updated 20 September 2026. Public professional geography only; no street addresses.
 
-88 of 96 entities have map coordinates: 79 sourced, reported or editorially set positions and 9 inherited positions still awaiting verification. 8 have no single defensible mapped base yet.
+89 of 96 entities have map coordinates: 80 sourced, reported or editorially set positions and 9 inherited positions still awaiting verification. 7 have no single defensible mapped base yet.
 
 Sources include artist websites, SoundCloud and Bandcamp profiles, release notes, radio, festival and agency biographies, interviews and public professional profiles. Search results were checked against track and alias identity. Label addresses, birthplace, nationality and gig locations do not establish a current working base.
 
@@ -100,6 +100,7 @@ A source checked today may contain an old biography. `reported` marks dated or q
 | Sauvage Dub Trio | Marseille / Lyon, France | regional / editorial_confirmed | |
 | Uman Yazar | Marseille area, France | regional / editorial_confirmed | |
 | Material Things | Glasgow, United Kingdom | city / editorial_confirmed | |
+| Dåggěr | Pereira, Colombia | city / editorial_confirmed | |
 
 ## Unresolved geography
 
@@ -140,12 +141,6 @@ Sources checked: [Source 1](https://mikenogami.com/).
 Official biography gives Aichi origin and career history; no current working city is stated.
 
 Sources checked: [Source 1](https://akifukakusa.jp/discographynew/wpage/profile.html), [Source 2](https://akifukakusa.jp/).
-
-### Dåggěr
-
-Label biography establishes Pereira origin, not current residence. Artist SoundCloud could not be retrieved; Munich is the label location.
-
-Sources checked: [Source 1](https://qeone.bandcamp.com/album/dawn-chorus), [Source 2](https://soundcloud.com/dagger_1).
 
 ### Yingtuitive
 
