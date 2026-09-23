@@ -9,7 +9,7 @@ html{scroll-padding-top:24px}
 .practice-nav a:hover{border-color:var(--gold);color:var(--gold)}
 .practice{margin:64px 3.3% 72px;border-top:1px solid var(--line);padding-top:56px}
 .practice-head{max-width:900px;margin-bottom:44px}
-.practice-head h1{font-size:clamp(36px,5.2vw,72px);font-weight:300;line-height:1.06;letter-spacing:-.025em;margin:18px 0 24px}
+.practice-head h2{font-size:clamp(36px,5.2vw,72px);font-weight:300;line-height:1.06;letter-spacing:-.025em;margin:18px 0 24px}
 .practice-head p{max-width:690px;color:#aab9c9;font-size:17px;line-height:1.75}
 .practice-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:1px solid var(--line);border-left:1px solid var(--line)}
 .practice-card{border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:32px;min-width:0;position:relative}
@@ -62,3 +62,17 @@ html{scroll-padding-top:24px}
 .player-heading{display:flex;align-items:center;gap:8px}.player-heading>div{min-width:0;flex:1}.player-heading h2{font-size:13px;line-height:1.4;margin:5px 0 12px;font-weight:400}.player-heading .eyebrow{font-size:8px;color:#ddbd87}.player-heading button{width:36px;height:40px;flex-shrink:0;font-size:23px;color:#a9b5c1}
 #soundcloud-frame{display:block;width:100%;border:0;background:#12181e;border-radius:3px}#player-source{display:inline-block;font-size:9px;color:#b9a583;margin-top:10px;padding:6px 0}#listening-player.minimized #player-content{display:none}#listening-player.minimized h2{margin-bottom:4px}body.listening{padding-bottom:95px}
 @media(max-width:760px){#listening-player{bottom:10px;left:10px;width:calc(100vw - 20px);padding:12px}.player-heading h2{font-size:12px}}
+
+/* Editorial introduction and three concise routes through the practice. */
+.fog-intro{margin:6px 3.3% 24px;display:flex;align-items:end;justify-content:space-between;gap:24px}
+.fog-intro h1{font-size:clamp(27px,3vw,40px);font-weight:400;letter-spacing:-.025em;margin:8px 0 10px}
+.fog-intro h1 span{font-weight:300;color:#b7c5d4}.fog-intro p{max-width:720px;line-height:1.65;color:#aab9c9;margin:0}
+.fog-intro>a,.project-link{font-size:10px;letter-spacing:.1em;color:var(--gold);line-height:1.6;display:inline-flex;align-items:center;min-height:44px}
+.fog-intro>a{flex-shrink:0}.atlas-layout{height:calc(100dvh - 250px);min-height:480px}
+.research{margin:32px 3.3% 0;max-width:850px}.research h2{font-size:20px;font-weight:400;margin:0 0 14px}
+.research p{font-size:15px;line-height:1.8;color:#aab9c9}.research summary{cursor:pointer;color:var(--gold);padding:12px 0;font-size:12px}
+.research a{text-decoration:underline;text-underline-offset:3px}.research summary:focus-visible{outline:2px solid var(--gold);outline-offset:4px}
+.practice-axes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-bottom:32px}
+.practice-axes a{border-top:1px solid #665131;padding:18px 0;display:block}.practice-axes strong{font-size:18px;font-weight:400;color:#e1e8ef;display:block;margin-bottom:10px}
+.practice-axes span{display:block;font-size:13px;line-height:1.7;color:#aab9c9}.practice-axes a:hover strong,.project-link:hover{color:var(--gold);text-decoration:underline}
+@media(max-width:760px){.fog-intro{margin:8px 20px 24px;display:block}.fog-intro .eyebrow{font-size:8px}.fog-intro>a{margin-top:8px}.atlas-layout{height:auto;min-height:0}.research{margin:28px 20px 0}.practice-axes{grid-template-columns:1fr;gap:0;margin-bottom:24px}.practice-axes a{padding:14px 0}.practice-axes strong{margin-bottom:5px}}

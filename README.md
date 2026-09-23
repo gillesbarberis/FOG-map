@@ -1,12 +1,36 @@
-# FOG — Atlas & Practice
+# FOG — Effe or Gilles
 
-An episode-led musical atlas and a portfolio of Gilles Barberis’s current practice. Static HTML, CSS, Canvas 2D and WebGL; no build step or account credentials required.
+**Electronic music culture & editorial research.**
+
+An ongoing radio and research project by Gilles Barberis, mapping electronic music through places, scenes, labels and artists.
+
+[Explore the interactive atlas](https://gillesbarberis.github.io/FOG-map/) · [Current practice](https://gillesbarberis.github.io/FOG-map/#practice)
+
+## About the research
+
+FOG follows local scenes, independent labels and the artists who shape them. Musical selections, field material and guest contributions become radio episodes; the atlas makes their relationships explorable. Recording credits and documented label connections remain distinct from artist geography. Sources, approximate locations and editorial decisions are retained in the research register.
+
+## Three areas of practice
+
+| Area | Focus |
+| --- | --- |
+| [FOG](https://gillesbarberis.github.io/FOG-map/) | Electronic music culture & editorial research |
+| [TENS](https://github.com/gillesbarberis/TENS-electroacoustic-instruments) | Experimental instruments & music technology; ongoing independent R&D |
+| [Professional Audio](https://gillesbarberis.github.io/FOG-map/#professional-audio) | Post-production, restoration, Pro Tools & immersive audio |
+
+From 2020 to 2022, Gilles assembled and sold hundreds of DIY Eurorack modules, connecting hands-on hardware experience with his instrument research.
+
+**In development:** Gilles is contributing to an upcoming Antinational Noise various-artists remix release and has proposed mixing the record in SPAT to Giacomo Giunchedi (Sacrobosco). A launch/listening session at Serra Madre, Bologna, is a possibility, not a confirmed event. A collaborative album/EP with Rogi (AEDI) is also in progress, with a label still to be found and a possible spatial presentation as a second case study.
+
+## Website
+
+Static HTML, CSS, Canvas 2D and WebGL; no build step or account credentials required.
 
 ## Local preview
 
 Run `python3 -m http.server 8080 --bind 127.0.0.1` and open http://127.0.0.1:8080/#atlas. Practice is at `#practice`.
 
-The `spatial-practice-ctm` branch and draft PR #1 remain under review. Do not merge into `main` until Gilles has approved the preview.
+The earlier Practice and episode-led atlas work was merged in PR #1 on 19 September 2026.
 
 ## Explore the atlas
 
