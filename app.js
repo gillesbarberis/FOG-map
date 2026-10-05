@@ -20,14 +20,15 @@ const compile=(type,source)=>{const s=gl.createShader(type);gl.shaderSource(s,so
 program=gl.createProgram();gl.attachShader(program,compile(gl.VERTEX_SHADER,'attribute vec2 a;void main(){gl_Position=vec4(a,0.,1.);}'));
 gl.attachShader(program,compile(gl.FRAGMENT_SHADER,`precision highp float;
 uniform vec2 resolution;uniform vec2 center;uniform float radius;uniform float yaw;uniform float pitch;uniform sampler2D earthMap;
-void main(){vec2 p=(gl_FragCoord.xy-center)/radius;float rr=dot(p,p);vec3 bg=vec3(.0078,.0157,.0235);if(rr>1.){float glow=exp(-(sqrt(rr)-1.)*43.)*.16;gl_FragColor=vec4(bg+vec3(.18,.40,.59)*glow,1.);return;}
+void main(){vec2 p=(gl_FragCoord.xy-center)/radius;float rr=dot(p,p);vec3 bg=vec3(.0078,.0157,.0235);if(rr>1.){float glow=exp(-(sqrt(rr)-1.)*43.)*.10;gl_FragColor=vec4(bg+vec3(.18,.40,.59)*glow,1.);return;}
 float z=sqrt(1.-rr);float yy=p.y*cos(pitch)+z*sin(pitch);float zz=-p.y*sin(pitch)+z*cos(pitch);float xx=p.x*cos(yaw)-zz*sin(yaw);float zw=p.x*sin(yaw)+zz*cos(yaw);vec2 uv=vec2(.5+atan(xx,zw)/6.2831853,.5-asin(clamp(yy,-1.,1.))/3.14159265);vec3 t=texture2D(earthMap,uv).rgb;
-// Preserve the original night palette, with a restrained lift to surface detail.
+// Dark cartography, warm city lights and a fine blue atmosphere.
 float light=max(0.,t.r-t.b*.72);
-vec3 surface=pow(t,vec3(.90))*vec3(.48,.65,.76);
-vec3 col=surface+vec3(1.5,.92,.27)*pow(light,.72)*2.45;
-col*=.64+.36*pow(z,.35);
-float rim=pow(1.-z,5.);col+=vec3(.07,.15,.22)*rim*.7;
+float terrain=dot(t,vec3(.2126,.7152,.0722));
+vec3 surface=mix(t,vec3(terrain),.42)*vec3(.30,.39,.46);
+vec3 col=surface+vec3(1.5,1.10,.52)*pow(light,.80)*2.9;
+col*=.60+.40*pow(z,.35);
+float rim=pow(1.-z,7.);col+=vec3(.08,.19,.28)*rim*.85;
 gl_FragColor=vec4(col,1.);}`));gl.linkProgram(program);if(!gl.getProgramParameter(program,gl.LINK_STATUS))throw Error('Shader link');gl.useProgram(program);const buffer=gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,buffer);gl.bufferData(gl.ARRAY_BUFFER,new Float32Array([-1,-1,1,-1,-1,1,-1,1,1,-1,1,1]),gl.STATIC_DRAW);const a=gl.getAttribLocation(program,'a');gl.enableVertexAttribArray(a);gl.vertexAttribPointer(a,2,gl.FLOAT,false,0,0);texture=gl.createTexture();gl.bindTexture(gl.TEXTURE_2D,texture);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MIN_FILTER,gl.LINEAR);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MAG_FILTER,gl.LINEAR);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_S,gl.CLAMP_TO_EDGE);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_T,gl.CLAMP_TO_EDGE);
 const img=new Image();img.onload=()=>{gl.bindTexture(gl.TEXTURE_2D,texture);gl.texImage2D(gl.TEXTURE_2D,0,gl.RGB,gl.RGB,gl.UNSIGNED_BYTE,img);textureReady=true;$('#loading').hidden=true;requestDraw()};img.onerror=()=>{$('#loading').textContent='Texture unavailable · the list and search remain accessible'};img.src='assets/earth-night.jpg';
 }catch{$('#loading').textContent='3D globe unavailable in this browser. Explore the network using the list.'}
@@ -37,7 +38,7 @@ function activeNetwork(){
   for(const id of new Set([selected,hovered].filter(Boolean))){const network=G.visualNetwork(id);network.nodeIds.forEach(n=>nodeIds.add(n));network.edgeIds.forEach(e=>edgeIds.add(e));}
   return {nodeIds,edgeIds};
 }
-function drawArc(e){
+function drawArc(e,ambient=false){
   const a=B[e.source],b=B[e.target];if(!located(a)||!located(b))return false;
   if(!arcCache.has(e.id))arcCache.set(e.id,M.arc(a,b));
   ctx.beginPath();let pen=false;
@@ -52,13 +53,12 @@ function drawArc(e){
     points.forEach(n=>{const p=project(n);if(p.v<=.015){pen=false;return}
       if(pen)ctx.lineTo(p.x,p.y);else ctx.moveTo(p.x,p.y);pen=true;});
   }
-  // A flight-map route, with a soft bloom and a fine luminous core.
-  const rgb='255,197,104';
+  // Fine, cool routes let the warmer markers remain the visual anchors.
+  const rgb='159,204,228';
   ctx.save();ctx.lineCap='round';ctx.lineJoin='round';
-  ctx.shadowColor=`rgba(${rgb},.8)`;ctx.shadowBlur=15;
-  ctx.strokeStyle=`rgba(${rgb},.10)`;ctx.lineWidth=7;ctx.stroke();
-  ctx.shadowBlur=7;ctx.strokeStyle=`rgba(${rgb},.30)`;ctx.lineWidth=3;ctx.stroke();
-  ctx.shadowBlur=0;ctx.strokeStyle='rgba(255,229,178,.94)';ctx.lineWidth=1;ctx.stroke();
+  ctx.shadowColor=`rgba(${rgb},.35)`;ctx.shadowBlur=6;
+  ctx.strokeStyle=`rgba(${rgb},${ambient?'.045':'.09'})`;ctx.lineWidth=2.5;ctx.stroke();
+  ctx.shadowBlur=0;ctx.strokeStyle=`rgba(${rgb},${ambient?'.34':'.65'})`;ctx.lineWidth=ambient?.55:.7;ctx.stroke();
   ctx.restore();return true;
 }
 function visibleNodes(active,stages){
@@ -78,20 +78,23 @@ function visibleNodes(active,stages){
 }
 function marker(n,p,active){
   const role=G.role(n),emphasis=n.id===selected||n.id===hovered,dim=active.nodeIds.size&&!active.nodeIds.has(n.id);
-  const style={episode:{r:5,color:'#ffd17e',alpha:1,glow:16},focus:{r:4.8,color:'#ffd17e',alpha:1,glow:16},guest:{r:3.8,color:'#dae9f3',alpha:.72,glow:9},producer:{r:2.7,color:'#b9cbd8',alpha:.46,glow:4}}[role];
+  const style={episode:{r:4.5,color:'#ffd17e',alpha:1,glow:16},focus:{r:4.8,color:n.type==='artist'?'#e0ecf8':'#ffd17e',alpha:1,glow:16},guest:{r:3.5,color:'#e0ecf8',alpha:.85,glow:10},producer:{r:2.5,color:'#d4e3f2',alpha:.58,glow:6}}[role];
+  if(n.type==='hub'){style.r=6;style.glow=22}
   ctx.globalAlpha=dim?.24:emphasis?1:active.nodeIds.has(n.id)?Math.max(.8,style.alpha):style.alpha;ctx.fillStyle=style.color;ctx.shadowColor=style.color;ctx.shadowBlur=emphasis?20:style.glow;
   ctx.beginPath();ctx.arc(p.x,p.y,style.r+(emphasis?1.3:0),0,Math.PI*2);ctx.fill();ctx.shadowBlur=0;
   if(role==='episode'||emphasis){ctx.strokeStyle=style.color;ctx.lineWidth=.8;ctx.beginPath();ctx.arc(p.x,p.y,style.r+5,0,Math.PI*2);ctx.stroke()}
   ctx.globalAlpha=1;hits.push({n,x:p.x,y:p.y});
 }
 function placeLabels(visible,active){
-  const used=new Set(),boxes=[];
+  const used=new Set(),frame=canvas.getBoundingClientRect();
+  // Keep geography labels clear of the caption, search and navigation controls.
+  const boxes=['.atlas-caption','.map-context','.explore-wrap','.map-bottom','.zoom'].map(s=>$(s).getBoundingClientRect()).map(r=>({x:r.left-frame.left,y:r.top-frame.top,w:r.width,h:r.height}));
   const sorted=[...visible].sort((a,b)=>(b.n.id===selected)-(a.n.id===selected)||(b.n.type==='hub')-(a.n.type==='hub')||(b.n.type==='episode')-(a.n.type==='episode'));
   for(const {n,p} of sorted){
     const role=G.role(n),inScene=G.episodes.some(ep=>stage(ep)!=='episodes'&&[...ep.focusIds,...ep.guestIds].includes(n.id)),wanted=n.type==='hub'||role==='episode'||((role==='focus'||role==='guest')&&(inScene||active.nodeIds.has(n.id)))||(role==='producer'&&(active.nodeIds.has(n.id)||(zoom>=3&&p.v>.85)||G.episodes.some(ep=>stage(ep)==='detail'&&n.country===ep.country)))||n.id===selected||n.id===hovered;
     if(!wanted)continue;
     let el=labelElements.get(n.id);
-    if(!el){el=document.createElement('button');el.className='map-label '+role;el.dataset.node=n.id;el.setAttribute('aria-label',`Open ${n.name}${n.type==='episode'?' · '+n.country:''}`);el.innerHTML=`<span>${esc(n.name)}</span><small>${esc(n.type==='episode'?n.country:role==='guest'?'GUEST MIX':n.location?.precision==='country'?n.country:n.city)}</small>`;$('#map-labels').append(el);labelElements.set(n.id,el)}
+    if(!el){el=document.createElement('button');el.className='map-label '+role+(n.type==='artist'?' is-artist':'');el.dataset.node=n.id;el.setAttribute('aria-label',`Open ${n.name}${n.type==='episode'?' · '+n.country:''}`);el.innerHTML=`<span>${esc(n.name)}</span><small>${esc(n.type==='episode'?n.country:n.location?.precision==='country'?n.country:n.city)}</small>`;$('#map-labels').append(el);labelElements.set(n.id,el)}
     el.hidden=false;el.classList.toggle('selected',n.id===selected);el.classList.toggle('lit',active.nodeIds.has(n.id));el.classList.toggle('dimmed',active.nodeIds.size>0&&!active.nodeIds.has(n.id));
     const w=el.offsetWidth,h=el.offsetHeight,offsets=[[15,-h/2],[-w-15,-h/2],[15,20],[-w-15,20],[15,-h-20],[-w-15,-h-20],[15,h+18],[-w-15,h+18],[15,-2*h-18],[-w-15,-2*h-18],[15,2*h+30],[-w-15,2*h+30]];
     let box;
@@ -105,7 +108,10 @@ function placeLabels(visible,active){
 function draw(){
   if(!W||!H)return;drawEarth();ctx.clearRect(0,0,W,H);hits=[];
   const active=activeNetwork(),stages=Object.fromEntries(G.episodes.map(e=>[e.id,stage(e)]));
-  let arcCount=0;for(const e of G.visualEdges)if(active.edgeIds.has(e.id)&&drawArc(e))arcCount++;
+  let arcCount=0;for(const e of G.visualEdges){
+    const ambient=!active.nodeIds.size&&(e.source===data.hub?.id||e.target===data.hub?.id)&&[B[e.source],B[e.target]].some(n=>n.type==='episode');
+    if((active.edgeIds.has(e.id)||ambient)&&drawArc(e,ambient))arcCount++;
+  }
   const visible=visibleNodes(active,stages);visible.forEach(({n,p})=>marker(n,p,active));placeLabels(visible,active);
   const nearby=G.episodes.filter(e=>stages[e.id]!=='episodes').sort((a,b)=>project(b).v-project(a).v)[0];
   $('#map-level').textContent=nearby?`${nearby.name} / ${stages[nearby.id]==='detail'?'PEOPLE & PLACES':'LOCAL SCENE'}`:'FOG / EPISODES';
@@ -116,14 +122,14 @@ function draw(){
   canvas.dataset.visibleProducers=visible.filter(({n})=>G.role(n)==='producer').map(({n})=>n.id).join('|');canvas.dataset.selected=selected||'';canvas.dataset.hovered=hovered||'';canvas.dataset.arcCount=String(arcCount);canvas.dataset.level=nearby?stages[nearby.id]:'episodes';
 }
 function size(){const r=canvas.getBoundingClientRect();W=r.width;H=r.height;dpr=Math.min(devicePixelRatio||1,2);canvas.width=Math.round(W*dpr);canvas.height=Math.round(H*dpr);earth.width=canvas.width;earth.height=canvas.height;ctx.setTransform(dpr,0,0,dpr,0,0);requestDraw()}new ResizeObserver(size).observe(canvas);
-function row(n,subtitle){const role=G.role(n);return `<button class="network-row" data-node="${esc(n.id)}"><i class="${role==='episode'?'ring':role==='focus'?'gold':'white'}"></i><span>${esc(n.name)}<small>${esc(subtitle||locationLabel(n))}</small></span><span class="arrow">↗</span></button>`}
+function row(n,subtitle){return `<button class="network-row" data-node="${esc(n.id)}"><i class="${n.type==='episode'?'ring':n.type==='artist'?'white':'gold'}"></i><span>${esc(n.name)}<small>${esc(subtitle||locationLabel(n))}</small></span><span class="arrow" aria-hidden="true">→</span></button>`}
 let currentRecording=null,playerTimer=null;
 function soundCloudURL(r,autoplay=false){
   const url=new URL(r.url);if(url.protocol!=='https:'||url.hostname!=='soundcloud.com')throw Error('Invalid recording URL');
   return 'https://w.soundcloud.com/player/?url='+encodeURIComponent('https://api.soundcloud.com/tracks/soundcloud:tracks:'+r.id)+'&color=%23ffc568&auto_play='+autoplay+'&hide_related=true&show_comments=false&show_user=true&show_reposts=false&visual=false';
 }
 function player(r){
-  return `<div class="recording"><div class="eyebrow">${r.role==='guest'?'GUEST MIX':'FOG SELECTION'}</div><h3>${esc(r.title)}</h3><button class="play-recording" data-play="${esc(r.id)}" aria-label="Play ${esc(r.title)}"><span aria-hidden="true">▶</span><span>LISTEN IN PAGE<small>SoundCloud · full recording</small></span></button></div>`;
+  return `<div class="recording"><div class="eyebrow">${r.role==='guest'?'GUEST MIX':'FOG SELECTION'}</div><h3>${esc(r.title)}</h3><button class="play-recording" data-play="${esc(r.id)}" aria-label="Play ${esc(r.title)}"><span aria-hidden="true">▶</span><span>LISTEN ON SOUNDCLOUD</span><span class="arrow" aria-hidden="true">→</span></button></div>`;
 }
 function playRecording(id){
   const r=G.recordings[id];if(!r)return;
@@ -144,7 +150,7 @@ function choose(n,focus=true){
   selected=n.id;hovered=null;
   if(located(n)){yaw=-n.lon*Math.PI/180;pitch=n.lat*Math.PI/180;}
   else if(n.type!=='episode'){const ep=relatedEpisodes(n)[0];if(ep){yaw=-ep.lon*Math.PI/180;pitch=ep.lat*Math.PI/180;}}
-  const close='<button class="back" id="close-detail" aria-label="Close details">×</button>';
+  const close='<button class="back" id="close-detail" aria-label="Close details"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="m2 2 12 12M14 2 2 14"/></svg></button>';
   if(n.type==='hub'){
     detail.innerHTML=`${close}<div class="eyebrow">FOG / BOLOGNA</div><h2 class="panel-title">FOG</h2><div class="location">Bologna · Italy</div><p class="intro">A radio and research project by Gilles Barberis. From Bologna, FOG connects every episode, artist, label, collective and festival in this atlas.</p><section class="section"><h2>EXPLORE THE EPISODES</h2>${G.episodes.map(ep=>row(ep,ep.country)).join('')}</section><section class="section"><h2>LISTEN</h2>${players(data.recordings.map(r=>r.id))}</section>`;
   }else if(n.type==='episode'){
@@ -152,7 +158,7 @@ function choose(n,focus=true){
     detail.innerHTML=`${close}<div class="eyebrow">FOG / COUNTRY EPISODE</div><h2 class="panel-title">${esc(n.name)}</h2><p class="episode-country">${esc(n.country)}</p><p class="intro">${esc(n.focusIds.map(id=>B[id].name).join(' / '))}</p><button class="scene-button" data-scene="${esc(n.id)}">EXPLORE THE LOCAL SCENE +</button><section class="section"><h2>LISTEN / TWO RECORDINGS</h2>${players(n.recordingIds)}</section><section class="section"><h2>FOCUS & GUEST</h2>${[...new Set([...n.focusIds,...n.guestIds])].map(id=>row(B[id],n.guestIds.includes(id)?'Guest mix'+(n.focusIds.includes(id)?' / episode focus':''):'Episode focus')).join('')}</section><section class="section"><h2>PRODUCERS IN THESE RECORDINGS <span class="muted">/ ${members.length}</span></h2><p class="note">Connections follow the tracklists, wherever each artist is based.${pending.length?' '+pending.length+' locations are still being researched.':''}</p>${members.map(p=>row(p,located(p)?locationLabel(p):'Location to verify')).join('')}</section>`;
   }else{
     const eps=relatedEpisodes(n),relationships=E.filter(e=>e.kind!=='appears_in'&&e.kind!=='episode_focus'&&e.kind!=='guest_mix'&&(e.source===n.id||e.target===n.id));
-    detail.innerHTML=`${close}<div class="eyebrow">${G.role(n)==='guest'?'GUEST / PRODUCER':n.type.toUpperCase()}</div><h2 class="panel-title">${esc(n.name)}</h2><div class="location">${esc(located(n)?locationLabel(n):'Location to verify')}</div><section class="section"><h2>HEARD IN FOG</h2>${eps.map(ep=>row(ep,ep.country)).join('')||'<p class="note">Episode links are being researched.</p>'}${players(G.recordingIds(n))}</section><section class="section"><h2>CONNECTED SCENES</h2>${relationships.map(e=>row(B[e.source===n.id?e.target:e.source],e.kind.replaceAll('_',' '))).join('')||'<p class="note">More connections will be added as the archive is researched.</p>'}</section>`;
+    detail.innerHTML=`${close}<h2 class="panel-title">${esc(n.name)}</h2><div class="eyebrow">${n.type==='artist'?'ARTIST / PRODUCER':n.type.toUpperCase()}</div><div class="location"><svg viewBox="0 0 16 20" fill="none" aria-hidden="true"><path d="M8 18S2 11 2 7a6 6 0 1 1 12 0c0 4-6 11-6 11Z"/><circle cx="8" cy="7" r="2"/></svg><span>${esc(located(n)?locationLabel(n):'Location to verify')}</span></div><section class="section"><h2>CONNECTED TO</h2>${relationships.map(e=>row(B[e.source===n.id?e.target:e.source],e.kind.replaceAll('_',' '))).join('')||'<p class="note">More connections will be added as the archive is researched.</p>'}</section><section class="section"><h2>FOG EPISODES</h2>${eps.map(ep=>row(ep,ep.country)).join('')||'<p class="note">Episode links are being researched.</p>'}${players(G.recordingIds(n))}</section>`;
   }
   $('#close-detail').onclick=()=>{selected=null;hovered=null;overview();requestDraw()};$('#panel').scrollTop=0;closeSearch();requestDraw();
   if(focus&&innerWidth<=760)$('#panel').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth',block:'start'});

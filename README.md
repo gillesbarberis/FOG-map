@@ -26,6 +26,12 @@ From 2020 to 2022, Gilles assembled and sold hundreds of DIY Eurorack modules, c
 
 Static HTML, CSS, Canvas 2D and WebGL; no build step or account credentials required.
 
+### Visual design
+
+The night atlas opens with the globe occupying most of the first screen, a restrained blue atmospheric rim, warm city lights and a thin-bordered detail panel. Organisation markers are amber; artist markers are pale white. Country episodes use rings. Labels remain keyboard-accessible and avoid the caption and navigation controls where space permits.
+
+Faint routes from the Bologna hub to the four country episodes provide an initial overview. Selecting or hovering an entry reveals its existing documented network with fine blue trajectories. The city-light texture is background cartography; it does not represent additional artists or connections. About the research and Practice remain accessible from the compact atlas caption. The atlas is an early coding prototype.
+
 ## Local preview
 
 Run `python3 -m http.server 8080 --bind 127.0.0.1` and open http://127.0.0.1:8080/#atlas. Practice is at `#practice`.
